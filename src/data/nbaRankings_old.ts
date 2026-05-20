@@ -5,8 +5,8 @@ export type NBARanking = {
   value: number
 }
 
-// Lokalni seed za igro. Seznam je namenoma redek: če igralec ni vpisan v
-// izbrani kategoriji, igra uporabi kazen +50 točk.
+// Lokalni seed za igro. Seznam je namenoma redek.
+// Če igralec nima zapisa za kategorijo, dobi +50 točk.
 export const nbaRankings: NBARanking[] = [
   { categoryId: 'career-points', playerId: 'lebron-james', rank: 1, value: 40474 },
   { categoryId: 'career-points', playerId: 'kareem-abdul-jabbar', rank: 2, value: 38387 },
@@ -28,6 +28,9 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'career-points', playerId: 'kevin-garnett', rank: 18, value: 26071 },
   { categoryId: 'career-points', playerId: 'vince-carter', rank: 19, value: 25728 },
   { categoryId: 'career-points', playerId: 'jerry-west', rank: 20, value: 25192 },
+  { categoryId: 'career-points', playerId: 'julius-erving', rank: 24, value: 18364 },
+  { categoryId: 'career-points', playerId: 'dwyane-wade', rank: 35, value: 23165 },
+  { categoryId: 'career-points', playerId: 'shai-gilgeous-alexander', rank: 90, value: 10000 },
 
   { categoryId: 'career-rebounds', playerId: 'wilt-chamberlain', rank: 1, value: 23924 },
   { categoryId: 'career-rebounds', playerId: 'bill-russell', rank: 2, value: 21620 },
@@ -134,7 +137,6 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'single-game-threes', playerId: 'kobe-bryant', rank: 11, value: 12 },
   { categoryId: 'single-game-threes', playerId: 'luka-doncic', rank: 25, value: 9 },
 
-
   // Pri nagradnih kategorijah rank pomeni igralne točke po razredih, value pa dejansko število nagrad, izborov, naslovov ali sezon.
   { categoryId: 'championships', playerId: 'bill-russell', rank: 1, value: 11 },
   { categoryId: 'championships', playerId: 'kareem-abdul-jabbar', rank: 6, value: 6 },
@@ -146,17 +148,37 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'championships', playerId: 'lebron-james', rank: 14, value: 4 },
   { categoryId: 'championships', playerId: 'shaquille-oneal', rank: 14, value: 4 },
   { categoryId: 'championships', playerId: 'stephen-curry', rank: 14, value: 4 },
+  { categoryId: 'championships', playerId: 'dwyane-wade', rank: 20, value: 3 },
+  { categoryId: 'championships', playerId: 'julius-erving', rank: 35, value: 1 },
 
   { categoryId: 'mvps', playerId: 'kareem-abdul-jabbar', rank: 1, value: 6 },
-  { categoryId: 'mvps', playerId: 'bill-russell', rank: 3, value: 5 },
   { categoryId: 'mvps', playerId: 'michael-jordan', rank: 3, value: 5 },
+  { categoryId: 'mvps', playerId: 'bill-russell', rank: 3, value: 5 },
   { categoryId: 'mvps', playerId: 'lebron-james', rank: 8, value: 4 },
   { categoryId: 'mvps', playerId: 'wilt-chamberlain', rank: 8, value: 4 },
-  { categoryId: 'mvps', playerId: 'larry-bird', rank: 12, value: 3 },
   { categoryId: 'mvps', playerId: 'magic-johnson', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'larry-bird', rank: 12, value: 3 },
   { categoryId: 'mvps', playerId: 'moses-malone', rank: 12, value: 3 },
   { categoryId: 'mvps', playerId: 'nikola-jokic', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'karl-malone', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'stephen-curry', rank: 18, value: 2 },
   { categoryId: 'mvps', playerId: 'giannis-antetokounmpo', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'steve-nash', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'tim-duncan', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'kevin-durant', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'kobe-bryant', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'shaquille-oneal', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'dirk-nowitzki', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'hakeem-olajuwon', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'james-harden', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'russell-westbrook', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'allen-iverson', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'charles-barkley', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'david-robinson', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'kevin-garnett', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'joel-embiid', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'julius-erving', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'shai-gilgeous-alexander', rank: 25, value: 1 },
 
   { categoryId: 'finals-mvps', playerId: 'michael-jordan', rank: 1, value: 6 },
   { categoryId: 'finals-mvps', playerId: 'lebron-james', rank: 5, value: 4 },
@@ -168,6 +190,7 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'finals-mvps', playerId: 'kevin-durant', rank: 16, value: 2 },
   { categoryId: 'finals-mvps', playerId: 'kawhi-leonard', rank: 16, value: 2 },
   { categoryId: 'finals-mvps', playerId: 'hakeem-olajuwon', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'dwyane-wade', rank: 25, value: 1 },
 
   { categoryId: 'all-star', playerId: 'lebron-james', rank: 1, value: 20 },
   { categoryId: 'all-star', playerId: 'kareem-abdul-jabbar', rank: 4, value: 19 },
@@ -179,6 +202,9 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'all-star', playerId: 'michael-jordan', rank: 15, value: 14 },
   { categoryId: 'all-star', playerId: 'dirk-nowitzki', rank: 15, value: 14 },
   { categoryId: 'all-star', playerId: 'karl-malone', rank: 15, value: 14 },
+  { categoryId: 'all-star', playerId: 'dwyane-wade', rank: 15, value: 13 },
+  { categoryId: 'all-star', playerId: 'julius-erving', rank: 22, value: 11 },
+  { categoryId: 'all-star', playerId: 'shai-gilgeous-alexander', rank: 38, value: 3 },
 
   { categoryId: 'all-nba', playerId: 'lebron-james', rank: 1, value: 20 },
   { categoryId: 'all-nba', playerId: 'kareem-abdul-jabbar', rank: 4, value: 15 },
@@ -190,6 +216,9 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'all-nba', playerId: 'hakeem-olajuwon', rank: 8, value: 12 },
   { categoryId: 'all-nba', playerId: 'michael-jordan', rank: 13, value: 11 },
   { categoryId: 'all-nba', playerId: 'john-stockton', rank: 13, value: 11 },
+  { categoryId: 'all-nba', playerId: 'julius-erving', rank: 20, value: 7 },
+  { categoryId: 'all-nba', playerId: 'dwyane-wade', rank: 20, value: 8 },
+  { categoryId: 'all-nba', playerId: 'shai-gilgeous-alexander', rank: 40, value: 3 },
 
   { categoryId: 'all-defense', playerId: 'tim-duncan', rank: 1, value: 15 },
   { categoryId: 'all-defense', playerId: 'kobe-bryant', rank: 4, value: 12 },
@@ -245,6 +274,9 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'points-per-game', playerId: 'jerry-west', rank: 8, value: 27.0 },
   { categoryId: 'points-per-game', playerId: 'oscar-robertson', rank: 9, value: 25.7 },
   { categoryId: 'points-per-game', playerId: 'karl-malone', rank: 10, value: 25.0 },
+  { categoryId: 'points-per-game', playerId: 'shai-gilgeous-alexander', rank: 14, value: 24.6 },
+  { categoryId: 'points-per-game', playerId: 'julius-erving', rank: 22, value: 22.0 },
+  { categoryId: 'points-per-game', playerId: 'dwyane-wade', rank: 24, value: 22.0 },
 
   { categoryId: 'rebounds-per-game', playerId: 'wilt-chamberlain', rank: 1, value: 22.9 },
   { categoryId: 'rebounds-per-game', playerId: 'bill-russell', rank: 2, value: 22.5 },
