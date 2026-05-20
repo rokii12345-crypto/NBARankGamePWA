@@ -75,4 +75,7 @@ export const nbaPlayers: NBAPlayer[] = [
   { id: 'robert-parish', name: 'Robert Parish', country: 'ZDA', flagEmoji: '🇺🇸', primaryTeam: 'Boston Celtics', position: 'C', shortBio: 'Dolgoživi center Celticsov in rekorder po odigranih tekmah.' },
   { id: 'scott-skiles', name: 'Scott Skiles', country: 'ZDA', flagEmoji: '🇺🇸', primaryTeam: 'Orlando Magic', position: 'PG', shortBio: 'Organizator igre z rekordom po asistencah na eni tekmi.' },
   { id: 'zach-lavine', name: 'Zach LaVine', country: 'ZDA', flagEmoji: '🇺🇸', primaryTeam: 'Chicago Bulls / Minnesota Timberwolves', position: 'SG', shortBio: 'Eksploziven strelec in dvakratni zmagovalec tekmovanja v zabijanju.' },
+  { id: 'steve-nash', name: 'Steve Nash', country: 'Kanada', flagEmoji: '🇨🇦', primaryTeam: 'Phoenix Suns / Dallas Mavericks', position: 'PG', shortBio: 'Kanadski organizator igre, dvakratni MVP in eden najboljših podajalcev v zgodovini NBA.' },
+  { id: 'dwight-howard', name: 'Dwight Howard', country: 'ZDA', flagEmoji: '🇺🇸', primaryTeam: 'Orlando Magic / Los Angeles Lakers', position: 'C', shortBio: 'Dominanten center, znan po skokih, blokadah in obrambi pod obročem.' },
+  { id: 'anthony-davis', name: 'Anthony Davis', country: 'ZDA', flagEmoji: '🇺🇸', primaryTeam: 'New Orleans Pelicans / Los Angeles Lakers', position: 'PF/C', shortBio: 'Elitni visoki igralec, znan po obrambi, blokadah in vsestranski igri.' },
 ]

@@ -5,14 +5,15 @@ export type NBARanking = {
   value: number
 }
 
-// Lokalni seed za igro. Seznam je namenoma redek: če igralec ni vpisan v
-// izbrani kategoriji, igra uporabi kazen +50 točk.
+// Lokalni seed za igro. Če igralec ni vpisan v izbrani kategoriji,
+// gameEngine uporabi kazen +50 točk.
 //
-// Pri kariernih statističnih kategorijah rank pomeni približno dejansko
-// all-time uvrstitev v rednem delu NBA. Pri nagradnih kategorijah rank pomeni
-// igralne točke po razredih, value pa dejansko število nagrad/izborov/naslovov.
+// value = dejanska statistična vrednost ali število nagrad/izborov/naslovov.
+// rank = igralne točke. Pri kariernih skupnih statistikah je rank približno
+//        dejanska all-time uvrstitev. Pri nagradah, povprečjih in rekordih
+//        na eni tekmi je rank namerno razdeljen v igralne razrede, da igra
+//        ni preveč kaznovalna.
 export const nbaRankings: NBARanking[] = [
-  // Del 2: karierne statistike, posodobljeno za podatkovni set po sezoni 2025/26.
 
   // career-points
   { categoryId: 'career-points', playerId: 'lebron-james', rank: 1, value: 43440 },
@@ -127,6 +128,190 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'career-threes', playerId: 'vince-carter', rank: 11, value: 2290 },
   { categoryId: 'career-threes', playerId: 'kobe-bryant', rank: 16, value: 1827 },
 
+  // single-game-points
+  { categoryId: 'single-game-points', playerId: 'wilt-chamberlain', rank: 1, value: 100 },
+  { categoryId: 'single-game-points', playerId: 'kobe-bryant', rank: 3, value: 81 },
+  { categoryId: 'single-game-points', playerId: 'luka-doncic', rank: 6, value: 73 },
+  { categoryId: 'single-game-points', playerId: 'damian-lillard', rank: 6, value: 71 },
+  { categoryId: 'single-game-points', playerId: 'david-robinson', rank: 6, value: 71 },
+  { categoryId: 'single-game-points', playerId: 'donovan-mitchell', rank: 6, value: 71 },
+  { categoryId: 'single-game-points', playerId: 'elgin-baylor', rank: 6, value: 71 },
+  { categoryId: 'single-game-points', playerId: 'devin-booker', rank: 6, value: 70 },
+  { categoryId: 'single-game-points', playerId: 'joel-embiid', rank: 6, value: 70 },
+  { categoryId: 'single-game-points', playerId: 'michael-jordan', rank: 12, value: 69 },
+
+  // single-game-rebounds
+  { categoryId: 'single-game-rebounds', playerId: 'wilt-chamberlain', rank: 1, value: 55 },
+  { categoryId: 'single-game-rebounds', playerId: 'bill-russell', rank: 3, value: 51 },
+  { categoryId: 'single-game-rebounds', playerId: 'jerry-lucas', rank: 8, value: 40 },
+  { categoryId: 'single-game-rebounds', playerId: 'moses-malone', rank: 15, value: 37 },
+  { categoryId: 'single-game-rebounds', playerId: 'charles-barkley', rank: 25, value: 33 },
+  { categoryId: 'single-game-rebounds', playerId: 'shaquille-oneal', rank: 45, value: 28 },
+
+  // single-game-assists
+  { categoryId: 'single-game-assists', playerId: 'scott-skiles', rank: 1, value: 30 },
+  { categoryId: 'single-game-assists', playerId: 'kevin-porter', rank: 5, value: 29 },
+  { categoryId: 'single-game-assists', playerId: 'bob-cousy', rank: 5, value: 28 },
+  { categoryId: 'single-game-assists', playerId: 'john-stockton', rank: 5, value: 28 },
+  { categoryId: 'single-game-assists', playerId: 'jason-kidd', rank: 10, value: 25 },
+  { categoryId: 'single-game-assists', playerId: 'magic-johnson', rank: 18, value: 24 },
+  { categoryId: 'single-game-assists', playerId: 'russell-westbrook', rank: 18, value: 24 },
+  { categoryId: 'single-game-assists', playerId: 'chris-paul', rank: 25, value: 21 },
+
+  // single-game-steals
+  { categoryId: 'single-game-steals', playerId: 'kendall-gill', rank: 1, value: 11 },
+  { categoryId: 'single-game-steals', playerId: 'larry-kenon', rank: 1, value: 11 },
+  { categoryId: 'single-game-steals', playerId: 'allen-iverson', rank: 5, value: 10 },
+  { categoryId: 'single-game-steals', playerId: 'clyde-drexler', rank: 5, value: 10 },
+  { categoryId: 'single-game-steals', playerId: 'michael-jordan', rank: 5, value: 10 },
+  { categoryId: 'single-game-steals', playerId: 'chris-paul', rank: 12, value: 9 },
+
+  // single-game-blocks
+  { categoryId: 'single-game-blocks', playerId: 'elmore-smith', rank: 1, value: 17 },
+  { categoryId: 'single-game-blocks', playerId: 'manute-bol', rank: 5, value: 15 },
+  { categoryId: 'single-game-blocks', playerId: 'shaquille-oneal', rank: 5, value: 15 },
+  { categoryId: 'single-game-blocks', playerId: 'david-robinson', rank: 25, value: 12 },
+  { categoryId: 'single-game-blocks', playerId: 'hakeem-olajuwon', rank: 25, value: 12 },
+  { categoryId: 'single-game-blocks', playerId: 'tim-duncan', rank: 45, value: 9 },
+
+  // single-game-threes
+  { categoryId: 'single-game-threes', playerId: 'klay-thompson', rank: 1, value: 14 },
+  { categoryId: 'single-game-threes', playerId: 'stephen-curry', rank: 5, value: 13 },
+  { categoryId: 'single-game-threes', playerId: 'zach-lavine', rank: 5, value: 13 },
+  { categoryId: 'single-game-threes', playerId: 'kobe-bryant', rank: 10, value: 12 },
+  { categoryId: 'single-game-threes', playerId: 'damian-lillard', rank: 18, value: 11 },
+  { categoryId: 'single-game-threes', playerId: 'luka-doncic', rank: 45, value: 9 },
+
+  // championships
+  { categoryId: 'championships', playerId: 'bill-russell', rank: 1, value: 11 },
+  { categoryId: 'championships', playerId: 'kareem-abdul-jabbar', rank: 6, value: 6 },
+  { categoryId: 'championships', playerId: 'michael-jordan', rank: 6, value: 6 },
+  { categoryId: 'championships', playerId: 'scottie-pippen', rank: 6, value: 6 },
+  { categoryId: 'championships', playerId: 'kobe-bryant', rank: 9, value: 5 },
+  { categoryId: 'championships', playerId: 'magic-johnson', rank: 9, value: 5 },
+  { categoryId: 'championships', playerId: 'tim-duncan', rank: 9, value: 5 },
+  { categoryId: 'championships', playerId: 'lebron-james', rank: 14, value: 4 },
+  { categoryId: 'championships', playerId: 'shaquille-oneal', rank: 14, value: 4 },
+  { categoryId: 'championships', playerId: 'stephen-curry', rank: 14, value: 4 },
+  { categoryId: 'championships', playerId: 'dwyane-wade', rank: 20, value: 3 },
+  { categoryId: 'championships', playerId: 'anthony-davis', rank: 35, value: 1 },
+  { categoryId: 'championships', playerId: 'dwight-howard', rank: 35, value: 1 },
+  { categoryId: 'championships', playerId: 'julius-erving', rank: 35, value: 1 },
+
+  // mvps
+  { categoryId: 'mvps', playerId: 'kareem-abdul-jabbar', rank: 1, value: 6 },
+  { categoryId: 'mvps', playerId: 'bill-russell', rank: 3, value: 5 },
+  { categoryId: 'mvps', playerId: 'michael-jordan', rank: 3, value: 5 },
+  { categoryId: 'mvps', playerId: 'lebron-james', rank: 8, value: 4 },
+  { categoryId: 'mvps', playerId: 'wilt-chamberlain', rank: 8, value: 4 },
+  { categoryId: 'mvps', playerId: 'larry-bird', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'magic-johnson', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'moses-malone', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'nikola-jokic', rank: 12, value: 3 },
+  { categoryId: 'mvps', playerId: 'bob-pettit', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'giannis-antetokounmpo', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'karl-malone', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'shai-gilgeous-alexander', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'stephen-curry', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'steve-nash', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'tim-duncan', rank: 18, value: 2 },
+  { categoryId: 'mvps', playerId: 'allen-iverson', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'bob-cousy', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'charles-barkley', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'david-robinson', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'dirk-nowitzki', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'hakeem-olajuwon', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'james-harden', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'joel-embiid', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'julius-erving', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'kevin-durant', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'kevin-garnett', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'kobe-bryant', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'oscar-robertson', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'russell-westbrook', rank: 25, value: 1 },
+  { categoryId: 'mvps', playerId: 'shaquille-oneal', rank: 25, value: 1 },
+
+  // finals-mvps
+  { categoryId: 'finals-mvps', playerId: 'michael-jordan', rank: 1, value: 6 },
+  { categoryId: 'finals-mvps', playerId: 'lebron-james', rank: 5, value: 4 },
+  { categoryId: 'finals-mvps', playerId: 'magic-johnson', rank: 10, value: 3 },
+  { categoryId: 'finals-mvps', playerId: 'shaquille-oneal', rank: 10, value: 3 },
+  { categoryId: 'finals-mvps', playerId: 'tim-duncan', rank: 10, value: 3 },
+  { categoryId: 'finals-mvps', playerId: 'hakeem-olajuwon', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'kareem-abdul-jabbar', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'kawhi-leonard', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'kevin-durant', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'kobe-bryant', rank: 16, value: 2 },
+  { categoryId: 'finals-mvps', playerId: 'dwyane-wade', rank: 25, value: 1 },
+  { categoryId: 'finals-mvps', playerId: 'shai-gilgeous-alexander', rank: 25, value: 1 },
+
+  // all-star
+  { categoryId: 'all-star', playerId: 'lebron-james', rank: 1, value: 20 },
+  { categoryId: 'all-star', playerId: 'kareem-abdul-jabbar', rank: 4, value: 19 },
+  { categoryId: 'all-star', playerId: 'kobe-bryant', rank: 4, value: 18 },
+  { categoryId: 'all-star', playerId: 'kevin-durant', rank: 8, value: 15 },
+  { categoryId: 'all-star', playerId: 'kevin-garnett', rank: 8, value: 15 },
+  { categoryId: 'all-star', playerId: 'shaquille-oneal', rank: 8, value: 15 },
+  { categoryId: 'all-star', playerId: 'tim-duncan', rank: 8, value: 15 },
+  { categoryId: 'all-star', playerId: 'dirk-nowitzki', rank: 15, value: 14 },
+  { categoryId: 'all-star', playerId: 'karl-malone', rank: 15, value: 14 },
+  { categoryId: 'all-star', playerId: 'michael-jordan', rank: 15, value: 14 },
+  { categoryId: 'all-star', playerId: 'dwyane-wade', rank: 15, value: 13 },
+  { categoryId: 'all-star', playerId: 'julius-erving', rank: 22, value: 11 },
+  { categoryId: 'all-star', playerId: 'anthony-davis', rank: 22, value: 10 },
+  { categoryId: 'all-star', playerId: 'dwight-howard', rank: 30, value: 8 },
+  { categoryId: 'all-star', playerId: 'steve-nash', rank: 30, value: 8 },
+  { categoryId: 'all-star', playerId: 'shai-gilgeous-alexander', rank: 38, value: 4 },
+
+  // all-nba
+  { categoryId: 'all-nba', playerId: 'lebron-james', rank: 1, value: 20 },
+  { categoryId: 'all-nba', playerId: 'kareem-abdul-jabbar', rank: 4, value: 15 },
+  { categoryId: 'all-nba', playerId: 'kobe-bryant', rank: 4, value: 15 },
+  { categoryId: 'all-nba', playerId: 'tim-duncan', rank: 4, value: 15 },
+  { categoryId: 'all-nba', playerId: 'karl-malone', rank: 8, value: 14 },
+  { categoryId: 'all-nba', playerId: 'shaquille-oneal', rank: 8, value: 14 },
+  { categoryId: 'all-nba', playerId: 'dirk-nowitzki', rank: 8, value: 12 },
+  { categoryId: 'all-nba', playerId: 'hakeem-olajuwon', rank: 8, value: 12 },
+  { categoryId: 'all-nba', playerId: 'john-stockton', rank: 13, value: 11 },
+  { categoryId: 'all-nba', playerId: 'michael-jordan', rank: 13, value: 11 },
+  { categoryId: 'all-nba', playerId: 'dwight-howard', rank: 20, value: 8 },
+  { categoryId: 'all-nba', playerId: 'dwyane-wade', rank: 20, value: 8 },
+  { categoryId: 'all-nba', playerId: 'julius-erving', rank: 20, value: 7 },
+  { categoryId: 'all-nba', playerId: 'steve-nash', rank: 20, value: 7 },
+  { categoryId: 'all-nba', playerId: 'anthony-davis', rank: 30, value: 5 },
+  { categoryId: 'all-nba', playerId: 'shai-gilgeous-alexander', rank: 30, value: 4 },
+
+  // all-defense
+  { categoryId: 'all-defense', playerId: 'tim-duncan', rank: 1, value: 15 },
+  { categoryId: 'all-defense', playerId: 'kevin-garnett', rank: 4, value: 12 },
+  { categoryId: 'all-defense', playerId: 'kobe-bryant', rank: 4, value: 12 },
+  { categoryId: 'all-defense', playerId: 'kareem-abdul-jabbar', rank: 7, value: 11 },
+  { categoryId: 'all-defense', playerId: 'scottie-pippen', rank: 7, value: 10 },
+  { categoryId: 'all-defense', playerId: 'chris-paul', rank: 12, value: 9 },
+  { categoryId: 'all-defense', playerId: 'gary-payton', rank: 12, value: 9 },
+  { categoryId: 'all-defense', playerId: 'hakeem-olajuwon', rank: 12, value: 9 },
+  { categoryId: 'all-defense', playerId: 'michael-jordan', rank: 12, value: 9 },
+  { categoryId: 'all-defense', playerId: 'kawhi-leonard', rank: 20, value: 7 },
+  { categoryId: 'all-defense', playerId: 'anthony-davis', rank: 30, value: 5 },
+  { categoryId: 'all-defense', playerId: 'dwight-howard', rank: 30, value: 5 },
+  { categoryId: 'all-defense', playerId: 'dwyane-wade', rank: 30, value: 3 },
+
+  // seasons
+  { categoryId: 'seasons', playerId: 'vince-carter', rank: 1, value: 22 },
+  { categoryId: 'seasons', playerId: 'dirk-nowitzki', rank: 3, value: 21 },
+  { categoryId: 'seasons', playerId: 'kevin-garnett', rank: 3, value: 21 },
+  { categoryId: 'seasons', playerId: 'lebron-james', rank: 3, value: 21 },
+  { categoryId: 'seasons', playerId: 'jamal-crawford', rank: 6, value: 20 },
+  { categoryId: 'seasons', playerId: 'kareem-abdul-jabbar', rank: 6, value: 20 },
+  { categoryId: 'seasons', playerId: 'kobe-bryant', rank: 6, value: 20 },
+  { categoryId: 'seasons', playerId: 'chris-paul', rank: 10, value: 19 },
+  { categoryId: 'seasons', playerId: 'john-stockton', rank: 10, value: 19 },
+  { categoryId: 'seasons', playerId: 'karl-malone', rank: 10, value: 19 },
+  { categoryId: 'seasons', playerId: 'dwight-howard', rank: 15, value: 18 },
+  { categoryId: 'seasons', playerId: 'steve-nash', rank: 15, value: 18 },
+  { categoryId: 'seasons', playerId: 'dwyane-wade', rank: 25, value: 16 },
+  { categoryId: 'seasons', playerId: 'anthony-davis', rank: 40, value: 13 },
+
   // games-played
   { categoryId: 'games-played', playerId: 'lebron-james', rank: 1, value: 1622 },
   { categoryId: 'games-played', playerId: 'robert-parish', rank: 2, value: 1611 },
@@ -181,176 +366,35 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'minutes-played', playerId: 'dwight-howard', rank: 44, value: 39457 },
   { categoryId: 'minutes-played', playerId: 'charles-barkley', rank: 45, value: 39330 },
 
-  // Del 4: rekordi na eni tekmi.
-  // Pri single-game kategorijah rank pomeni igralne točke po razredih, value pa dejanski najboljši dosežek igralca v eni NBA tekmi.
-  //
-  // single-game-points:
-  // 100 = 1, 80+ = 3, 70-79 = 6, 60-69 = 12, 50-59 = 25.
-  { categoryId: 'single-game-points', playerId: 'wilt-chamberlain', rank: 1, value: 100 },
-  { categoryId: 'single-game-points', playerId: 'kobe-bryant', rank: 3, value: 81 },
-  { categoryId: 'single-game-points', playerId: 'luka-doncic', rank: 6, value: 73 },
-  { categoryId: 'single-game-points', playerId: 'david-robinson', rank: 6, value: 71 },
-  { categoryId: 'single-game-points', playerId: 'damian-lillard', rank: 6, value: 71 },
-  { categoryId: 'single-game-points', playerId: 'donovan-mitchell', rank: 6, value: 71 },
-  { categoryId: 'single-game-points', playerId: 'elgin-baylor', rank: 6, value: 71 },
-  { categoryId: 'single-game-points', playerId: 'devin-booker', rank: 6, value: 70 },
-  { categoryId: 'single-game-points', playerId: 'joel-embiid', rank: 6, value: 70 },
-  { categoryId: 'single-game-points', playerId: 'michael-jordan', rank: 12, value: 69 },
-
-  // single-game-rebounds:
-  // 55+ = 1, 50-54 = 3, 45-49 = 6, 40-44 = 10, 35-39 = 18, 30-34 = 25, 25-29 = 35.
-  { categoryId: 'single-game-rebounds', playerId: 'wilt-chamberlain', rank: 1, value: 55 },
-  { categoryId: 'single-game-rebounds', playerId: 'bill-russell', rank: 3, value: 51 },
-  { categoryId: 'single-game-rebounds', playerId: 'jerry-lucas', rank: 10, value: 40 },
-  { categoryId: 'single-game-rebounds', playerId: 'moses-malone', rank: 18, value: 37 },
-  { categoryId: 'single-game-rebounds', playerId: 'charles-barkley', rank: 25, value: 33 },
-  { categoryId: 'single-game-rebounds', playerId: 'shaquille-oneal', rank: 35, value: 28 },
-
-  // single-game-assists:
-  // 30 = 1, 29 = 3, 28 = 5, 25-27 = 10, 24 = 14, 20-23 = 22.
-  { categoryId: 'single-game-assists', playerId: 'scott-skiles', rank: 1, value: 30 },
-  { categoryId: 'single-game-assists', playerId: 'kevin-porter', rank: 3, value: 29 },
-  { categoryId: 'single-game-assists', playerId: 'bob-cousy', rank: 5, value: 28 },
-  { categoryId: 'single-game-assists', playerId: 'john-stockton', rank: 5, value: 28 },
-  { categoryId: 'single-game-assists', playerId: 'jason-kidd', rank: 10, value: 25 },
-  { categoryId: 'single-game-assists', playerId: 'magic-johnson', rank: 14, value: 24 },
-  { categoryId: 'single-game-assists', playerId: 'russell-westbrook', rank: 14, value: 24 },
-  { categoryId: 'single-game-assists', playerId: 'chris-paul', rank: 22, value: 21 },
-
-  // single-game-steals:
-  // 11 = 1, 10 = 5, 9 = 12, 8 = 20, 7 = 30.
-  { categoryId: 'single-game-steals', playerId: 'larry-kenon', rank: 1, value: 11 },
-  { categoryId: 'single-game-steals', playerId: 'kendall-gill', rank: 1, value: 11 },
-  { categoryId: 'single-game-steals', playerId: 'allen-iverson', rank: 5, value: 10 },
-  { categoryId: 'single-game-steals', playerId: 'michael-jordan', rank: 5, value: 10 },
-  { categoryId: 'single-game-steals', playerId: 'clyde-drexler', rank: 5, value: 10 },
-  { categoryId: 'single-game-steals', playerId: 'chris-paul', rank: 12, value: 9 },
-
-  // single-game-blocks:
-  // 17 = 1, 15-16 = 3, 13-14 = 8, 12 = 12, 10-11 = 20, 9 = 30.
-  { categoryId: 'single-game-blocks', playerId: 'elmore-smith', rank: 1, value: 17 },
-  { categoryId: 'single-game-blocks', playerId: 'shaquille-oneal', rank: 3, value: 15 },
-  { categoryId: 'single-game-blocks', playerId: 'manute-bol', rank: 3, value: 15 },
-  { categoryId: 'single-game-blocks', playerId: 'hakeem-olajuwon', rank: 12, value: 12 },
-  { categoryId: 'single-game-blocks', playerId: 'david-robinson', rank: 12, value: 12 },
-  { categoryId: 'single-game-blocks', playerId: 'tim-duncan', rank: 30, value: 9 },
-
-  // single-game-threes:
-  // 14 = 1, 13 = 3, 12 = 6, 11 = 10, 10 = 18, 9 = 25.
-  { categoryId: 'single-game-threes', playerId: 'klay-thompson', rank: 1, value: 14 },
-  { categoryId: 'single-game-threes', playerId: 'stephen-curry', rank: 3, value: 13 },
-  { categoryId: 'single-game-threes', playerId: 'zach-lavine', rank: 3, value: 13 },
-  { categoryId: 'single-game-threes', playerId: 'kobe-bryant', rank: 6, value: 12 },
-  { categoryId: 'single-game-threes', playerId: 'damian-lillard', rank: 10, value: 11 },
-  { categoryId: 'single-game-threes', playerId: 'luka-doncic', rank: 25, value: 9 },
-
-  { categoryId: 'championships', playerId: 'bill-russell', rank: 1, value: 11 },
-  { categoryId: 'championships', playerId: 'kareem-abdul-jabbar', rank: 6, value: 6 },
-  { categoryId: 'championships', playerId: 'michael-jordan', rank: 6, value: 6 },
-  { categoryId: 'championships', playerId: 'scottie-pippen', rank: 6, value: 6 },
-  { categoryId: 'championships', playerId: 'kobe-bryant', rank: 9, value: 5 },
-  { categoryId: 'championships', playerId: 'magic-johnson', rank: 9, value: 5 },
-  { categoryId: 'championships', playerId: 'tim-duncan', rank: 9, value: 5 },
-  { categoryId: 'championships', playerId: 'lebron-james', rank: 14, value: 4 },
-  { categoryId: 'championships', playerId: 'shaquille-oneal', rank: 14, value: 4 },
-  { categoryId: 'championships', playerId: 'stephen-curry', rank: 14, value: 4 },
-  { categoryId: 'mvps', playerId: 'kareem-abdul-jabbar', rank: 1, value: 6 },
-  { categoryId: 'mvps', playerId: 'bill-russell', rank: 3, value: 5 },
-  { categoryId: 'mvps', playerId: 'michael-jordan', rank: 3, value: 5 },
-  { categoryId: 'mvps', playerId: 'lebron-james', rank: 8, value: 4 },
-  { categoryId: 'mvps', playerId: 'wilt-chamberlain', rank: 8, value: 4 },
-  { categoryId: 'mvps', playerId: 'larry-bird', rank: 12, value: 3 },
-  { categoryId: 'mvps', playerId: 'magic-johnson', rank: 12, value: 3 },
-  { categoryId: 'mvps', playerId: 'moses-malone', rank: 12, value: 3 },
-  { categoryId: 'mvps', playerId: 'nikola-jokic', rank: 12, value: 3 },
-  { categoryId: 'mvps', playerId: 'giannis-antetokounmpo', rank: 18, value: 2 },
-  { categoryId: 'finals-mvps', playerId: 'michael-jordan', rank: 1, value: 6 },
-  { categoryId: 'finals-mvps', playerId: 'lebron-james', rank: 5, value: 4 },
-  { categoryId: 'finals-mvps', playerId: 'magic-johnson', rank: 10, value: 3 },
-  { categoryId: 'finals-mvps', playerId: 'shaquille-oneal', rank: 10, value: 3 },
-  { categoryId: 'finals-mvps', playerId: 'tim-duncan', rank: 10, value: 3 },
-  { categoryId: 'finals-mvps', playerId: 'kareem-abdul-jabbar', rank: 16, value: 2 },
-  { categoryId: 'finals-mvps', playerId: 'kobe-bryant', rank: 16, value: 2 },
-  { categoryId: 'finals-mvps', playerId: 'kevin-durant', rank: 16, value: 2 },
-  { categoryId: 'finals-mvps', playerId: 'kawhi-leonard', rank: 16, value: 2 },
-  { categoryId: 'finals-mvps', playerId: 'hakeem-olajuwon', rank: 16, value: 2 },
-  { categoryId: 'all-star', playerId: 'lebron-james', rank: 1, value: 20 },
-  { categoryId: 'all-star', playerId: 'kareem-abdul-jabbar', rank: 4, value: 19 },
-  { categoryId: 'all-star', playerId: 'kobe-bryant', rank: 4, value: 18 },
-  { categoryId: 'all-star', playerId: 'tim-duncan', rank: 8, value: 15 },
-  { categoryId: 'all-star', playerId: 'shaquille-oneal', rank: 8, value: 15 },
-  { categoryId: 'all-star', playerId: 'kevin-garnett', rank: 8, value: 15 },
-  { categoryId: 'all-star', playerId: 'kevin-durant', rank: 8, value: 15 },
-  { categoryId: 'all-star', playerId: 'michael-jordan', rank: 15, value: 14 },
-  { categoryId: 'all-star', playerId: 'dirk-nowitzki', rank: 15, value: 14 },
-  { categoryId: 'all-star', playerId: 'karl-malone', rank: 15, value: 14 },
-  { categoryId: 'all-nba', playerId: 'lebron-james', rank: 1, value: 20 },
-  { categoryId: 'all-nba', playerId: 'kareem-abdul-jabbar', rank: 4, value: 15 },
-  { categoryId: 'all-nba', playerId: 'kobe-bryant', rank: 4, value: 15 },
-  { categoryId: 'all-nba', playerId: 'tim-duncan', rank: 4, value: 15 },
-  { categoryId: 'all-nba', playerId: 'karl-malone', rank: 8, value: 14 },
-  { categoryId: 'all-nba', playerId: 'shaquille-oneal', rank: 8, value: 14 },
-  { categoryId: 'all-nba', playerId: 'dirk-nowitzki', rank: 8, value: 12 },
-  { categoryId: 'all-nba', playerId: 'hakeem-olajuwon', rank: 8, value: 12 },
-  { categoryId: 'all-nba', playerId: 'michael-jordan', rank: 13, value: 11 },
-  { categoryId: 'all-nba', playerId: 'john-stockton', rank: 13, value: 11 },
-  { categoryId: 'all-defense', playerId: 'tim-duncan', rank: 1, value: 15 },
-  { categoryId: 'all-defense', playerId: 'kobe-bryant', rank: 4, value: 12 },
-  { categoryId: 'all-defense', playerId: 'kevin-garnett', rank: 4, value: 12 },
-  { categoryId: 'all-defense', playerId: 'kareem-abdul-jabbar', rank: 7, value: 11 },
-  { categoryId: 'all-defense', playerId: 'scottie-pippen', rank: 7, value: 10 },
-  { categoryId: 'all-defense', playerId: 'michael-jordan', rank: 12, value: 9 },
-  { categoryId: 'all-defense', playerId: 'gary-payton', rank: 12, value: 9 },
-  { categoryId: 'all-defense', playerId: 'hakeem-olajuwon', rank: 12, value: 9 },
-  { categoryId: 'all-defense', playerId: 'chris-paul', rank: 12, value: 9 },
-  { categoryId: 'all-defense', playerId: 'kawhi-leonard', rank: 20, value: 7 },
-  { categoryId: 'seasons', playerId: 'vince-carter', rank: 1, value: 22 },
-  { categoryId: 'seasons', playerId: 'lebron-james', rank: 3, value: 21 },
-  { categoryId: 'seasons', playerId: 'dirk-nowitzki', rank: 3, value: 21 },
-  { categoryId: 'seasons', playerId: 'kevin-garnett', rank: 3, value: 21 },
-  { categoryId: 'seasons', playerId: 'kareem-abdul-jabbar', rank: 6, value: 20 },
-  { categoryId: 'seasons', playerId: 'kobe-bryant', rank: 6, value: 20 },
-  { categoryId: 'seasons', playerId: 'jamal-crawford', rank: 6, value: 20 },
-  { categoryId: 'seasons', playerId: 'chris-paul', rank: 10, value: 19 },
-  { categoryId: 'seasons', playerId: 'john-stockton', rank: 10, value: 19 },
-  { categoryId: 'seasons', playerId: 'karl-malone', rank: 10, value: 19 },
-  // Del 3: povprečja kariere.
-  // Pri povprečjih rank pomeni igralne točke po razredih, value pa dejansko povprečje na tekmo.
-  //
-  // points-per-game:
-  // 30+ -> rank 1, 28-29.9 -> rank 5, 26-27.9 -> rank 10,
-  // 24-25.9 -> rank 18, 22-23.9 -> rank 30, 20-21.9 -> rank 38.
+  // points-per-game
   { categoryId: 'points-per-game', playerId: 'michael-jordan', rank: 1, value: 30.1 },
   { categoryId: 'points-per-game', playerId: 'wilt-chamberlain', rank: 1, value: 30.1 },
   { categoryId: 'points-per-game', playerId: 'luka-doncic', rank: 5, value: 29.2 },
   { categoryId: 'points-per-game', playerId: 'elgin-baylor', rank: 10, value: 27.4 },
   { categoryId: 'points-per-game', playerId: 'kevin-durant', rank: 10, value: 27.3 },
   { categoryId: 'points-per-game', playerId: 'lebron-james', rank: 10, value: 27.1 },
-  { categoryId: 'points-per-game', playerId: 'jerry-west', rank: 10, value: 27.0 },
+  { categoryId: 'points-per-game', playerId: 'jerry-west', rank: 10, value: 27 },
   { categoryId: 'points-per-game', playerId: 'allen-iverson', rank: 10, value: 26.7 },
   { categoryId: 'points-per-game', playerId: 'oscar-robertson', rank: 18, value: 25.7 },
   { categoryId: 'points-per-game', playerId: 'damian-lillard', rank: 18, value: 25.1 },
-  { categoryId: 'points-per-game', playerId: 'kobe-bryant', rank: 18, value: 25.0 },
-  { categoryId: 'points-per-game', playerId: 'karl-malone', rank: 18, value: 25.0 },
+  { categoryId: 'points-per-game', playerId: 'karl-malone', rank: 18, value: 25 },
+  { categoryId: 'points-per-game', playerId: 'kobe-bryant', rank: 18, value: 25 },
   { categoryId: 'points-per-game', playerId: 'dominique-wilkins', rank: 18, value: 24.8 },
   { categoryId: 'points-per-game', playerId: 'stephen-curry', rank: 18, value: 24.7 },
   { categoryId: 'points-per-game', playerId: 'larry-bird', rank: 18, value: 24.3 },
   { categoryId: 'points-per-game', playerId: 'james-harden', rank: 18, value: 24.1 },
-  { categoryId: 'points-per-game', playerId: 'shai-gilgeous-alexander', rank: 18, value: 24.0 },
+  { categoryId: 'points-per-game', playerId: 'shai-gilgeous-alexander', rank: 18, value: 24 },
   { categoryId: 'points-per-game', playerId: 'giannis-antetokounmpo', rank: 30, value: 23.7 },
   { categoryId: 'points-per-game', playerId: 'shaquille-oneal', rank: 30, value: 23.7 },
   { categoryId: 'points-per-game', playerId: 'carmelo-anthony', rank: 30, value: 22.5 },
-  { categoryId: 'points-per-game', playerId: 'dwyane-wade', rank: 30, value: 22.0 },
+  { categoryId: 'points-per-game', playerId: 'dwyane-wade', rank: 30, value: 22 },
   { categoryId: 'points-per-game', playerId: 'dirk-nowitzki', rank: 38, value: 20.7 },
 
-  // rebounds-per-game:
-  // 22+ -> rank 1, 16-17.9 -> rank 5, 14-15.9 -> rank 8,
-  // 13-13.9 -> rank 12, 12-12.9 -> rank 18, 11-11.9 -> rank 25,
-  // 10-10.9 -> rank 35, 9-9.9 -> rank 40.
+  // rebounds-per-game
   { categoryId: 'rebounds-per-game', playerId: 'wilt-chamberlain', rank: 1, value: 22.9 },
   { categoryId: 'rebounds-per-game', playerId: 'bill-russell', rank: 1, value: 22.5 },
   { categoryId: 'rebounds-per-game', playerId: 'bob-pettit', rank: 5, value: 16.2 },
-  { categoryId: 'rebounds-per-game', playerId: 'elgin-baylor', rank: 12, value: 13.5 },
+  { categoryId: 'rebounds-per-game', playerId: 'elgin-baylor', rank: 10, value: 13.5 },
   { categoryId: 'rebounds-per-game', playerId: 'moses-malone', rank: 18, value: 12.2 },
   { categoryId: 'rebounds-per-game', playerId: 'charles-barkley', rank: 25, value: 11.7 },
   { categoryId: 'rebounds-per-game', playerId: 'kareem-abdul-jabbar', rank: 25, value: 11.2 },
@@ -360,18 +404,15 @@ export const nbaRankings: NBARanking[] = [
   { categoryId: 'rebounds-per-game', playerId: 'nikola-jokic', rank: 35, value: 10.7 },
   { categoryId: 'rebounds-per-game', playerId: 'david-robinson', rank: 35, value: 10.6 },
   { categoryId: 'rebounds-per-game', playerId: 'karl-malone', rank: 35, value: 10.1 },
-  { categoryId: 'rebounds-per-game', playerId: 'kevin-garnett', rank: 35, value: 10.0 },
-  { categoryId: 'rebounds-per-game', playerId: 'giannis-antetokounmpo', rank: 40, value: 9.8 },
+  { categoryId: 'rebounds-per-game', playerId: 'kevin-garnett', rank: 35, value: 10 },
+  { categoryId: 'rebounds-per-game', playerId: 'giannis-antetokounmpo', rank: 45, value: 9.8 },
 
-  // assists-per-game:
-  // 11+ -> rank 1, 10-10.9 -> rank 5, 9-9.9 -> rank 10,
-  // 8-8.9 -> rank 18, 7-7.9 -> rank 25, 6-6.9 -> rank 35,
-  // 5-5.9 -> rank 40.
+  // assists-per-game
   { categoryId: 'assists-per-game', playerId: 'magic-johnson', rank: 1, value: 11.2 },
   { categoryId: 'assists-per-game', playerId: 'john-stockton', rank: 5, value: 10.5 },
   { categoryId: 'assists-per-game', playerId: 'oscar-robertson', rank: 10, value: 9.5 },
-  { categoryId: 'assists-per-game', playerId: 'chris-paul', rank: 10, value: 9.2 },
   { categoryId: 'assists-per-game', playerId: 'isiah-thomas', rank: 10, value: 9.3 },
+  { categoryId: 'assists-per-game', playerId: 'chris-paul', rank: 10, value: 9.2 },
   { categoryId: 'assists-per-game', playerId: 'jason-kidd', rank: 18, value: 8.7 },
   { categoryId: 'assists-per-game', playerId: 'luka-doncic', rank: 18, value: 8.3 },
   { categoryId: 'assists-per-game', playerId: 'russell-westbrook', rank: 18, value: 8.1 },
