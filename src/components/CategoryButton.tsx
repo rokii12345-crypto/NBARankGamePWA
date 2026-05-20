@@ -1,6 +1,6 @@
 import type { NBACategory } from '../data/nbaCategories'
+import { formatAssignmentResult } from '../game/formatResult'
 import type { CategoryAssignment } from '../types/game'
-import { formatUsedCategorySummary } from '../game/formatResult'
 
 type CategoryButtonProps = {
   category: NBACategory
@@ -31,13 +31,7 @@ function CategoryButton({
         <strong>{category.title}</strong>
         <small>
           {isUsed && assignment
-            ? formatUsedCategorySummary({
-                playerName: assignment.playerName,
-                value: assignment.value,
-                unit: category.unit,
-                points: assignment.points,
-                missingData: assignment.missingData,
-              })
+            ? formatAssignmentResult(assignment, category)
             : category.subtitle}
         </small>
       </span>

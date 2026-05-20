@@ -2,7 +2,12 @@ import { nbaCategories } from '../data/nbaCategories'
 import { nbaPlayers, type NBAPlayer } from '../data/nbaPlayers'
 import { nbaRankings } from '../data/nbaRankings'
 import type { NBACategory } from '../data/nbaCategories'
-import { GAME_ROUNDS, type GameState, type RoundResult } from '../types/game'
+import {
+  GAME_ROUNDS,
+  type CategoryAssignment,
+  type GameState,
+  type RoundResult,
+} from '../types/game'
 
 const MISSING_RANKING_PENALTY = 50
 
@@ -126,15 +131,25 @@ export const selectCategoryForCurrentPlayer = (
   }
 
   const ranking = findRanking(player.id, category.id)
-  const assignment = {
-    categoryId: category.id,
-    playerId: player.id,
-    playerName: player.name,
-    rank: ranking?.rank ?? null,
-    value: ranking?.value ?? null,
-    points: ranking?.rank ?? MISSING_RANKING_PENALTY,
-    missingData: !ranking,
-  }
+  const assignment: CategoryAssignment = ranking
+    ? {
+        categoryId: category.id,
+        playerId: player.id,
+        playerName: player.name,
+        rank: ranking.rank,
+        value: ranking.value,
+        points: ranking.rank,
+        missingData: false,
+      }
+    : {
+        categoryId: category.id,
+        playerId: player.id,
+        playerName: player.name,
+        rank: null,
+        value: null,
+        points: MISSING_RANKING_PENALTY,
+        missingData: true,
+      }
 
   const lastResult: RoundResult = {
     ...assignment,

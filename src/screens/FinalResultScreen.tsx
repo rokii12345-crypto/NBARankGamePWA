@@ -1,6 +1,6 @@
 import ScoreBadge from '../components/ScoreBadge'
+import { formatAssignmentResult } from '../game/formatResult'
 import { getTotalScore } from '../game/gameEngine'
-import { formatPoints, formatStatValue } from '../game/formatResult'
 import type { GameState } from '../types/game'
 
 type FinalResultScreenProps = {
@@ -39,11 +39,9 @@ function FinalResultScreen({ game, onRestart, onHome }: FinalResultScreenProps) 
               <span>{assignment.playerName}</span>
               <strong>{category?.title ?? 'Kategorija'}</strong>
               <em>
-                {assignment.missingData
-                  ? `ni na lestvici · ${formatPoints(assignment.points)}`
-                  : `${formatStatValue(assignment.value, category?.unit)} · ${formatPoints(
-                      assignment.points,
-                    )}`}
+                {formatAssignmentResult(assignment, category, {
+                  includePlayerName: false,
+                })}
               </em>
             </article>
           )

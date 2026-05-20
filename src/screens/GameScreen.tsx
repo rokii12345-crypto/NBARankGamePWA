@@ -6,8 +6,8 @@ import {
   type CategoryAssignment,
   type GameState,
 } from '../types/game'
+import { formatRoundResult } from '../game/formatResult'
 import { getCurrentPlayer, getTotalScore } from '../game/gameEngine'
-import { formatPoints, formatStatValue } from '../game/formatResult'
 
 type GameScreenProps = {
   game: GameState
@@ -39,23 +39,7 @@ function GameScreen({ game, onSelectCategory }: GameScreenProps) {
 
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">
-          {game.lastResult.missingData ? (
-            <p>
-              <strong>{game.lastResult.playerName}</strong> ni na lestvici za{' '}
-              <strong>{game.lastResult.categoryTitle}</strong>. Kazen:{' '}
-              <strong>{formatPoints(game.lastResult.points)}</strong>.
-            </p>
-          ) : (
-            <p>
-              <strong>{game.lastResult.playerName}</strong> —{' '}
-              <strong>{game.lastResult.categoryTitle}</strong>:{' '}
-              <strong>
-                {formatStatValue(game.lastResult.value, game.lastResult.unit)}
-              </strong>
-              . Igralne točke:{' '}
-              <strong>{formatPoints(game.lastResult.points)}</strong>.
-            </p>
-          )}
+          <p>{formatRoundResult(game.lastResult)}</p>
           <span>Naslednji igralec čez 3 sekunde ...</span>
         </section>
       ) : (
