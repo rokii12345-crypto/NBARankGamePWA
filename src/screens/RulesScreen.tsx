@@ -11,7 +11,8 @@ function RulesScreen({ onBack }: RulesScreenProps) {
         <ul>
           <li>Igra ima 10 naključnih NBA igralcev in 10 naključnih kategorij.</li>
           <li>Za vsakega igralca izbereš eno še neuporabljeno kategorijo.</li>
-          <li>Rezultat kroga je igralčeva uvrstitev v izbrani kategoriji.</li>
+          <li>Po izboru vidiš dejanski podatek, na primer karierne točke, MVP nagrade ali rekord na eni tekmi.</li>
+          <li>Igralne točke so izračunane iz ranka oziroma razreda v izbrani kategoriji.</li>
           <li>Če igralec ni na tej lestvici, je kazen +50 točk.</li>
           <li>Nižji skupni rezultat je boljši.</li>
           <li>Vsak igralec in vsaka kategorija se uporabita samo enkrat.</li>
