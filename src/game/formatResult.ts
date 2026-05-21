@@ -1,21 +1,35 @@
-import type { NBACategory } from '../data/nbaCategories'
-import type { CategoryAssignment, RoundResult } from '../types/game'
+import type {
+  CategoryAssignment,
+  RoundResult,
+  SloveniaCategoryAssignment,
+  SloveniaRoundResult,
+} from '../types/game'
 
-const formatNumber = (value: number) => {
-  const hasDecimals = !Number.isInteger(value)
+type ResultCategory = {
+  unit: string
+  decimals?: number
+}
+
+const formatNumber = (value: number, decimals?: number) => {
+  const resolvedDecimals =
+    decimals ?? (Number.isInteger(value) ? 0 : 1)
 
   return new Intl.NumberFormat('sl-SI', {
-    maximumFractionDigits: hasDecimals ? 1 : 0,
-    minimumFractionDigits: 0,
+    maximumFractionDigits: resolvedDecimals,
+    minimumFractionDigits: resolvedDecimals,
   }).format(value)
 }
 
-export const formatStatValue = (value: number | null, unit?: string) => {
+export const formatStatValue = (
+  value: number | null,
+  unit?: string,
+  decimals?: number,
+) => {
   if (value === null || value === undefined) {
     return 'ni podatka'
   }
 
-  const formattedValue = formatNumber(value)
+  const formattedValue = formatNumber(value, decimals)
 
   if (!unit) {
     return formattedValue
@@ -32,7 +46,7 @@ export const formatGamePoints = (points: number) => `+${points}`
 
 export const formatAssignmentResult = (
   assignment: CategoryAssignment,
-  category?: NBACategory,
+  category?: ResultCategory,
   options: { includePlayerName?: boolean } = {},
 ) => {
   const includePlayerName = options.includePlayerName ?? true
@@ -45,6 +59,7 @@ export const formatAssignmentResult = (
   return `${playerPrefix}${formatStatValue(
     assignment.value,
     category.unit,
+    category.decimals,
   )} · ${formatGamePoints(assignment.points)}`
 }
 
@@ -60,3 +75,31 @@ export const formatRoundResult = (result: RoundResult) => {
     result.unit,
   )}. Igralne točke: ${formatGamePoints(result.points)}.`
 }
+
+export const formatSloveniaAssignmentResult = (
+  assignment: SloveniaCategoryAssignment,
+  category?: ResultCategory,
+  options: { includeMunicipalityName?: boolean } = {},
+) => {
+  const includeMunicipalityName = options.includeMunicipalityName ?? true
+  const municipalityPrefix = includeMunicipalityName
+    ? `${assignment.municipalityName} · `
+    : ''
+
+  if (!category) {
+    return `${municipalityPrefix}${formatGamePoints(assignment.points)}`
+  }
+
+  return `${municipalityPrefix}${formatStatValue(
+    assignment.value,
+    category.unit,
+    category.decimals,
+  )} · ${formatGamePoints(assignment.points)}`
+}
+
+export const formatSloveniaRoundResult = (result: SloveniaRoundResult) =>
+  `${result.municipalityName} — ${result.categoryTitle}: ${formatStatValue(
+    result.value,
+    result.unit,
+    result.decimals,
+  )}. Igralne točke: ${formatGamePoints(result.points)}.`

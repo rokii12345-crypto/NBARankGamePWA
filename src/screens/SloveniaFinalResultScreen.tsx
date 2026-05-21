@@ -1,24 +1,28 @@
 import ScoreBadge from '../components/ScoreBadge'
-import { formatAssignmentResult } from '../game/formatResult'
-import { getTotalScore } from '../game/gameEngine'
-import type { GameState } from '../types/game'
+import { formatSloveniaAssignmentResult } from '../game/formatResult'
+import { getSloveniaTotalScore } from '../game/sloveniaGameEngine'
+import type { SloveniaGameState } from '../types/game'
 
-type FinalResultScreenProps = {
-  game: GameState
+type SloveniaFinalResultScreenProps = {
+  game: SloveniaGameState
   onRestart: () => void
   onHome: () => void
 }
 
 const getResultText = (score: number) => {
-  if (score <= 80) return 'NBA genij'
-  if (score <= 160) return 'Odličen strateg'
+  if (score <= 80) return 'Mojster občin'
+  if (score <= 160) return 'Odličen poznavalec'
   if (score <= 250) return 'Dober rezultat'
-  if (score <= 350) return 'Tvegana igra'
-  return 'Preveč zgrešenih kategorij'
+  if (score <= 350) return 'Pogumna igra'
+  return 'Prostor za boljši izbor'
 }
 
-function FinalResultScreen({ game, onRestart, onHome }: FinalResultScreenProps) {
-  const totalScore = getTotalScore(game)
+function SloveniaFinalResultScreen({
+  game,
+  onRestart,
+  onHome,
+}: SloveniaFinalResultScreenProps) {
+  const totalScore = getSloveniaTotalScore(game)
 
   return (
     <main className="screen final-screen">
@@ -36,11 +40,11 @@ function FinalResultScreen({ game, onRestart, onHome }: FinalResultScreenProps) 
 
           return (
             <article className="final-row" key={assignment.categoryId}>
-              <span>{assignment.playerName}</span>
+              <span>{assignment.municipalityName}</span>
               <strong>{category?.title ?? 'Kategorija'}</strong>
               <em>
-                {formatAssignmentResult(assignment, category, {
-                  includePlayerName: false,
+                {formatSloveniaAssignmentResult(assignment, category, {
+                  includeMunicipalityName: false,
                 })}
               </em>
             </article>
@@ -60,4 +64,4 @@ function FinalResultScreen({ game, onRestart, onHome }: FinalResultScreenProps) 
   )
 }
 
-export default FinalResultScreen
+export default SloveniaFinalResultScreen

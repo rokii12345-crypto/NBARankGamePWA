@@ -1,10 +1,24 @@
 import type { NBACategory } from '../data/nbaCategories'
 import type { NBAPlayer } from '../data/nbaPlayers'
 import type { NBARanking } from '../data/nbaRankings'
+import type { SloveniaCategory } from '../data/sloveniaCategories'
+import type { SloveniaMunicipality } from '../data/sloveniaMunicipalities'
+import type { SloveniaRanking } from '../data/sloveniaRankings'
 
 export const GAME_ROUNDS = 10
 
-export type AppScreen = 'home' | 'player-name' | 'game' | 'rules' | 'final'
+export type GameMode =
+  | 'nba'
+  | 'slovenia'
+  | 'guess-municipality'
+  | 'higher-lower'
+
+export type AppScreen =
+  | 'mode-select'
+  | 'player-name'
+  | 'game'
+  | 'rules'
+  | 'final'
 
 export type CategoryAssignment = {
   categoryId: string
@@ -34,4 +48,91 @@ export type CategoryChoice = {
   category: NBACategory
   assignment?: CategoryAssignment
   ranking?: NBARanking
+}
+
+export type SloveniaCategoryAssignment = {
+  categoryId: string
+  municipalityId: string
+  municipalityName: string
+  rank: number
+  value: number
+  points: number
+}
+
+export type SloveniaRoundResult = SloveniaCategoryAssignment & {
+  categoryTitle: string
+  unit: string
+  decimals: number
+}
+
+export type SloveniaGameState = {
+  municipalities: SloveniaMunicipality[]
+  categories: SloveniaCategory[]
+  currentRoundIndex: number
+  assignments: SloveniaCategoryAssignment[]
+  lastResult: SloveniaRoundResult | null
+  isResolving: boolean
+}
+
+export type SloveniaCategoryChoice = {
+  category: SloveniaCategory
+  assignment?: SloveniaCategoryAssignment
+  ranking?: SloveniaRanking
+}
+
+export type GuessMunicipalityHint = {
+  category: SloveniaCategory
+  ranking: SloveniaRanking
+}
+
+export type GuessMunicipalityQuestion = {
+  municipality: SloveniaMunicipality
+  hints: GuessMunicipalityHint[]
+  options: SloveniaMunicipality[]
+}
+
+export type GuessMunicipalityAnswer = {
+  questionIndex: number
+  selectedMunicipalityId: string
+  selectedMunicipalityName: string
+  correctMunicipalityId: string
+  correctMunicipalityName: string
+  isCorrect: boolean
+}
+
+export type GuessMunicipalityGameState = {
+  questions: GuessMunicipalityQuestion[]
+  currentQuestionIndex: number
+  answers: GuessMunicipalityAnswer[]
+  lastAnswer: GuessMunicipalityAnswer | null
+  isResolving: boolean
+}
+
+export type HigherLowerChoice = 'higher' | 'lower'
+
+export type HigherLowerQuestion = {
+  previousMunicipality: SloveniaMunicipality
+  previousRanking: SloveniaRanking
+  nextMunicipality: SloveniaMunicipality
+  nextRanking: SloveniaRanking
+}
+
+export type HigherLowerAnswer = {
+  questionIndex: number
+  choice: HigherLowerChoice
+  correctChoice: HigherLowerChoice
+  isCorrect: boolean
+  previousMunicipalityName: string
+  nextMunicipalityName: string
+  previousValue: number
+  nextValue: number
+}
+
+export type HigherLowerGameState = {
+  category: SloveniaCategory
+  questions: HigherLowerQuestion[]
+  currentQuestionIndex: number
+  answers: HigherLowerAnswer[]
+  lastAnswer: HigherLowerAnswer | null
+  isResolving: boolean
 }

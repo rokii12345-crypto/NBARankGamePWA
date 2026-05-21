@@ -11,10 +11,11 @@ import { getCurrentPlayer, getTotalScore } from '../game/gameEngine'
 
 type GameScreenProps = {
   game: GameState
+  countdown: number
   onSelectCategory: (categoryId: string) => void
 }
 
-function GameScreen({ game, onSelectCategory }: GameScreenProps) {
+function GameScreen({ game, countdown, onSelectCategory }: GameScreenProps) {
   const player = getCurrentPlayer(game)
   const totalScore = getTotalScore(game)
   const assignmentsByCategory = new Map<string, CategoryAssignment>(
@@ -40,7 +41,7 @@ function GameScreen({ game, onSelectCategory }: GameScreenProps) {
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">
           <p>{formatRoundResult(game.lastResult)}</p>
-          <span>Naslednji igralec čez 3 sekunde ...</span>
+          <span>Naslednji igralec čez {countdown} s ...</span>
         </section>
       ) : (
         <p className="choose-copy">Izberi kategorijo za tega igralca.</p>

@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+.mode-select-screen,
 .home-screen,
 .player-name-screen,
 .final-screen,
@@ -17,6 +18,7 @@
   gap: 22px;
 }
 
+.mode-select-hero,
 .home-hero,
 .rules-panel,
 .final-summary {
@@ -33,6 +35,7 @@
   text-transform: uppercase;
 }
 
+.mode-select-hero h1,
 .home-hero h1,
 .final-summary h1,
 .rules-panel h1 {
@@ -41,6 +44,81 @@
   font-size: clamp(2rem, 12vw, 4rem);
   line-height: 0.95;
   letter-spacing: 0;
+}
+
+.mode-card-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.mode-card {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 96px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 14px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(255, 159, 28, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.mode-card--slovenia {
+  background:
+    linear-gradient(135deg, rgba(20, 184, 166, 0.18), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card--guess {
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card--higher-lower {
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card:not(:disabled):active {
+  transform: scale(0.99);
+}
+
+.mode-card__icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 2rem;
+}
+
+.mode-card__body {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.mode-card strong {
+  color: #ffffff;
+  font-size: 1.12rem;
+  line-height: 1.1;
+}
+
+.mode-card small {
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  line-height: 1.25;
 }
 
 .home-hero p:not(.eyebrow),
@@ -210,6 +288,14 @@
   display: none;
 }
 
+.municipality-card .player-card__facts div:first-child {
+  display: block;
+}
+
+.municipality-card__facts {
+  grid-template-columns: 1fr 1fr;
+}
+
 .result-panel {
   display: grid;
   gap: 4px;
@@ -238,6 +324,284 @@
   font-size: 0.82rem;
   font-weight: 700;
   text-align: left;
+}
+
+.guess-game-screen {
+  gap: 10px;
+}
+
+.guess-prompt-card {
+  display: grid;
+  gap: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 197, 94, 0.24);
+  border-radius: 18px;
+  padding: 15px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.16), transparent 44%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.guess-prompt-card h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.hint-grid,
+.answer-grid {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.hint-card {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 10px;
+  color: #f8fafc;
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.94), rgba(15, 23, 42, 0.98));
+}
+
+.hint-card__icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(34, 197, 94, 0.12);
+  font-size: 1.3rem;
+}
+
+.hint-card__body {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hint-card strong,
+.hint-card span {
+  overflow-wrap: anywhere;
+}
+
+.hint-card strong {
+  color: #ffffff;
+  font-size: 0.82rem;
+  line-height: 1.08;
+}
+
+.hint-card span {
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  line-height: 1.1;
+}
+
+.hint-card em {
+  justify-self: end;
+  border-radius: 999px;
+  padding: 4px 7px;
+  color: #bbf7d0;
+  background: rgba(34, 197, 94, 0.1);
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.answer-grid {
+  grid-template-columns: 1fr;
+}
+
+.answer-button {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 13px 14px;
+  color: #f8fafc;
+  background: linear-gradient(180deg, rgba(38, 50, 68, 0.98), rgba(15, 23, 42, 0.98));
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 850;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  overflow-wrap: anywhere;
+}
+
+.answer-button:not(:disabled):active {
+  transform: scale(0.99);
+}
+
+.answer-button:disabled {
+  cursor: default;
+}
+
+.answer-button--correct {
+  border-color: rgba(34, 197, 94, 0.78);
+  color: #ecfdf5;
+  background: linear-gradient(180deg, rgba(22, 101, 52, 0.92), rgba(20, 83, 45, 0.96));
+}
+
+.answer-button--wrong {
+  border-color: rgba(248, 113, 113, 0.72);
+  color: #fef2f2;
+  background: linear-gradient(180deg, rgba(127, 29, 29, 0.9), rgba(69, 10, 10, 0.96));
+}
+
+.guess-result-panel {
+  border-color: rgba(248, 113, 113, 0.46);
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.38), rgba(15, 23, 42, 0.9));
+}
+
+.guess-result-panel--correct {
+  border-color: rgba(34, 197, 94, 0.5);
+  background: linear-gradient(135deg, rgba(22, 101, 52, 0.38), rgba(15, 23, 42, 0.9));
+}
+
+.higher-lower-game-screen {
+  gap: 10px;
+}
+
+.higher-lower-category-card {
+  display: grid;
+  gap: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-radius: 18px;
+  padding: 14px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.15), transparent 44%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.higher-lower-category-card h1 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.45rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.comparison-stack {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.comparison-card {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 12px;
+  color: #f8fafc;
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.94), rgba(15, 23, 42, 0.98));
+}
+
+.comparison-card--next {
+  border-color: rgba(56, 189, 248, 0.24);
+}
+
+.comparison-card h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.28rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.comparison-card strong {
+  color: #dbeafe;
+  font-size: 1rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.higher-lower-question {
+  margin: 0;
+  color: #dbeafe;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.higher-lower-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  min-width: 0;
+}
+
+.higher-lower-button {
+  display: grid;
+  gap: 4px;
+  place-items: center;
+  min-height: 66px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  color: #f8fafc;
+  background: linear-gradient(180deg, rgba(38, 50, 68, 0.98), rgba(15, 23, 42, 0.98));
+  font: inherit;
+  font-size: 1.04rem;
+  font-weight: 900;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.higher-lower-button span {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.higher-lower-button:not(:disabled):active {
+  transform: scale(0.99);
+}
+
+.higher-lower-button:disabled {
+  cursor: default;
+}
+
+.higher-lower-button--up {
+  border-color: rgba(34, 197, 94, 0.24);
+}
+
+.higher-lower-button--down {
+  border-color: rgba(248, 113, 113, 0.24);
+}
+
+.higher-lower-button--selected {
+  border-color: rgba(56, 189, 248, 0.72);
+  background: linear-gradient(180deg, rgba(14, 116, 144, 0.9), rgba(8, 47, 73, 0.96));
+}
+
+.higher-lower-result-panel {
+  border-color: rgba(248, 113, 113, 0.46);
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.38), rgba(15, 23, 42, 0.9));
+}
+
+.higher-lower-result-panel--correct {
+  border-color: rgba(34, 197, 94, 0.5);
+  background: linear-gradient(135deg, rgba(22, 101, 52, 0.38), rgba(15, 23, 42, 0.9));
 }
 
 .category-grid {
@@ -279,6 +643,7 @@
   color: #cbd5e1;
   background: linear-gradient(180deg, rgba(30, 41, 59, 0.45), rgba(15, 23, 42, 0.7));
   opacity: 0.72;
+  min-height: 78px;
 }
 
 .category-button__icon {
@@ -318,6 +683,12 @@
   -webkit-line-clamp: 2;
 }
 
+.category-button--used .category-button__text small {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: initial;
+}
+
 .category-button__lock {
   grid-column: 2;
   width: fit-content;
@@ -335,6 +706,13 @@
   gap: 10px;
   margin: 0;
   padding: 0;
+}
+
+.rules-panel h2 {
+  margin: 4px 0 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.1;
 }
 
 .rules-panel li {
@@ -482,5 +860,90 @@
   .category-button__lock {
     padding: 1px 5px;
     font-size: 0.55rem;
+  }
+
+  .guess-prompt-card {
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .guess-prompt-card h1 {
+    font-size: 1.35rem;
+  }
+
+  .hint-grid,
+  .answer-grid {
+    gap: 6px;
+  }
+
+  .hint-card {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .hint-card__icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.08rem;
+  }
+
+  .hint-card strong {
+    font-size: 0.72rem;
+  }
+
+  .hint-card span {
+    font-size: 0.68rem;
+  }
+
+  .hint-card em {
+    padding: 3px 6px;
+    font-size: 0.6rem;
+  }
+
+  .answer-button {
+    min-height: 46px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .higher-lower-category-card {
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .higher-lower-category-card h1 {
+    font-size: 1.12rem;
+  }
+
+  .comparison-stack {
+    gap: 6px;
+  }
+
+  .comparison-card {
+    padding: 10px;
+  }
+
+  .comparison-card h2 {
+    font-size: 1.08rem;
+  }
+
+  .comparison-card strong,
+  .higher-lower-question {
+    font-size: 0.8rem;
+  }
+
+  .higher-lower-actions {
+    gap: 6px;
+  }
+
+  .higher-lower-button {
+    min-height: 54px;
+    padding: 9px;
+    font-size: 0.92rem;
+  }
+
+  .higher-lower-button span {
+    font-size: 1.12rem;
   }
 }
