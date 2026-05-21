@@ -82,27 +82,58 @@ function HigherLowerScreen({
     game.category.decimals,
   )
   const isAnswered = Boolean(lastAnswer)
+  const correctDirectionText =
+    lastAnswer?.correctChoice === 'higher' ? 'višjo' : 'nižjo'
+  const getAnswerButtonClassName = (choice: HigherLowerChoice) => {
+    const classNames = [
+      'higher-lower-button',
+      choice === 'higher'
+        ? 'higher-lower-button--up'
+        : 'higher-lower-button--down',
+    ]
+
+    if (lastAnswer && choice === lastAnswer.correctChoice) {
+      classNames.push('higher-lower-button--correct')
+    }
+
+    if (
+      lastAnswer &&
+      choice === lastAnswer.choice &&
+      !lastAnswer.isCorrect
+    ) {
+      classNames.push('higher-lower-button--wrong')
+    }
+
+    return classNames.join(' ')
+  }
 
   return (
     <main className="screen game-screen higher-lower-game-screen">
-      <header className="game-header">
-        <ScoreBadge
-          label="Vprašanje"
-          value={`${Math.min(game.currentQuestionIndex + 1, GAME_ROUNDS)} / ${GAME_ROUNDS}`}
-        />
-        <ScoreBadge
-          label="Pravilno"
-          value={`${score} / ${GAME_ROUNDS}`}
-          tone="accent"
-        />
+      <header className="higher-lower-topbar">
+        <div className="higher-lower-stat-card">
+          <span>Vprašanje</span>
+          <strong>
+            {Math.min(game.currentQuestionIndex + 1, GAME_ROUNDS)} /{' '}
+            {GAME_ROUNDS}
+          </strong>
+        </div>
+        <div className="higher-lower-stat-card higher-lower-stat-card--score">
+          <span>Pravilno</span>
+          <strong>
+            {score} / {GAME_ROUNDS}
+          </strong>
+        </div>
       </header>
 
       <section className="higher-lower-category-card">
         <p className="eyebrow">Kategorija</p>
-        <h1>
+        <div className="higher-lower-category-main">
           <span aria-hidden="true">{game.category.icon}</span>
-          {game.category.title}
-        </h1>
+          <div>
+            <h1>{game.category.title}</h1>
+            <p>{game.category.subtitle}</p>
+          </div>
+        </div>
       </section>
 
       <section className="comparison-stack" aria-label="Primerjava občin">
@@ -115,37 +146,36 @@ function HigherLowerScreen({
         <article className="comparison-card comparison-card--next">
           <p className="eyebrow">Nova občina</p>
           <h2>{question.nextMunicipality.name}</h2>
-          <strong>{isAnswered ? nextValue : 'Vrednost je skrita'}</strong>
+          <strong>{isAnswered ? nextValue : 'Podatek je skrit'}</strong>
         </article>
       </section>
 
       <p className="higher-lower-question">
-        Ali ima {question.nextMunicipality.name} višjo ali nižjo vrednost kot{' '}
-        {question.previousMunicipality.name}?
+        Ali ima <strong>{question.nextMunicipality.name}</strong> višjo ali
+        nižjo vrednost kot{' '}
+        <strong>{question.previousMunicipality.name}</strong>?
       </p>
 
       <section className="higher-lower-actions" aria-label="Odgovori">
         <button
-          className={`higher-lower-button higher-lower-button--up${
-            lastAnswer?.choice === 'higher' ? ' higher-lower-button--selected' : ''
-          }`}
+          className={getAnswerButtonClassName('higher')}
           type="button"
           disabled={game.isResolving || isAnswered}
           onClick={() => onSelectAnswer('higher')}
         >
           <span aria-hidden="true">⬆️</span>
-          Višje
+          <strong>Višje</strong>
+          <small>večja vrednost</small>
         </button>
         <button
-          className={`higher-lower-button higher-lower-button--down${
-            lastAnswer?.choice === 'lower' ? ' higher-lower-button--selected' : ''
-          }`}
+          className={getAnswerButtonClassName('lower')}
           type="button"
           disabled={game.isResolving || isAnswered}
           onClick={() => onSelectAnswer('lower')}
         >
           <span aria-hidden="true">⬇️</span>
-          Nižje
+          <strong>Nižje</strong>
+          <small>manjša vrednost</small>
         </button>
       </section>
 
@@ -156,9 +186,13 @@ function HigherLowerScreen({
           }`}
           aria-live="polite"
         >
+          <strong className="higher-lower-result-value">
+            {question.nextMunicipality.name} — {nextValue}
+          </strong>
           <p>
-            <strong>{lastAnswer.isCorrect ? 'Pravilno.' : 'Napačno.'}</strong>{' '}
-            {question.nextMunicipality.name} — {nextValue}.
+            {lastAnswer.isCorrect ? 'Pravilno!' : 'Napačno.'}{' '}
+            {question.nextMunicipality.name} ima {correctDirectionText}{' '}
+            vrednost.
           </p>
           <span>Naslednje vprašanje čez {countdown} s ...</span>
         </section>
