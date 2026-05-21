@@ -13,9 +13,17 @@ type GameScreenProps = {
   game: GameState
   countdown: number
   onSelectCategory: (categoryId: string) => void
+  onRestart: () => void
+  onBack: () => void
 }
 
-function GameScreen({ game, countdown, onSelectCategory }: GameScreenProps) {
+function GameScreen({
+  game,
+  countdown,
+  onSelectCategory,
+  onRestart,
+  onBack,
+}: GameScreenProps) {
   const player = getCurrentPlayer(game)
   const totalScore = getTotalScore(game)
   const assignmentsByCategory = new Map<string, CategoryAssignment>(
@@ -37,6 +45,15 @@ function GameScreen({ game, countdown, onSelectCategory }: GameScreenProps) {
       </header>
 
       <PlayerCard player={player} />
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onBack}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
 
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">

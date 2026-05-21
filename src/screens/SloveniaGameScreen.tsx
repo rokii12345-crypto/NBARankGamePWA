@@ -16,12 +16,16 @@ type SloveniaGameScreenProps = {
   game: SloveniaGameState
   countdown: number
   onSelectCategory: (categoryId: string) => void
+  onRestart: () => void
+  onBack: () => void
 }
 
 function SloveniaGameScreen({
   game,
   countdown,
   onSelectCategory,
+  onRestart,
+  onBack,
 }: SloveniaGameScreenProps) {
   const municipality = getCurrentMunicipality(game)
   const totalScore = getSloveniaTotalScore(game)
@@ -44,6 +48,15 @@ function SloveniaGameScreen({
       </header>
 
       <MunicipalityCard municipality={municipality} />
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onBack}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
 
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">

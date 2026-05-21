@@ -58,7 +58,7 @@ function GuessMunicipalityScreen({
             Nova igra
           </button>
           <button className="ghost-button" type="button" onClick={onHome}>
-            Izbira načina
+            Nazaj
           </button>
         </div>
       </main>
@@ -80,6 +80,15 @@ function GuessMunicipalityScreen({
           tone="accent"
         />
       </header>
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onHome}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
 
       <section className="guess-prompt-card" aria-label="Skrita občina">
         <p className="eyebrow">Skrita občina</p>

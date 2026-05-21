@@ -64,7 +64,7 @@ function HigherLowerScreen({
             Nova igra
           </button>
           <button className="ghost-button" type="button" onClick={onHome}>
-            Izbira načina
+            Nazaj
           </button>
         </div>
       </main>
@@ -124,6 +124,15 @@ function HigherLowerScreen({
           </strong>
         </div>
       </header>
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onHome}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
 
       <section className="higher-lower-category-card">
         <p className="eyebrow">Kategorija</p>

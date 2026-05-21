@@ -89,6 +89,12 @@
     linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
 }
 
+.mode-card--sport {
+  background:
+    linear-gradient(135deg, rgba(251, 191, 36, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
 .mode-card:not(:disabled):active {
   transform: scale(0.99);
 }
@@ -119,6 +125,47 @@
   color: #cbd5e1;
   font-size: 0.84rem;
   line-height: 1.25;
+}
+
+.menu-action-row,
+.game-action-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+.game-action-row {
+  margin: 1px 0 4px;
+}
+
+.utility-button {
+  min-height: 46px;
+  border: 1px solid rgba(255, 159, 28, 0.28);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(255, 159, 28, 0.1), transparent 62%),
+    linear-gradient(180deg, rgba(38, 50, 68, 0.96), rgba(15, 23, 42, 0.98));
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 900;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.game-action-row .utility-button:last-child {
+  border-color: rgba(255, 209, 102, 0.65);
+  color: #1f1303;
+  background: linear-gradient(135deg, #ff9f1c, #ffd166);
+}
+
+.utility-button:not(:disabled):active {
+  transform: scale(0.99);
 }
 
 .home-hero p:not(.eyebrow),
@@ -154,6 +201,7 @@
 .ghost-button {
   color: #f8fafc;
   background: #263244;
+  border: 1px solid rgba(255, 159, 28, 0.22);
 }
 
 .game-screen {
@@ -570,26 +618,41 @@
 
 .comparison-stack {
   display: grid;
-  gap: 8px;
+  gap: 9px;
   min-width: 0;
 }
 
 .comparison-card {
   display: grid;
-  gap: 7px;
+  gap: 6px;
   min-width: 0;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 12px 13px;
+  border-radius: 12px;
+  padding: 10px 12px;
   color: #f8fafc;
   background: linear-gradient(180deg, rgba(30, 41, 59, 0.94), rgba(15, 23, 42, 0.98));
 }
 
+.comparison-card:not(.comparison-card--next) {
+  opacity: 0.86;
+}
+
 .comparison-card--next {
-  border-color: rgba(255, 159, 28, 0.28);
+  gap: 9px;
+  border: 1px solid rgba(255, 209, 102, 0.58);
+  border-radius: 18px;
+  padding: 16px 15px;
   background:
-    linear-gradient(135deg, rgba(255, 159, 28, 0.08), transparent 54%),
+    linear-gradient(135deg, rgba(255, 159, 28, 0.2), transparent 58%),
+    radial-gradient(circle at top right, rgba(255, 209, 102, 0.18), transparent 38%),
     linear-gradient(180deg, rgba(30, 41, 59, 0.94), rgba(15, 23, 42, 0.98));
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.comparison-card--next .eyebrow {
+  color: #ffd166;
 }
 
 .comparison-card h2 {
@@ -606,6 +669,22 @@
   font-size: 1.08rem;
   line-height: 1.15;
   overflow-wrap: anywhere;
+}
+
+.comparison-card--next h2 {
+  font-size: 1.58rem;
+}
+
+.comparison-card--next strong {
+  display: inline-grid;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid rgba(255, 209, 102, 0.32);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: #fff7ed;
+  background: rgba(255, 159, 28, 0.12);
+  font-size: 1.12rem;
 }
 
 .higher-lower-question {
@@ -944,6 +1023,17 @@
     font-size: 0.68rem;
   }
 
+  .game-action-row {
+    gap: 6px;
+    margin-bottom: 2px;
+  }
+
+  .utility-button {
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: 0.76rem;
+  }
+
   .category-grid {
     gap: 6px;
   }
@@ -1078,6 +1168,21 @@
 
   .comparison-card strong {
     font-size: 0.84rem;
+  }
+
+  .comparison-card--next {
+    gap: 7px;
+    border-radius: 15px;
+    padding: 12px;
+  }
+
+  .comparison-card--next h2 {
+    font-size: 1.18rem;
+  }
+
+  .comparison-card--next strong {
+    padding: 5px 8px;
+    font-size: 0.9rem;
   }
 
   .higher-lower-question {

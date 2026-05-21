@@ -222,6 +222,8 @@ function App() {
       <PlayerNameScreen
         player={currentPlayer}
         onContinue={() => setScreen('game')}
+        onRestart={restartGame}
+        onBack={goHome}
       />
     )
   }
@@ -232,6 +234,8 @@ function App() {
         game={sloveniaGame}
         countdown={resultCountdown}
         onSelectCategory={selectCategory}
+        onRestart={restartGame}
+        onBack={goHome}
       />
     )
   }
@@ -266,6 +270,8 @@ function App() {
         game={nbaGame}
         countdown={resultCountdown}
         onSelectCategory={selectCategory}
+        onRestart={restartGame}
+        onBack={goHome}
       />
     )
   }

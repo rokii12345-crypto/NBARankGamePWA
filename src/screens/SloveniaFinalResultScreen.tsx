@@ -57,7 +57,7 @@ function SloveniaFinalResultScreen({
           Nova igra
         </button>
         <button className="ghost-button" type="button" onClick={onHome}>
-          Izbira načina
+          Nazaj
         </button>
       </div>
     </main>
