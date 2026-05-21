@@ -1,30 +1,29 @@
 import ScoreBadge from '../components/ScoreBadge'
-import { formatStatValue } from '../game/formatResult'
 import {
-  getCurrentGuessMunicipalityQuestion,
-  getGuessMunicipalityScore,
-  isGuessMunicipalityGameComplete,
-} from '../game/guessMunicipalityEngine'
-import { GAME_ROUNDS, type GuessMunicipalityGameState } from '../types/game'
+  getCurrentFootballGuessQuestion,
+  getFootballGuessScore,
+  isFootballGuessGameComplete,
+} from '../game/footballGuessEngine'
+import { GAME_ROUNDS, type FootballGuessGameState } from '../types/game'
 
-type GuessMunicipalityScreenProps = {
-  game: GuessMunicipalityGameState
+type FootballGuessScreenProps = {
+  game: FootballGuessGameState
   countdown: number
-  onSelectAnswer: (municipalityId: string) => void
+  onSelectAnswer: (clubId: string) => void
   onRestart: () => void
   onHome: () => void
 }
 
-function GuessMunicipalityScreen({
+function FootballGuessScreen({
   game,
   countdown,
   onSelectAnswer,
   onRestart,
   onHome,
-}: GuessMunicipalityScreenProps) {
-  const question = getCurrentGuessMunicipalityQuestion(game)
-  const score = getGuessMunicipalityScore(game)
-  const isComplete = isGuessMunicipalityGameComplete(game)
+}: FootballGuessScreenProps) {
+  const question = getCurrentFootballGuessQuestion(game)
+  const score = getFootballGuessScore(game)
+  const isComplete = isFootballGuessGameComplete(game)
   const lastAnswer =
     game.lastAnswer?.questionIndex === game.currentQuestionIndex
       ? game.lastAnswer
@@ -32,9 +31,9 @@ function GuessMunicipalityScreen({
 
   if (isComplete || !question) {
     return (
-      <main className="screen final-screen guess-final-screen">
+      <main className="screen final-screen football-final-screen">
         <section className="final-summary">
-          <p className="eyebrow">Ugani občino</p>
+          <p className="eyebrow">Ugani klub</p>
           <h1>{score} / 10</h1>
           <ScoreBadge
             label="Pravilni odgovori"
@@ -47,8 +46,8 @@ function GuessMunicipalityScreen({
           {game.answers.map((answer) => (
             <article className="final-row" key={answer.questionIndex}>
               <span>{answer.isCorrect ? 'Pravilno' : 'Napačno'}</span>
-              <strong>{answer.correctMunicipalityName}</strong>
-              <em>Izbral si: {answer.selectedMunicipalityName}</em>
+              <strong>{answer.correctClubName}</strong>
+              <em>Izbral si: {answer.selectedClubName}</em>
             </article>
           ))}
         </section>
@@ -68,7 +67,7 @@ function GuessMunicipalityScreen({
   const isAnswered = Boolean(lastAnswer)
 
   return (
-    <main className="screen game-screen guess-game-screen">
+    <main className="screen game-screen football-game-screen">
       <header className="game-header">
         <ScoreBadge
           label="Vprašanje"
@@ -81,24 +80,22 @@ function GuessMunicipalityScreen({
         />
       </header>
 
-      <section className="guess-prompt-card" aria-label="Skrita občina">
-        <p className="eyebrow">Skrita občina</p>
-        <h1>Katera občina je to?</h1>
+      <section className="guess-prompt-card football-prompt-card" aria-label="Skriti klub">
+        <p className="eyebrow">Skriti klub</p>
+        <h1>Kateri klub je to?</h1>
+        <p className="football-difficulty-copy">Samo trije namigi.</p>
       </section>
 
-      <section className="hint-grid" aria-label="Statistični namigi">
-        {question.hints.map(({ category, ranking }) => (
-          <article className="hint-card" key={category.id}>
+      <section className="hint-grid" aria-label="Nogometni namigi">
+        {question.hints.map((hint) => (
+          <article className="hint-card football-hint-card" key={hint.label}>
             <span className="hint-card__icon" aria-hidden="true">
-              {category.icon}
+              {hint.icon}
             </span>
             <div className="hint-card__body">
-              <strong>{category.title}</strong>
-              <span>
-                {formatStatValue(ranking.value, category.unit, category.decimals)}
-              </span>
+              <strong>{hint.label}</strong>
+              <span>{hint.value}</span>
             </div>
-            <em>{ranking.rank}. mesto</em>
           </article>
         ))}
       </section>
@@ -107,12 +104,9 @@ function GuessMunicipalityScreen({
         {question.options.map((option) => {
           const answerClassNames = ['answer-button']
 
-          if (lastAnswer && option.id === lastAnswer.correctMunicipalityId) {
+          if (lastAnswer && option.id === lastAnswer.correctClubId) {
             answerClassNames.push('answer-button--correct')
-          } else if (
-            lastAnswer &&
-            option.id === lastAnswer.selectedMunicipalityId
-          ) {
+          } else if (lastAnswer && option.id === lastAnswer.selectedClubId) {
             answerClassNames.push('answer-button--wrong')
           }
 
@@ -139,7 +133,7 @@ function GuessMunicipalityScreen({
         >
           <p>
             <strong>{lastAnswer.isCorrect ? 'Pravilno.' : 'Ni pravilno.'}</strong>{' '}
-            Pravilna občina je {lastAnswer.correctMunicipalityName}.
+            Pravilni klub je {lastAnswer.correctClubName}.
           </p>
           <span>Naslednje vprašanje čez {countdown} s ...</span>
         </section>
@@ -157,4 +151,4 @@ function GuessMunicipalityScreen({
   )
 }
 
-export default GuessMunicipalityScreen
+export default FootballGuessScreen

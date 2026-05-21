@@ -1,44 +1,44 @@
-import MunicipalityCard from '../components/MunicipalityCard'
+import CountryCard from '../components/CountryCard'
+import EuropeCategoryButton from '../components/EuropeCategoryButton'
 import ScoreBadge from '../components/ScoreBadge'
-import SloveniaCategoryButton from '../components/SloveniaCategoryButton'
-import { formatSloveniaRoundResult } from '../game/formatResult'
+import { formatEuropeRoundResult } from '../game/formatResult'
 import {
-  getCurrentMunicipality,
-  getSloveniaTotalScore,
-} from '../game/sloveniaGameEngine'
+  getCurrentEuropeCountry,
+  getEuropeTotalScore,
+} from '../game/europeGameEngine'
 import {
   GAME_ROUNDS,
-  type SloveniaCategoryAssignment,
-  type SloveniaGameState,
+  type EuropeCategoryAssignment,
+  type EuropeGameState,
 } from '../types/game'
 
-type SloveniaGameScreenProps = {
-  game: SloveniaGameState
+type EuropeGameScreenProps = {
+  game: EuropeGameState
   countdown: number
   onSelectCategory: (categoryId: string) => void
   onRestart: () => void
   onBack: () => void
 }
 
-function SloveniaGameScreen({
+function EuropeGameScreen({
   game,
   countdown,
   onSelectCategory,
   onRestart,
   onBack,
-}: SloveniaGameScreenProps) {
-  const municipality = getCurrentMunicipality(game)
-  const totalScore = getSloveniaTotalScore(game)
-  const assignmentsByCategory = new Map<string, SloveniaCategoryAssignment>(
+}: EuropeGameScreenProps) {
+  const country = getCurrentEuropeCountry(game)
+  const totalScore = getEuropeTotalScore(game)
+  const assignmentsByCategory = new Map<string, EuropeCategoryAssignment>(
     game.assignments.map((assignment) => [assignment.categoryId, assignment]),
   )
 
-  if (!municipality) {
+  if (!country) {
     return null
   }
 
   return (
-    <main className="screen game-screen slovenia-game-screen">
+    <main className="screen game-screen europe-game-screen">
       <header className="game-header">
         <ScoreBadge
           label="Krog"
@@ -47,20 +47,20 @@ function SloveniaGameScreen({
         <ScoreBadge label="Skupaj" value={totalScore} tone="accent" />
       </header>
 
-      <MunicipalityCard municipality={municipality} />
+      <CountryCard country={country} />
 
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">
-          <p>{formatSloveniaRoundResult(game.lastResult)}</p>
-          <span>Naslednja občina čez {countdown} s ...</span>
+          <p>{formatEuropeRoundResult(game.lastResult)}</p>
+          <span>Naslednja država čez {countdown} s ...</span>
         </section>
       ) : (
-        <p className="choose-copy">Izberi kategorijo za to občino.</p>
+        <p className="choose-copy">Izberi kategorijo za to državo.</p>
       )}
 
       <section className="category-grid" aria-label="Kategorije">
         {game.categories.map((category) => (
-          <SloveniaCategoryButton
+          <EuropeCategoryButton
             key={category.id}
             category={category}
             assignment={assignmentsByCategory.get(category.id)}
@@ -82,4 +82,4 @@ function SloveniaGameScreen({
   )
 }
 
-export default SloveniaGameScreen
+export default EuropeGameScreen

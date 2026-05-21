@@ -1,0 +1,228 @@
+{
+  "source": "World Bank World Development Indicators exports downloaded 2026-05-21 via data.worldbank.org indicator downloads",
+  "countries": 46,
+  "categories": 19,
+  "rankingRecords": 844,
+  "coverage": [
+    {
+      "categoryId": "population",
+      "indicator": "SP.POP.TOTL",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2024,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "surface-area",
+      "indicator": "AG.SRF.TOTL.K2",
+      "availableCountries": 45,
+      "missingCountries": [
+        "Kosovo"
+      ],
+      "latestYearMin": 2023,
+      "latestYearMax": 2023,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "population-density",
+      "indicator": "EN.POP.DNST",
+      "availableCountries": 45,
+      "missingCountries": [
+        "Kosovo"
+      ],
+      "latestYearMin": 2023,
+      "latestYearMax": 2023,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "gdp",
+      "indicator": "NY.GDP.MKTP.CD",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2023,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "gdp-per-capita",
+      "indicator": "NY.GDP.PCAP.CD",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2023,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "life-expectancy",
+      "indicator": "SP.DYN.LE00.IN",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2024,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "older-population-share",
+      "indicator": "SP.POP.65UP.TO.ZS",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2024,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "urban-population-share",
+      "indicator": "SP.URB.TOTL.IN.ZS",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2024,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "forest-area-share",
+      "indicator": "AG.LND.FRST.ZS",
+      "availableCountries": 45,
+      "missingCountries": [
+        "Kosovo"
+      ],
+      "latestYearMin": 2023,
+      "latestYearMax": 2023,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "internet-users",
+      "indicator": "IT.NET.USER.ZS",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2018,
+      "latestYearMax": 2025,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "tourist-arrivals",
+      "indicator": "ST.INT.ARVL",
+      "availableCountries": 45,
+      "missingCountries": [
+        "Kosovo"
+      ],
+      "latestYearMin": 2018,
+      "latestYearMax": 2020,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "co2-per-capita",
+      "indicator": "EN.ATM.CO2E.PC",
+      "availableCountries": 44,
+      "missingCountries": [
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2016,
+      "latestYearMax": 2020,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "fertility-rate",
+      "indicator": "SP.DYN.TFRT.IN",
+      "availableCountries": 46,
+      "missingCountries": [],
+      "latestYearMin": 2024,
+      "latestYearMax": 2024,
+      "coverage": "full"
+    },
+    {
+      "categoryId": "unemployment-rate",
+      "indicator": "SL.UEM.TOTL.ZS",
+      "availableCountries": 41,
+      "missingCountries": [
+        "Andora",
+        "Kosovo",
+        "Lihtenštajn",
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2021,
+      "latestYearMax": 2025,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "renewable-electricity-share",
+      "indicator": "EG.ELC.RNEW.ZS",
+      "availableCountries": 43,
+      "missingCountries": [
+        "Lihtenštajn",
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2011,
+      "latestYearMax": 2021,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "tertiary-enrollment",
+      "indicator": "SE.TER.ENRR",
+      "availableCountries": 45,
+      "missingCountries": [
+        "Kosovo"
+      ],
+      "latestYearMin": 2021,
+      "latestYearMax": 2024,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "employment-agriculture-share",
+      "indicator": "SL.AGR.EMPL.ZS",
+      "availableCountries": 41,
+      "missingCountries": [
+        "Andora",
+        "Kosovo",
+        "Lihtenštajn",
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2021,
+      "latestYearMax": 2025,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "employment-industry-share",
+      "indicator": "SL.IND.EMPL.ZS",
+      "availableCountries": 41,
+      "missingCountries": [
+        "Andora",
+        "Kosovo",
+        "Lihtenštajn",
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2021,
+      "latestYearMax": 2025,
+      "coverage": "partial"
+    },
+    {
+      "categoryId": "employment-services-share",
+      "indicator": "SL.SRV.EMPL.ZS",
+      "availableCountries": 41,
+      "missingCountries": [
+        "Andora",
+        "Kosovo",
+        "Lihtenštajn",
+        "Monako",
+        "San Marino"
+      ],
+      "latestYearMin": 2021,
+      "latestYearMax": 2025,
+      "coverage": "partial"
+    }
+  ],
+  "validation": {
+    "errors": []
+  },
+  "notes": [
+    "Rank 1 means highest latest available value in the category.",
+    "Values are latest available World Bank WDI values per country/indicator; year is stored per ranking row.",
+    "Partial categories are missing data for one or more selected European countries and should be handled by game engine filtering."
+  ]
+}

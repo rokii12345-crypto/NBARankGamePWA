@@ -46,15 +46,6 @@ function GameScreen({
 
       <PlayerCard player={player} />
 
-      <div className="game-action-row">
-        <button className="utility-button" type="button" onClick={onBack}>
-          Nazaj
-        </button>
-        <button className="utility-button" type="button" onClick={onRestart}>
-          Nova igra
-        </button>
-      </div>
-
       {game.lastResult ? (
         <section className="result-panel" aria-live="polite">
           <p>{formatRoundResult(game.lastResult)}</p>
@@ -75,6 +66,15 @@ function GameScreen({
           />
         ))}
       </section>
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onBack}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
     </main>
   )
 }

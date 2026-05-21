@@ -1,6 +1,10 @@
 import type { NBACategory } from '../data/nbaCategories'
 import type { NBAPlayer } from '../data/nbaPlayers'
 import type { NBARanking } from '../data/nbaRankings'
+import type { EuropeCategory } from '../data/europeCategories'
+import type { EuropeCountry } from '../data/europeCountries'
+import type { EuropeRanking } from '../data/europeRankings'
+import type { FootballClub } from '../data/footballClubs'
 import type { SloveniaCategory } from '../data/sloveniaCategories'
 import type { SloveniaMunicipality } from '../data/sloveniaMunicipalities'
 import type { SloveniaRanking } from '../data/sloveniaRankings'
@@ -9,9 +13,12 @@ export const GAME_ROUNDS = 10
 
 export type GameMode =
   | 'nba'
+  | 'europe'
   | 'slovenia'
   | 'guess-municipality'
   | 'higher-lower'
+  | 'football-guess'
+  | 'football-stadium'
 
 export type AppScreen =
   | 'mode-select'
@@ -80,6 +87,37 @@ export type SloveniaCategoryChoice = {
   ranking?: SloveniaRanking
 }
 
+export type EuropeCategoryAssignment = {
+  categoryId: string
+  countryId: string
+  countryName: string
+  rank: number
+  value: number
+  year: number
+  points: number
+}
+
+export type EuropeRoundResult = EuropeCategoryAssignment & {
+  categoryTitle: string
+  unit: string
+  decimals: number
+}
+
+export type EuropeGameState = {
+  countries: EuropeCountry[]
+  categories: EuropeCategory[]
+  currentRoundIndex: number
+  assignments: EuropeCategoryAssignment[]
+  lastResult: EuropeRoundResult | null
+  isResolving: boolean
+}
+
+export type EuropeCategoryChoice = {
+  category: EuropeCategory
+  assignment?: EuropeCategoryAssignment
+  ranking?: EuropeRanking
+}
+
 export type GuessMunicipalityHint = {
   category: SloveniaCategory
   ranking: SloveniaRanking
@@ -134,5 +172,55 @@ export type HigherLowerGameState = {
   currentQuestionIndex: number
   answers: HigherLowerAnswer[]
   lastAnswer: HigherLowerAnswer | null
+  isResolving: boolean
+}
+
+export type FootballGuessHint = {
+  label: string
+  value: string
+  icon: string
+}
+
+export type FootballGuessQuestion = {
+  club: FootballClub
+  hints: FootballGuessHint[]
+  options: FootballClub[]
+}
+
+export type FootballGuessAnswer = {
+  questionIndex: number
+  selectedClubId: string
+  selectedClubName: string
+  correctClubId: string
+  correctClubName: string
+  isCorrect: boolean
+}
+
+export type FootballGuessGameState = {
+  questions: FootballGuessQuestion[]
+  currentQuestionIndex: number
+  answers: FootballGuessAnswer[]
+  lastAnswer: FootballGuessAnswer | null
+  isResolving: boolean
+}
+
+export type FootballStadiumQuestion = {
+  club: FootballClub
+  options: string[]
+}
+
+export type FootballStadiumAnswer = {
+  questionIndex: number
+  clubName: string
+  selectedStadium: string
+  correctStadium: string
+  isCorrect: boolean
+}
+
+export type FootballStadiumGameState = {
+  questions: FootballStadiumQuestion[]
+  currentQuestionIndex: number
+  answers: FootballStadiumAnswer[]
+  lastAnswer: FootballStadiumAnswer | null
   isResolving: boolean
 }

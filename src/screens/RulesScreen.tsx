@@ -32,6 +32,15 @@ function RulesScreen({ onBack }: RulesScreenProps) {
           <li>Po izbiri kategorije se naslednji igralec ali občina prikaže samodejno.</li>
         </ul>
 
+        <h2>Rank Evropa</h2>
+        <ul>
+          <li>Igra ima 10 evropskih držav in 10 World Bank kategorij.</li>
+          <li>Države se izberejo samo iz podatkov, ki pokrivajo vseh 10 izbranih kategorij.</li>
+          <li>Za vsako državo izbereš eno še neuporabljeno kategorijo.</li>
+          <li>Po izboru vidiš dejansko vrednost, leto podatka in igralne točke.</li>
+          <li>Nižji skupni rezultat je boljši.</li>
+        </ul>
+
         <h2>Ugani občino</h2>
         <ul>
           <li>Igra ima 10 vprašanj s skrito slovensko občino.</li>
@@ -48,6 +57,22 @@ function RulesScreen({ onBack }: RulesScreenProps) {
           <li>Naslednja občina je najprej skrita, ti pa izbereš višje ali nižje.</li>
           <li>Po odgovoru vidiš dejansko vrednost druge občine in rezultat odgovora.</li>
           <li>Druga občina nato postane prejšnja občina za naslednje vprašanje.</li>
+        </ul>
+
+        <h2>Ugani klub</h2>
+        <ul>
+          <li>Igra ima 10 vprašanj s skritim evropskim nogometnim klubom.</li>
+          <li>Vsako vprašanje pokaže samo tri naključne namige iz podatkov o klubu.</li>
+          <li>Izbereš enega od štirih možnih klubov.</li>
+          <li>Po odgovoru vidiš pravilni klub, nato gre igra naprej sama.</li>
+        </ul>
+
+        <h2>Stadionski kviz</h2>
+        <ul>
+          <li>Igra ima 10 vprašanj z nogometnim klubom in štirimi stadioni.</li>
+          <li>Izbereš stadion, na katerem igra prikazani klub.</li>
+          <li>Možni odgovori imajo prednostno stadione iz iste lige ali države.</li>
+          <li>Po odgovoru vidiš pravi stadion, nato gre igra naprej sama.</li>
         </ul>
 
         <button className="primary-button" type="button" onClick={onBack}>

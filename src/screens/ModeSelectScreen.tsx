@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { GameMode } from '../types/game'
 
-type ModeGroup = 'root' | 'slovenia' | 'sport'
+type ModeGroup = 'root' | 'europe' | 'slovenia' | 'sport'
 
 type ModeSelectScreenProps = {
   onStart: (mode: GameMode) => void
@@ -32,6 +32,20 @@ function ModeSelectScreen({ onStart, onRules }: ModeSelectScreenProps) {
         </button>
 
         <button
+          className="mode-card mode-card--europe"
+          type="button"
+          onClick={() => setGroup('europe')}
+        >
+          <span className="mode-card__icon" aria-hidden="true">
+            🇪🇺
+          </span>
+          <span className="mode-card__body">
+            <strong>Evropa</strong>
+            <small>Države, World Bank podatki in evropske lestvice.</small>
+          </span>
+        </button>
+
+        <button
           className="mode-card mode-card--sport"
           type="button"
           onClick={() => setGroup('sport')}
@@ -49,6 +63,38 @@ function ModeSelectScreen({ onStart, onRules }: ModeSelectScreenProps) {
       <button className="ghost-button" type="button" onClick={onRules}>
         Pravila
       </button>
+    </>
+  )
+
+  const renderEurope = () => (
+    <>
+      <p className="eyebrow">Evropa</p>
+      <h1>Evropske igre</h1>
+
+      <div className="mode-card-grid" aria-label="Evropske igre">
+        <button
+          className="mode-card mode-card--europe"
+          type="button"
+          onClick={() => onStart('europe')}
+        >
+          <span className="mode-card__icon" aria-hidden="true">
+            🇪🇺
+          </span>
+          <span className="mode-card__body">
+            <strong>Rank Evropa</strong>
+            <small>Države, 10 kategorij in dejanske World Bank vrednosti.</small>
+          </span>
+        </button>
+      </div>
+
+      <div className="menu-action-row">
+        <button className="ghost-button" type="button" onClick={() => setGroup('root')}>
+          Nazaj
+        </button>
+        <button className="ghost-button" type="button" onClick={onRules}>
+          Pravila
+        </button>
+      </div>
     </>
   )
 
@@ -119,6 +165,34 @@ function ModeSelectScreen({ onStart, onRules }: ModeSelectScreenProps) {
 
       <div className="mode-card-grid" aria-label="Športne igre">
         <button
+          className="mode-card mode-card--stadium"
+          type="button"
+          onClick={() => onStart('football-stadium')}
+        >
+          <span className="mode-card__icon" aria-hidden="true">
+            🏟️
+          </span>
+          <span className="mode-card__body">
+            <strong>Stadionski kviz</strong>
+            <small>Izberi pravi stadion za znani nogometni klub.</small>
+          </span>
+        </button>
+
+        <button
+          className="mode-card mode-card--football"
+          type="button"
+          onClick={() => onStart('football-guess')}
+        >
+          <span className="mode-card__icon" aria-hidden="true">
+            ⚽
+          </span>
+          <span className="mode-card__body">
+            <strong>Ugani klub</strong>
+            <small>Trije naključni namigi in štirje podobni klubi.</small>
+          </span>
+        </button>
+
+        <button
           className="mode-card"
           type="button"
           onClick={() => onStart('nba')}
@@ -149,9 +223,11 @@ function ModeSelectScreen({ onStart, onRules }: ModeSelectScreenProps) {
       <section className="mode-select-hero">
         {group === 'slovenia'
           ? renderSlovenia()
+          : group === 'europe'
+          ? renderEurope()
           : group === 'sport'
-            ? renderSport()
-            : renderRoot()}
+          ? renderSport()
+          : renderRoot()}
       </section>
     </main>
   )

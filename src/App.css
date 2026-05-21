@@ -18,6 +18,36 @@
   gap: 22px;
 }
 
+.player-name-screen {
+  justify-content: flex-start;
+}
+
+.final-screen {
+  justify-content: flex-start;
+}
+
+.player-name-screen .game-action-row {
+  width: 100%;
+  margin-top: auto;
+}
+
+.final-screen .action-row {
+  position: sticky;
+  bottom: max(8px, env(safe-area-inset-bottom));
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 4px;
+  background: linear-gradient(180deg, transparent, rgba(7, 10, 18, 0.94) 34%);
+}
+
+.final-screen .action-row > button {
+  width: 100%;
+}
+
 .mode-select-hero,
 .home-hero,
 .rules-panel,
@@ -83,6 +113,12 @@
     linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
 }
 
+.mode-card--europe {
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.18), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
 .mode-card--higher-lower {
   background:
     linear-gradient(135deg, rgba(56, 189, 248, 0.16), transparent 46%),
@@ -92,6 +128,18 @@
 .mode-card--sport {
   background:
     linear-gradient(135deg, rgba(251, 191, 36, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card--football {
+  background:
+    linear-gradient(135deg, rgba(74, 222, 128, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card--stadium {
+  background:
+    linear-gradient(135deg, rgba(249, 115, 22, 0.18), transparent 46%),
     linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
 }
 
@@ -136,7 +184,12 @@
 }
 
 .game-action-row {
-  margin: 1px 0 4px;
+  position: sticky;
+  bottom: max(8px, env(safe-area-inset-bottom));
+  z-index: 4;
+  margin-top: auto;
+  padding-top: 4px;
+  background: linear-gradient(180deg, transparent, rgba(7, 10, 18, 0.94) 34%);
 }
 
 .utility-button {
@@ -340,8 +393,16 @@
   display: block;
 }
 
+.country-card .player-card__facts div:first-child {
+  display: block;
+}
+
 .municipality-card__facts {
   grid-template-columns: 1fr 1fr;
+}
+
+.country-card__facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .result-panel {
@@ -376,6 +437,10 @@
 
 .guess-game-screen {
   gap: 10px;
+}
+
+.europe-game-screen {
+  gap: 8px;
 }
 
 .guess-prompt-card {
@@ -514,6 +579,65 @@
 .guess-result-panel--correct {
   border-color: rgba(34, 197, 94, 0.5);
   background: linear-gradient(135deg, rgba(22, 101, 52, 0.38), rgba(15, 23, 42, 0.9));
+}
+
+.football-game-screen {
+  gap: 10px;
+}
+
+.football-prompt-card {
+  border-color: rgba(74, 222, 128, 0.28);
+  background:
+    linear-gradient(135deg, rgba(74, 222, 128, 0.16), transparent 44%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+}
+
+.football-hint-card .hint-card__icon {
+  background: rgba(74, 222, 128, 0.12);
+}
+
+.football-difficulty-copy {
+  margin: 0;
+  color: #bbf7d0;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.stadium-game-screen {
+  gap: 10px;
+}
+
+.stadium-prompt-card {
+  display: grid;
+  gap: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(249, 115, 22, 0.28);
+  border-radius: 18px;
+  padding: 16px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(249, 115, 22, 0.18), transparent 48%),
+    radial-gradient(circle at top right, rgba(255, 209, 102, 0.16), transparent 34%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.stadium-prompt-card h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.7rem, 9vw, 2.65rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.stadium-prompt-card p:not(.eyebrow) {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .higher-lower-game-screen {
@@ -1109,6 +1233,19 @@
     min-height: 46px;
     padding: 10px 12px;
     font-size: 0.9rem;
+  }
+
+  .stadium-prompt-card {
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .stadium-prompt-card h1 {
+    font-size: 1.35rem;
+  }
+
+  .stadium-prompt-card p:not(.eyebrow) {
+    font-size: 0.76rem;
   }
 
   .higher-lower-category-card {

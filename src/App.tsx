@@ -8,6 +8,24 @@ import {
   selectCategoryForCurrentPlayer,
 } from './game/gameEngine'
 import {
+  advanceAfterEuropeResult,
+  createNewEuropeGame,
+  isEuropeGameComplete,
+  selectCategoryForCurrentEuropeCountry,
+} from './game/europeGameEngine'
+import {
+  advanceAfterFootballGuessAnswer,
+  createNewFootballGuessGame,
+  isFootballGuessGameComplete,
+  selectFootballGuessAnswer,
+} from './game/footballGuessEngine'
+import {
+  advanceAfterFootballStadiumAnswer,
+  createNewFootballStadiumGame,
+  isFootballStadiumGameComplete,
+  selectFootballStadiumAnswer,
+} from './game/footballStadiumEngine'
+import {
   advanceAfterGuessMunicipalityAnswer,
   createNewGuessMunicipalityGame,
   isGuessMunicipalityGameComplete,
@@ -27,6 +45,9 @@ import {
 } from './game/sloveniaGameEngine'
 import type {
   AppScreen,
+  EuropeGameState,
+  FootballGuessGameState,
+  FootballStadiumGameState,
   GameMode,
   GameState,
   GuessMunicipalityGameState,
@@ -34,7 +55,11 @@ import type {
   HigherLowerGameState,
   SloveniaGameState,
 } from './types/game'
+import EuropeFinalResultScreen from './screens/EuropeFinalResultScreen'
+import EuropeGameScreen from './screens/EuropeGameScreen'
 import FinalResultScreen from './screens/FinalResultScreen'
+import FootballGuessScreen from './screens/FootballGuessScreen'
+import FootballStadiumScreen from './screens/FootballStadiumScreen'
 import GameScreen from './screens/GameScreen'
 import GuessMunicipalityScreen from './screens/GuessMunicipalityScreen'
 import HigherLowerScreen from './screens/HigherLowerScreen'
@@ -48,6 +73,9 @@ function App() {
   const [screen, setScreen] = useState<AppScreen>('mode-select')
   const [gameMode, setGameMode] = useState<GameMode | null>(null)
   const [nbaGame, setNbaGame] = useState<GameState>(() => createNewNbaGame())
+  const [europeGame, setEuropeGame] = useState<EuropeGameState>(() =>
+    createNewEuropeGame(),
+  )
   const [sloveniaGame, setSloveniaGame] = useState<SloveniaGameState>(() =>
     createNewSloveniaGame(),
   )
@@ -57,16 +85,31 @@ function App() {
     )
   const [higherLowerGame, setHigherLowerGame] =
     useState<HigherLowerGameState>(() => createNewHigherLowerGame())
+  const [footballGuessGame, setFootballGuessGame] =
+    useState<FootballGuessGameState>(() => createNewFootballGuessGame())
+  const [footballStadiumGame, setFootballStadiumGame] =
+    useState<FootballStadiumGameState>(() => createNewFootballStadiumGame())
   const [resultCountdown, setResultCountdown] = useState(3)
 
   const startGame = (mode: GameMode) => {
     setGameMode(mode)
     setResultCountdown(
-      mode === 'guess-municipality' || mode === 'higher-lower' ? 2 : 3,
+      mode === 'guess-municipality' ||
+        mode === 'higher-lower' ||
+        mode === 'football-guess' ||
+        mode === 'football-stadium'
+        ? 2
+        : 3,
     )
 
     if (mode === 'slovenia') {
       setSloveniaGame(createNewSloveniaGame())
+      setScreen('game')
+      return
+    }
+
+    if (mode === 'europe') {
+      setEuropeGame(createNewEuropeGame())
       setScreen('game')
       return
     }
@@ -79,6 +122,18 @@ function App() {
 
     if (mode === 'higher-lower') {
       setHigherLowerGame(createNewHigherLowerGame())
+      setScreen('game')
+      return
+    }
+
+    if (mode === 'football-guess') {
+      setFootballGuessGame(createNewFootballGuessGame())
+      setScreen('game')
+      return
+    }
+
+    if (mode === 'football-stadium') {
+      setFootballStadiumGame(createNewFootballStadiumGame())
       setScreen('game')
       return
     }
@@ -109,6 +164,13 @@ function App() {
       return
     }
 
+    if (gameMode === 'europe') {
+      setEuropeGame((currentGame) =>
+        selectCategoryForCurrentEuropeCountry(currentGame, categoryId),
+      )
+      return
+    }
+
     setNbaGame((currentGame) =>
       selectCategoryForCurrentPlayer(currentGame, categoryId),
     )
@@ -128,18 +190,45 @@ function App() {
     )
   }
 
-  const isResolving =
-    gameMode === 'guess-municipality'
-      ? guessMunicipalityGame.isResolving
-      : gameMode === 'higher-lower'
-        ? higherLowerGame.isResolving
-      : gameMode === 'slovenia'
-        ? sloveniaGame.isResolving
-        : gameMode === 'nba'
-        ? nbaGame.isResolving
-        : false
+  const selectFootballAnswer = (clubId: string) => {
+    setResultCountdown(2)
+    setFootballGuessGame((currentGame) =>
+      selectFootballGuessAnswer(currentGame, clubId),
+    )
+  }
+
+  const selectFootballStadium = (stadium: string) => {
+    setResultCountdown(2)
+    setFootballStadiumGame((currentGame) =>
+      selectFootballStadiumAnswer(currentGame, stadium),
+    )
+  }
+
+  const isResolving = (() => {
+    switch (gameMode) {
+      case 'guess-municipality':
+        return guessMunicipalityGame.isResolving
+      case 'higher-lower':
+        return higherLowerGame.isResolving
+      case 'football-guess':
+        return footballGuessGame.isResolving
+      case 'football-stadium':
+        return footballStadiumGame.isResolving
+      case 'europe':
+        return europeGame.isResolving
+      case 'slovenia':
+        return sloveniaGame.isResolving
+      case 'nba':
+        return nbaGame.isResolving
+      default:
+        return false
+    }
+  })()
   const resolveDelayMs =
-    gameMode === 'guess-municipality' || gameMode === 'higher-lower'
+    gameMode === 'guess-municipality' ||
+    gameMode === 'higher-lower' ||
+    gameMode === 'football-guess' ||
+    gameMode === 'football-stadium'
       ? 2000
       : 3000
 
@@ -181,11 +270,50 @@ function App() {
         return
       }
 
+      if (gameMode === 'football-guess') {
+        setFootballGuessGame((currentGame) => {
+          const nextGame = advanceAfterFootballGuessAnswer(currentGame)
+
+          if (isFootballGuessGameComplete(nextGame)) {
+            window.setTimeout(() => setScreen('final'), 0)
+          }
+
+          return nextGame
+        })
+        return
+      }
+
+      if (gameMode === 'football-stadium') {
+        setFootballStadiumGame((currentGame) => {
+          const nextGame = advanceAfterFootballStadiumAnswer(currentGame)
+
+          if (isFootballStadiumGameComplete(nextGame)) {
+            window.setTimeout(() => setScreen('final'), 0)
+          }
+
+          return nextGame
+        })
+        return
+      }
+
       if (gameMode === 'slovenia') {
         setSloveniaGame((currentGame) => {
           const nextGame = advanceAfterSloveniaResult(currentGame)
 
           if (isSloveniaGameComplete(nextGame)) {
+            window.setTimeout(() => setScreen('final'), 0)
+          }
+
+          return nextGame
+        })
+        return
+      }
+
+      if (gameMode === 'europe') {
+        setEuropeGame((currentGame) => {
+          const nextGame = advanceAfterEuropeResult(currentGame)
+
+          if (isEuropeGameComplete(nextGame)) {
             window.setTimeout(() => setScreen('final'), 0)
           }
 
@@ -240,6 +368,18 @@ function App() {
     )
   }
 
+  if (screen === 'game' && gameMode === 'europe') {
+    return (
+      <EuropeGameScreen
+        game={europeGame}
+        countdown={resultCountdown}
+        onSelectCategory={selectCategory}
+        onRestart={restartGame}
+        onBack={goHome}
+      />
+    )
+  }
+
   if (screen === 'game' && gameMode === 'guess-municipality') {
     return (
       <GuessMunicipalityScreen
@@ -258,6 +398,30 @@ function App() {
         game={higherLowerGame}
         countdown={resultCountdown}
         onSelectAnswer={selectHigherLowerChoice}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'game' && gameMode === 'football-guess') {
+    return (
+      <FootballGuessScreen
+        game={footballGuessGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectFootballAnswer}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'game' && gameMode === 'football-stadium') {
+    return (
+      <FootballStadiumScreen
+        game={footballStadiumGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectFootballStadium}
         onRestart={restartGame}
         onHome={goHome}
       />
@@ -286,6 +450,16 @@ function App() {
     )
   }
 
+  if (screen === 'final' && gameMode === 'europe') {
+    return (
+      <EuropeFinalResultScreen
+        game={europeGame}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
   if (screen === 'final' && gameMode === 'guess-municipality') {
     return (
       <GuessMunicipalityScreen
@@ -304,6 +478,30 @@ function App() {
         game={higherLowerGame}
         countdown={resultCountdown}
         onSelectAnswer={selectHigherLowerChoice}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'final' && gameMode === 'football-guess') {
+    return (
+      <FootballGuessScreen
+        game={footballGuessGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectFootballAnswer}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'final' && gameMode === 'football-stadium') {
+    return (
+      <FootballStadiumScreen
+        game={footballStadiumGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectFootballStadium}
         onRestart={restartGame}
         onHome={goHome}
       />

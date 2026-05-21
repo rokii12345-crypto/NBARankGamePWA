@@ -125,15 +125,6 @@ function HigherLowerScreen({
         </div>
       </header>
 
-      <div className="game-action-row">
-        <button className="utility-button" type="button" onClick={onHome}>
-          Nazaj
-        </button>
-        <button className="utility-button" type="button" onClick={onRestart}>
-          Nova igra
-        </button>
-      </div>
-
       <section className="higher-lower-category-card">
         <p className="eyebrow">Kategorija</p>
         <div className="higher-lower-category-main">
@@ -206,6 +197,15 @@ function HigherLowerScreen({
           <span>Naslednje vprašanje čez {countdown} s ...</span>
         </section>
       ) : null}
+
+      <div className="game-action-row">
+        <button className="utility-button" type="button" onClick={onHome}>
+          Nazaj
+        </button>
+        <button className="utility-button" type="button" onClick={onRestart}>
+          Nova igra
+        </button>
+      </div>
     </main>
   )
 }

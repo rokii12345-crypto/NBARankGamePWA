@@ -18,6 +18,9 @@ function PlayerNameScreen({
     <main className="screen player-name-screen">
       <p className="eyebrow">Prvi igralec je pripravljen</p>
       <PlayerCard player={player} />
+      <button className="primary-button" type="button" onClick={onContinue}>
+        Izberi kategorijo
+      </button>
       <div className="game-action-row">
         <button className="utility-button" type="button" onClick={onBack}>
           Nazaj
@@ -26,9 +29,6 @@ function PlayerNameScreen({
           Nova igra
         </button>
       </div>
-      <button className="primary-button" type="button" onClick={onContinue}>
-        Izberi kategorijo
-      </button>
     </main>
   )
 }

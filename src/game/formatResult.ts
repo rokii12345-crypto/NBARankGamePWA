@@ -1,5 +1,7 @@
 import type {
   CategoryAssignment,
+  EuropeCategoryAssignment,
+  EuropeRoundResult,
   RoundResult,
   SloveniaCategoryAssignment,
   SloveniaRoundResult,
@@ -103,3 +105,29 @@ export const formatSloveniaRoundResult = (result: SloveniaRoundResult) =>
     result.unit,
     result.decimals,
   )}. Igralne točke: ${formatGamePoints(result.points)}.`
+
+export const formatEuropeAssignmentResult = (
+  assignment: EuropeCategoryAssignment,
+  category?: ResultCategory,
+  options: { includeCountryName?: boolean } = {},
+) => {
+  const includeCountryName = options.includeCountryName ?? true
+  const countryPrefix = includeCountryName ? `${assignment.countryName} · ` : ''
+
+  if (!category) {
+    return `${countryPrefix}${formatGamePoints(assignment.points)}`
+  }
+
+  return `${countryPrefix}${formatStatValue(
+    assignment.value,
+    category.unit,
+    category.decimals,
+  )} · ${assignment.year} · ${formatGamePoints(assignment.points)}`
+}
+
+export const formatEuropeRoundResult = (result: EuropeRoundResult) =>
+  `${result.countryName} — ${result.categoryTitle}: ${formatStatValue(
+    result.value,
+    result.unit,
+    result.decimals,
+  )} (${result.year}). Igralne točke: ${formatGamePoints(result.points)}.`
