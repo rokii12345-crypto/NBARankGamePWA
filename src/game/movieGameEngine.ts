@@ -66,10 +66,18 @@ const intersectSets = (left: Set<string>, right: Set<string>) => {
   return intersection
 }
 
-const getPlayableCategories = () =>
-  movieCategories.filter(
-    (category) => getCategoryMovieIds(category.id).size >= GAME_ROUNDS,
-  )
+type MovieCategoryCandidate = {
+  category: MovieCategory
+  movieIds: Set<string>
+}
+
+const getPlayableCategoryCandidates = (): MovieCategoryCandidate[] =>
+  movieCategories
+    .map((category) => ({
+      category,
+      movieIds: getCategoryMovieIds(category.id),
+    }))
+    .filter((candidate) => candidate.movieIds.size >= GAME_ROUNDS)
 
 const getRequiredMovie = (movieId: string) => {
   const movie = moviesById.get(movieId)
@@ -91,36 +99,68 @@ const createEmptyGame = (setupError: string): MovieGameState => ({
   setupError,
 })
 
-const selectPlayableRound = () => {
-  const playableCategories = shuffle(getPlayableCategories())
-  let selectedMovieIds: Set<string> | null = null
-  const selectedCategories: MovieCategory[] = []
+const findPlayableCategoryCombination = (
+  candidates: MovieCategoryCandidate[],
+  startIndex = 0,
+  selectedCategories: MovieCategory[] = [],
+  selectedMovieIds: Set<string> | null = null,
+): { categories: MovieCategory[]; movieIds: Set<string> } | null => {
+  if (selectedCategories.length >= GAME_ROUNDS) {
+    if (selectedMovieIds && selectedMovieIds.size >= GAME_ROUNDS) {
+      return {
+        categories: selectedCategories,
+        movieIds: selectedMovieIds,
+      }
+    }
 
-  for (const category of playableCategories) {
-    const categoryMovieIds = getCategoryMovieIds(category.id)
-    const nextMovieIds: Set<string> = selectedMovieIds
-      ? intersectSets(selectedMovieIds, categoryMovieIds)
-      : categoryMovieIds
+    return null
+  }
+
+  const remainingCategoriesNeeded =
+    GAME_ROUNDS - selectedCategories.length
+  const lastUsableIndex = candidates.length - remainingCategoriesNeeded
+
+  for (let index = startIndex; index <= lastUsableIndex; index += 1) {
+    const candidate = candidates[index]
+    const nextMovieIds = selectedMovieIds
+      ? intersectSets(selectedMovieIds, candidate.movieIds)
+      : new Set(candidate.movieIds)
 
     if (nextMovieIds.size < GAME_ROUNDS) {
       continue
     }
 
-    selectedCategories.push(category)
-    selectedMovieIds = nextMovieIds
+    const result = findPlayableCategoryCombination(
+      candidates,
+      index + 1,
+      [...selectedCategories, candidate.category],
+      nextMovieIds,
+    )
 
-    if (selectedCategories.length >= GAME_ROUNDS) {
-      break
+    if (result) {
+      return result
     }
   }
 
-  if (selectedCategories.length < GAME_ROUNDS || !selectedMovieIds) {
+  return null
+}
+
+const selectPlayableRound = () => {
+  const candidates = shuffle(getPlayableCategoryCandidates())
+
+  if (candidates.length < GAME_ROUNDS) {
+    return null
+  }
+
+  const playableCombination = findPlayableCategoryCombination(candidates)
+
+  if (!playableCombination) {
     return null
   }
 
   return {
-    categories: selectedCategories,
-    movies: shuffle([...selectedMovieIds].map(getRequiredMovie)).slice(
+    categories: playableCombination.categories,
+    movies: shuffle([...playableCombination.movieIds].map(getRequiredMovie)).slice(
       0,
       GAME_ROUNDS,
     ),

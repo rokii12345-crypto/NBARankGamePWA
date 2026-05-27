@@ -1,0 +1,7242 @@
+{
+  "source": "Wikidata",
+  "generatedAt": "2026-05-27T20:45:20.911Z",
+  "results": [
+    {
+      "input": {
+        "title": "The Shawshank Redemption",
+        "year": "1994"
+      },
+      "wikidata": {
+        "id": "Q172241",
+        "label": "The Shawshank Redemption",
+        "description": "1994 film directed by Frank Darabont",
+        "year": 1994,
+        "runtimeMinutes": 142,
+        "budgetUsd": 25000000,
+        "boxOfficeUsd": 28817291,
+        "directors": [
+          {
+            "id": "Q295445",
+            "label": "Frank Darabont"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q663106",
+            "label": "buddy film"
+          },
+          {
+            "id": "Q586250",
+            "label": "prison film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 20,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "The Godfather",
+        "year": "1972"
+      },
+      "wikidata": {
+        "id": "Q47703",
+        "label": "The Godfather",
+        "description": "1972 film directed by Francis Ford Coppola",
+        "year": 1972,
+        "runtimeMinutes": 175,
+        "budgetUsd": 7000000,
+        "boxOfficeUsd": 268500000,
+        "directors": [
+          {
+            "id": "Q56094",
+            "label": "Francis Ford Coppola"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q38",
+            "label": "Italy"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q652",
+            "label": "Italian"
+          }
+        ],
+        "castCount": 40,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "The Godfather Part II",
+        "year": "1974"
+      },
+      "wikidata": {
+        "id": "Q184768",
+        "label": "The Godfather Part II",
+        "description": "1974 film by Francis Ford Coppola",
+        "year": 1974,
+        "runtimeMinutes": 202,
+        "budgetUsd": 13000000,
+        "boxOfficeUsd": 47960085,
+        "directors": [
+          {
+            "id": "Q56094",
+            "label": "Francis Ford Coppola"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q33973",
+            "label": "Sicilian"
+          }
+        ],
+        "castCount": 48,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "The Dark Knight",
+        "year": "2008"
+      },
+      "wikidata": {
+        "id": "Q163872",
+        "label": "The Dark Knight",
+        "description": "2008 film directed by Christopher Nolan",
+        "year": 2008,
+        "runtimeMinutes": 153,
+        "budgetUsd": 185000000,
+        "boxOfficeUsd": 1006234167,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 29,
+        "producerCount": 3,
+        "screenwriterCount": 5,
+        "composerCount": 2,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "12 Angry Men",
+        "year": "1957"
+      },
+      "wikidata": {
+        "id": "Q2345",
+        "label": "12 Angry Men",
+        "description": "1957 American film by Sidney Lumet",
+        "year": 1957,
+        "runtimeMinutes": 95,
+        "budgetUsd": 340000,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q51559",
+            "label": "Sidney Lumet"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q3072039",
+            "label": "trial film"
+          },
+          {
+            "id": "Q121432339",
+            "label": "huis-clos film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 16,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "Schindler's List",
+        "year": "1993"
+      },
+      "wikidata": {
+        "id": "Q483941",
+        "label": "Schindler's List",
+        "description": "1993 film directed by Steven Spielberg",
+        "year": 1993,
+        "runtimeMinutes": 195,
+        "budgetUsd": 25000000,
+        "boxOfficeUsd": 322139355,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q4774498",
+            "label": "anti-war film"
+          },
+          {
+            "id": "Q645928",
+            "label": "biographical film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q116456802",
+            "label": "war drama"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          },
+          {
+            "id": "Q369747",
+            "label": "war film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          },
+          {
+            "id": "Q809",
+            "label": "Polish"
+          },
+          {
+            "id": "Q8641",
+            "label": "Yiddish"
+          }
+        ],
+        "castCount": 51,
+        "producerCount": 4,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 12
+      }
+    },
+    {
+      "input": {
+        "title": "The Lord of the Rings: The Return of the King",
+        "year": "2003"
+      },
+      "wikidata": {
+        "id": "Q131074",
+        "label": "The Lord of the Rings: The Return of the King",
+        "description": "2003 film by Peter Jackson",
+        "year": 2003,
+        "runtimeMinutes": 200,
+        "budgetUsd": 94000000,
+        "boxOfficeUsd": 1149079287,
+        "directors": [
+          {
+            "id": "Q4465",
+            "label": "Peter Jackson"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q664",
+            "label": "New Zealand"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q42365",
+            "label": "Old English"
+          },
+          {
+            "id": "Q56383",
+            "label": "Quenya"
+          },
+          {
+            "id": "Q56437",
+            "label": "Sindarin"
+          }
+        ],
+        "castCount": 40,
+        "producerCount": 3,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 15
+      }
+    },
+    {
+      "input": {
+        "title": "Pulp Fiction",
+        "year": "1994"
+      },
+      "wikidata": {
+        "id": "Q104123",
+        "label": "Pulp Fiction",
+        "description": "1994 film by Quentin Tarantino",
+        "year": 1994,
+        "runtimeMinutes": 154,
+        "budgetUsd": 8000000,
+        "boxOfficeUsd": 213928762,
+        "directors": [
+          {
+            "id": "Q3772",
+            "label": "Quentin Tarantino"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q459290",
+            "label": "independent film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q5778924",
+            "label": "black comedy film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q1788980",
+            "label": "crime comedy film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q3990883",
+            "label": "action thriller"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 35,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 0,
+        "awardsReceivedCount": 23
+      }
+    },
+    {
+      "input": {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "year": "2001"
+      },
+      "wikidata": {
+        "id": "Q127367",
+        "label": "The Lord of the Rings: The Fellowship of the Ring",
+        "description": "2001 film by Peter Jackson",
+        "year": 2001,
+        "runtimeMinutes": 178,
+        "budgetUsd": 93000000,
+        "boxOfficeUsd": 897154942,
+        "directors": [
+          {
+            "id": "Q4465",
+            "label": "Peter Jackson"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q664",
+            "label": "New Zealand"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 31,
+        "producerCount": 4,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "The Lord of the Rings: The Two Towers",
+        "year": "2002"
+      },
+      "wikidata": {
+        "id": "Q164963",
+        "label": "The Lord of the Rings: The Two Towers",
+        "description": "2002 film by Peter Jackson",
+        "year": 2002,
+        "runtimeMinutes": 179,
+        "budgetUsd": 94000000,
+        "boxOfficeUsd": 944925225,
+        "directors": [
+          {
+            "id": "Q4465",
+            "label": "Peter Jackson"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q664",
+            "label": "New Zealand"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 31,
+        "producerCount": 3,
+        "screenwriterCount": 4,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "The Good, the Bad and the Ugly",
+        "year": "1966"
+      },
+      "wikidata": {
+        "id": "Q41483",
+        "label": "The Good, the Bad and the Ugly",
+        "description": "1966 film directed by Sergio Leone",
+        "year": 1966,
+        "runtimeMinutes": 177,
+        "budgetUsd": 1200000,
+        "boxOfficeUsd": 38900000,
+        "directors": [
+          {
+            "id": "Q164562",
+            "label": "Sergio Leone"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q212781",
+            "label": "Spaghetti Western"
+          },
+          {
+            "id": "Q22981906",
+            "label": "treasure hunt film"
+          },
+          {
+            "id": "Q369747",
+            "label": "war film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q172980",
+            "label": "Western film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q38",
+            "label": "Italy"
+          },
+          {
+            "id": "Q29",
+            "label": "Spain"
+          },
+          {
+            "id": "Q183",
+            "label": "Germany"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q652",
+            "label": "Italian"
+          },
+          {
+            "id": "Q1321",
+            "label": "Spanish"
+          }
+        ],
+        "castCount": 34,
+        "producerCount": 1,
+        "screenwriterCount": 7,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Forrest Gump",
+        "year": "1994"
+      },
+      "wikidata": {
+        "id": "Q134773",
+        "label": null,
+        "description": "1994 film directed by Robert Zemeckis",
+        "year": 1994,
+        "runtimeMinutes": 142,
+        "budgetUsd": 55000000,
+        "boxOfficeUsd": 678151134,
+        "directors": [
+          {
+            "id": "Q187364",
+            "label": "Robert Zemeckis"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q7168625",
+            "label": "historical drama"
+          },
+          {
+            "id": "Q118612349",
+            "label": "romantic comedy film"
+          },
+          {
+            "id": "Q192881",
+            "label": "tragicomedy"
+          },
+          {
+            "id": "Q111278985",
+            "label": "American football film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 119,
+        "producerCount": 4,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 9
+      }
+    },
+    {
+      "input": {
+        "title": "Fight Club",
+        "year": "1999"
+      },
+      "wikidata": {
+        "id": "Q190050",
+        "label": "Fight Club",
+        "description": "1999 film directed by David Fincher",
+        "year": 1999,
+        "runtimeMinutes": 139,
+        "budgetUsd": 63000000,
+        "boxOfficeUsd": 100853753,
+        "directors": [
+          {
+            "id": "Q184903",
+            "label": "David Fincher"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q590103",
+            "label": "psychological thriller"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q183",
+            "label": "Germany"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 28,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 5
+      }
+    },
+    {
+      "input": {
+        "title": "Inception",
+        "year": "2010"
+      },
+      "wikidata": {
+        "id": "Q25188",
+        "label": "Inception",
+        "description": "2010 film directed by Christopher Nolan",
+        "year": 2010,
+        "runtimeMinutes": 148,
+        "budgetUsd": 160000000,
+        "boxOfficeUsd": 829895144,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q496523",
+            "label": "heist film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q20656232",
+            "label": "science fiction action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q5287",
+            "label": "Japanese"
+          },
+          {
+            "id": "Q150",
+            "label": "French"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "The Matrix",
+        "year": "1999"
+      },
+      "wikidata": {
+        "id": "Q83495",
+        "label": "The Matrix",
+        "description": "1999 American science fiction action thriller film",
+        "year": 1999,
+        "runtimeMinutes": 136,
+        "budgetUsd": 63000000,
+        "boxOfficeUsd": 467222728,
+        "directors": [
+          {
+            "id": "Q9545711",
+            "label": "Lana Wachowski"
+          },
+          {
+            "id": "Q9544977",
+            "label": "Lilly Wachowski"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q174526",
+            "label": "cyberpunk"
+          },
+          {
+            "id": "Q3990883",
+            "label": "action thriller"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q185867",
+            "label": "film noir"
+          },
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q408",
+            "label": "Australia"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 19,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Goodfellas",
+        "year": "1990"
+      },
+      "wikidata": {
+        "id": "Q42047",
+        "label": "Goodfellas",
+        "description": "1990 film directed by Martin Scorsese",
+        "year": 1990,
+        "runtimeMinutes": 146,
+        "budgetUsd": 25000000,
+        "boxOfficeUsd": 46800000,
+        "directors": [
+          {
+            "id": "Q41148",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q645928",
+            "label": "biographical film"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q542475",
+            "label": "period drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 48,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "year": "1980"
+      },
+      "wikidata": {
+        "id": "Q181795",
+        "label": "Star Wars: Episode V – The Empire Strikes Back",
+        "description": "1980 American epic space opera film directed by Irvin Kershner",
+        "year": 1980,
+        "runtimeMinutes": 124,
+        "budgetUsd": 18000000,
+        "boxOfficeUsd": 547879454,
+        "directors": [
+          {
+            "id": "Q119348",
+            "label": "Irvin Kershner"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q468478",
+            "label": "space opera"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 27,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "One Flew Over the Cuckoo's Nest",
+        "year": "1975"
+      },
+      "wikidata": {
+        "id": "Q171669",
+        "label": "One Flew Over the Cuckoo's Nest",
+        "description": "1975 film directed by Miloš Forman",
+        "year": 1975,
+        "runtimeMinutes": 133,
+        "budgetUsd": 3000000,
+        "boxOfficeUsd": 109114817,
+        "directors": [
+          {
+            "id": "Q51525",
+            "label": "Miloš Forman"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1786567",
+            "label": "medical drama"
+          },
+          {
+            "id": "Q586250",
+            "label": "prison film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 23,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Interstellar",
+        "year": "2014"
+      },
+      "wikidata": {
+        "id": "Q13417189",
+        "label": "Interstellar",
+        "description": "2014 film by Christopher Nolan",
+        "year": 2014,
+        "runtimeMinutes": 169,
+        "budgetUsd": 165000000,
+        "boxOfficeUsd": 677471339,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q104765957",
+            "label": "time-travel film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q725757",
+            "label": "hard science fiction"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 23,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "Parasite",
+        "year": "2019"
+      },
+      "wikidata": {
+        "id": "Q61448040",
+        "label": "Parasite",
+        "description": "2019 film directed by Bong Joon-ho",
+        "year": 2019,
+        "runtimeMinutes": 132,
+        "budgetUsd": 13200000,
+        "boxOfficeUsd": 204581001,
+        "directors": [
+          {
+            "id": "Q495980",
+            "label": "Bong Joon-ho"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q53094",
+            "label": "black comedy"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q884",
+            "label": "South Korea"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q9176",
+            "label": "Korean"
+          }
+        ],
+        "castCount": 11,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 14
+      }
+    },
+    {
+      "input": {
+        "title": "Spirited Away",
+        "year": "2001"
+      },
+      "wikidata": {
+        "id": "Q155653",
+        "label": "Spirited Away",
+        "description": "2001 anime film directed by Hayao Miyazaki",
+        "year": 2001,
+        "runtimeMinutes": 125,
+        "budgetUsd": null,
+        "boxOfficeUsd": 355725195,
+        "directors": [
+          {
+            "id": "Q55400",
+            "label": "Hayao Miyazaki"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q15637301",
+            "label": "fantasy anime and manga"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          },
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q53911753",
+            "label": "isekai"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q104623124",
+            "label": "supernatural anime"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q17",
+            "label": "Japan"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q5287",
+            "label": "Japanese"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 5
+      }
+    },
+    {
+      "input": {
+        "title": "Saving Private Ryan",
+        "year": "1998"
+      },
+      "wikidata": {
+        "id": "Q165817",
+        "label": "Saving Private Ryan",
+        "description": "1998 film directed by Steven Spielberg",
+        "year": 1998,
+        "runtimeMinutes": 169,
+        "budgetUsd": 70000000,
+        "boxOfficeUsd": 482349603,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q369747",
+            "label": "war film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          },
+          {
+            "id": "Q150",
+            "label": "French"
+          }
+        ],
+        "castCount": 35,
+        "producerCount": 4,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "The Green Mile",
+        "year": "1999"
+      },
+      "wikidata": {
+        "id": "Q208263",
+        "label": "The Green Mile",
+        "description": "1999 film directed by Frank Darabont",
+        "year": 1999,
+        "runtimeMinutes": 189,
+        "budgetUsd": 60000000,
+        "boxOfficeUsd": 286801374,
+        "directors": [
+          {
+            "id": "Q295445",
+            "label": "Frank Darabont"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q586250",
+            "label": "prison film"
+          },
+          {
+            "id": "Q102706436",
+            "label": "magic realist film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Se7en",
+        "year": "1995"
+      },
+      "wikidata": {
+        "id": "Q190908",
+        "label": "Seven",
+        "description": "1995 film by David Fincher",
+        "year": 1995,
+        "runtimeMinutes": 127,
+        "budgetUsd": 33000000,
+        "boxOfficeUsd": 327333559,
+        "directors": [
+          {
+            "id": "Q184903",
+            "label": "David Fincher"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q4984974",
+            "label": "buddy cop film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q25533274",
+            "label": "detective film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q109629396",
+            "label": "psychological horror film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q459290",
+            "label": "independent film"
+          },
+          {
+            "id": "Q16538713",
+            "label": "chase film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Silence of the Lambs",
+        "year": "1991"
+      },
+      "wikidata": {
+        "id": "Q133654",
+        "label": "The Silence of the Lambs",
+        "description": "1991 film directed by Jonathan Demme",
+        "year": 1991,
+        "runtimeMinutes": 118,
+        "budgetUsd": 19000000,
+        "boxOfficeUsd": 272742922,
+        "directors": [
+          {
+            "id": "Q48987",
+            "label": "Jonathan Demme"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q109629396",
+            "label": "psychological horror film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q20442589",
+            "label": "LGBTQ-related film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 30,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 22
+      }
+    },
+    {
+      "input": {
+        "title": "City of God",
+        "year": "2002"
+      },
+      "wikidata": {
+        "id": "Q220741",
+        "label": "City of God",
+        "description": "2002 film directed by Fernando Meirelles and Kátia Lund",
+        "year": 2002,
+        "runtimeMinutes": 128,
+        "budgetUsd": 3300000,
+        "boxOfficeUsd": 30680793,
+        "directors": [
+          {
+            "id": "Q343293",
+            "label": "Fernando Meirelles"
+          },
+          {
+            "id": "Q3033796",
+            "label": "Kátia Lund"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q5897543",
+            "label": "hood film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q155",
+            "label": "Brazil"
+          },
+          {
+            "id": "Q142",
+            "label": "France"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q5146",
+            "label": "Portuguese"
+          }
+        ],
+        "castCount": 27,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 2,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Life Is Beautiful",
+        "year": "1997"
+      },
+      "wikidata": {
+        "id": "Q19355",
+        "label": "Life is Beautiful",
+        "description": "1997 film by Roberto Benigni",
+        "year": 1997,
+        "runtimeMinutes": 116,
+        "budgetUsd": 19000000,
+        "boxOfficeUsd": 229163264,
+        "directors": [
+          {
+            "id": "Q23301",
+            "label": "Roberto Benigni"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q38",
+            "label": "Italy"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q652",
+            "label": "Italian"
+          },
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          }
+        ],
+        "castCount": 19,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Terminator 2: Judgment Day",
+        "year": "1991"
+      },
+      "wikidata": {
+        "id": "Q170564",
+        "label": "Terminator 2: Judgment Day",
+        "description": "1991 film directed by James Cameron",
+        "year": 1991,
+        "runtimeMinutes": 137,
+        "budgetUsd": 102000000,
+        "boxOfficeUsd": 516950043,
+        "directors": [
+          {
+            "id": "Q42574",
+            "label": "James Cameron"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q104765957",
+            "label": "time-travel film"
+          },
+          {
+            "id": "Q20656232",
+            "label": "science fiction action film"
+          },
+          {
+            "id": "Q5778924",
+            "label": "black comedy film"
+          },
+          {
+            "id": "Q1776156",
+            "label": "girls with guns"
+          },
+          {
+            "id": "Q16538713",
+            "label": "chase film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q174526",
+            "label": "cyberpunk"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q580850",
+            "label": "techno-thriller"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 17,
+        "producerCount": 3,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "Back to the Future",
+        "year": "1985"
+      },
+      "wikidata": {
+        "id": "Q91540",
+        "label": "Back to the Future",
+        "description": "1985 film directed by Robert Zemeckis",
+        "year": 1985,
+        "runtimeMinutes": 115,
+        "budgetUsd": 19000000,
+        "boxOfficeUsd": 381109762,
+        "directors": [
+          {
+            "id": "Q187364",
+            "label": "Robert Zemeckis"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1146335",
+            "label": "teen film"
+          },
+          {
+            "id": "Q104765957",
+            "label": "time-travel film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 24,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 12
+      }
+    },
+    {
+      "input": {
+        "title": "Gladiator",
+        "year": "2000"
+      },
+      "wikidata": {
+        "id": "Q128518",
+        "label": "Gladiator",
+        "description": "2000 film by Ridley Scott",
+        "year": 2000,
+        "runtimeMinutes": 155,
+        "budgetUsd": 103000000,
+        "boxOfficeUsd": 460583960,
+        "directors": [
+          {
+            "id": "Q56005",
+            "label": "Ridley Scott"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1433443",
+            "label": "sword-and-sandal film"
+          },
+          {
+            "id": "Q1919632",
+            "label": "melodrama"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 23,
+        "producerCount": 4,
+        "screenwriterCount": 3,
+        "composerCount": 3,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "The Departed",
+        "year": "2006"
+      },
+      "wikidata": {
+        "id": "Q172975",
+        "label": "The Departed",
+        "description": "2006 film directed by Martin Scorsese",
+        "year": 2006,
+        "runtimeMinutes": 151,
+        "budgetUsd": 90000000,
+        "boxOfficeUsd": 291480452,
+        "directors": [
+          {
+            "id": "Q41148",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q8646",
+            "label": "Hong Kong"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 18,
+        "producerCount": 3,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "Whiplash",
+        "year": "2014"
+      },
+      "wikidata": {
+        "id": "Q15648198",
+        "label": "Whiplash",
+        "description": "2014 film directed by Damien Chazelle",
+        "year": 2014,
+        "runtimeMinutes": 106,
+        "budgetUsd": 3300000,
+        "boxOfficeUsd": 48982041,
+        "directors": [
+          {
+            "id": "Q18350026",
+            "label": "Damien Chazelle"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q842256",
+            "label": "musical film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 16,
+        "producerCount": 5,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "The Prestige",
+        "year": "2006"
+      },
+      "wikidata": {
+        "id": "Q46551",
+        "label": "The Prestige",
+        "description": "2006 film directed by Christopher Nolan",
+        "year": 2006,
+        "runtimeMinutes": 125,
+        "budgetUsd": 40000000,
+        "boxOfficeUsd": 109676311,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q102706436",
+            "label": "magic realist film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 26,
+        "producerCount": 3,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "The Lion King",
+        "year": "1994"
+      },
+      "wikidata": {
+        "id": "Q36479",
+        "label": "The Lion King",
+        "description": "1994 animated film directed by Roger Allers and Rob Minkoff",
+        "year": 1994,
+        "runtimeMinutes": 88,
+        "budgetUsd": 45000000,
+        "boxOfficeUsd": 968511805,
+        "directors": [
+          {
+            "id": "Q847468",
+            "label": "Roger Allers"
+          },
+          {
+            "id": "Q1151111",
+            "label": "Rob Minkoff"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q842256",
+            "label": "musical film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q7838",
+            "label": "Swahili"
+          },
+          {
+            "id": "Q13218",
+            "label": "Xhosa"
+          },
+          {
+            "id": "Q10179",
+            "label": "Zulu"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 4,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "Alien",
+        "year": "1979"
+      },
+      "wikidata": {
+        "id": "Q103569",
+        "label": "Alien",
+        "description": "1979 film by Ridley Scott",
+        "year": 1979,
+        "runtimeMinutes": 117,
+        "budgetUsd": 11000000,
+        "boxOfficeUsd": 106285522,
+        "directors": [
+          {
+            "id": "Q56005",
+            "label": "Ridley Scott"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q102260466",
+            "label": "body horror film"
+          },
+          {
+            "id": "Q10663882",
+            "label": "science fiction horror film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q1342372",
+            "label": "monster film"
+          },
+          {
+            "id": "Q1776156",
+            "label": "girls with guns"
+          },
+          {
+            "id": "Q20656232",
+            "label": "science fiction action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 9,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "Apocalypse Now",
+        "year": "1979"
+      },
+      "wikidata": {
+        "id": "Q182692",
+        "label": "Apocalypse Now",
+        "description": "1979 film directed by Francis Ford Coppola",
+        "year": 1979,
+        "runtimeMinutes": 153,
+        "budgetUsd": 31500000,
+        "boxOfficeUsd": 83471511,
+        "directors": [
+          {
+            "id": "Q56094",
+            "label": "Francis Ford Coppola"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q369747",
+            "label": "war film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q116456802",
+            "label": "war drama"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q109629396",
+            "label": "psychological horror film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q138603203",
+            "label": "satirical film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 36,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 2,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "Memento",
+        "year": "2000"
+      },
+      "wikidata": {
+        "id": "Q190525",
+        "label": "Memento",
+        "description": "2000 film by Christopher Nolan",
+        "year": 2000,
+        "runtimeMinutes": 113,
+        "budgetUsd": 9000000,
+        "boxOfficeUsd": 39665951,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q185867",
+            "label": "film noir"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 11,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "Raiders of the Lost Ark",
+        "year": "1981"
+      },
+      "wikidata": {
+        "id": "Q174284",
+        "label": "Raiders of the Lost Ark",
+        "description": "1981 film directed by Steven Spielberg",
+        "year": 1981,
+        "runtimeMinutes": 115,
+        "budgetUsd": 18000000,
+        "boxOfficeUsd": 389900000,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q22981906",
+            "label": "treasure hunt film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 20,
+        "producerCount": 3,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "WALL-E",
+        "year": "2008"
+      },
+      "wikidata": {
+        "id": "Q104905",
+        "label": "WALL-E",
+        "description": "2008 animated film directed by Andrew Stanton",
+        "year": 2008,
+        "runtimeMinutes": 98,
+        "budgetUsd": 180000000,
+        "boxOfficeUsd": 534767889,
+        "directors": [
+          {
+            "id": "Q328723",
+            "label": "Andrew Stanton"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q118612349",
+            "label": "romantic comedy film"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          },
+          {
+            "id": "Q761469",
+            "label": "science fiction comedy"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          },
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q4686573",
+            "label": "adventure science fiction"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 2,
+        "awardsReceivedCount": 11
+      }
+    },
+    {
+      "input": {
+        "title": "Django Unchained",
+        "year": "2012"
+      },
+      "wikidata": {
+        "id": "Q571032",
+        "label": "Django Unchained",
+        "description": "2012 film by Quentin Tarantino",
+        "year": 2012,
+        "runtimeMinutes": 165,
+        "budgetUsd": 100000000,
+        "boxOfficeUsd": 425368238,
+        "directors": [
+          {
+            "id": "Q3772",
+            "label": "Quentin Tarantino"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q491158",
+            "label": "revisionist Western"
+          },
+          {
+            "id": "Q172980",
+            "label": "Western film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q883179",
+            "label": "blaxploitation film"
+          },
+          {
+            "id": "Q116514801",
+            "label": "historical drama film"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 52,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "The Shining",
+        "year": "1980"
+      },
+      "wikidata": {
+        "id": "Q186341",
+        "label": "The Shining",
+        "description": "1980 film directed by Stanley Kubrick",
+        "year": 1980,
+        "runtimeMinutes": 144,
+        "budgetUsd": 19000000,
+        "boxOfficeUsd": 44017374,
+        "directors": [
+          {
+            "id": "Q2001",
+            "label": "Stanley Kubrick"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q109629396",
+            "label": "psychological horror film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q31888058",
+            "label": "ghost film"
+          },
+          {
+            "id": "Q43911809",
+            "label": "supernatural horror film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 12,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Avengers: Endgame",
+        "year": "2019"
+      },
+      "wikidata": {
+        "id": "Q23781155",
+        "label": "Avengers: Endgame",
+        "description": "2019 film by Anthony and Joe Russo",
+        "year": 2019,
+        "runtimeMinutes": 181,
+        "budgetUsd": 356000000,
+        "boxOfficeUsd": 2797501328,
+        "directors": [
+          {
+            "id": "Q18018415",
+            "label": "Anthony Russo"
+          },
+          {
+            "id": "Q20675767",
+            "label": "Joe Russo"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 100,
+        "producerCount": 1,
+        "screenwriterCount": 4,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "Avatar",
+        "year": "2009"
+      },
+      "wikidata": {
+        "id": "Q24871",
+        "label": "Avatar",
+        "description": "2009 film directed by James Cameron",
+        "year": 2009,
+        "runtimeMinutes": 162,
+        "budgetUsd": 237000000,
+        "boxOfficeUsd": 2847379794,
+        "directors": [
+          {
+            "id": "Q42574",
+            "label": "James Cameron"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q904447",
+            "label": "military science fiction"
+          },
+          {
+            "id": "Q25110269",
+            "label": "live-action/animated film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q132803402",
+            "label": "white savior film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q316939",
+            "label": "Na'vi"
+          },
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 18,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 2,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Avatar: The Way of Water",
+        "year": "2022"
+      },
+      "wikidata": {
+        "id": "Q3604746",
+        "label": "Avatar: The Way of Water",
+        "description": "2022 film by James Cameron",
+        "year": 2022,
+        "runtimeMinutes": 192,
+        "budgetUsd": 250000000,
+        "boxOfficeUsd": 2176229105,
+        "directors": [
+          {
+            "id": "Q42574",
+            "label": "James Cameron"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q316939",
+            "label": "Na'vi"
+          }
+        ],
+        "castCount": 28,
+        "producerCount": 2,
+        "screenwriterCount": 5,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Titanic",
+        "year": "1997"
+      },
+      "wikidata": {
+        "id": "Q44578",
+        "label": "Titanic",
+        "description": "1997 film by James Cameron",
+        "year": 1997,
+        "runtimeMinutes": 195,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1850197130,
+        "directors": [
+          {
+            "id": "Q42574",
+            "label": "James Cameron"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q846544",
+            "label": "disaster film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q1919632",
+            "label": "melodrama"
+          },
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 51,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 29
+      }
+    },
+    {
+      "input": {
+        "title": "Jurassic Park",
+        "year": "1993"
+      },
+      "wikidata": {
+        "id": "Q167726",
+        "label": "Jurassic Park",
+        "description": "1993 film by Steven Spielberg",
+        "year": 1993,
+        "runtimeMinutes": 123,
+        "budgetUsd": 63000000,
+        "boxOfficeUsd": 1030314141,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q1321",
+            "label": "Spanish"
+          }
+        ],
+        "castCount": 16,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "The Avengers",
+        "year": "2012"
+      },
+      "wikidata": {
+        "id": "Q182218",
+        "label": "The Avengers",
+        "description": "2012 film directed by Joss Whedon",
+        "year": 2012,
+        "runtimeMinutes": 142,
+        "budgetUsd": 220000000,
+        "boxOfficeUsd": 1518812988,
+        "directors": [
+          {
+            "id": "Q298025",
+            "label": "Joss Whedon"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q21192427",
+            "label": "crossover fiction"
+          },
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 54,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "Avengers: Infinity War",
+        "year": "2018"
+      },
+      "wikidata": {
+        "id": "Q23780914",
+        "label": "Avengers: Infinity War",
+        "description": "2018 film by Anthony Russo and Joe Russo",
+        "year": 2018,
+        "runtimeMinutes": 149,
+        "budgetUsd": 400000000,
+        "boxOfficeUsd": 2048359754,
+        "directors": [
+          {
+            "id": "Q18018415",
+            "label": "Anthony Russo"
+          },
+          {
+            "id": "Q20675767",
+            "label": "Joe Russo"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 54,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Spider-Man: No Way Home",
+        "year": "2021"
+      },
+      "wikidata": {
+        "id": "Q68934496",
+        "label": "Spider-Man: No Way Home",
+        "description": "2021 film directed by Jon Watts",
+        "year": 2021,
+        "runtimeMinutes": 148,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1921847111,
+        "directors": [
+          {
+            "id": "Q18519749",
+            "label": "Jon Watts"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q20819599",
+            "label": "technofantasy"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Top Gun: Maverick",
+        "year": "2022"
+      },
+      "wikidata": {
+        "id": "Q31202708",
+        "label": "Top Gun: Maverick",
+        "description": "2022 film directed by Joseph Kosinski",
+        "year": 2022,
+        "runtimeMinutes": 130,
+        "budgetUsd": 152000000,
+        "boxOfficeUsd": 1443725344,
+        "directors": [
+          {
+            "id": "Q2444076",
+            "label": "Joseph Kosinski"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 32,
+        "producerCount": 6,
+        "screenwriterCount": 7,
+        "composerCount": 5,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Black Panther",
+        "year": "2018"
+      },
+      "wikidata": {
+        "id": "Q23780734",
+        "label": "Black Panther",
+        "description": "2018 film directed by Ryan Coogler",
+        "year": 2018,
+        "runtimeMinutes": 134,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1347597973,
+        "directors": [
+          {
+            "id": "Q7383978",
+            "label": "Ryan Coogler"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q7976",
+            "label": "American English"
+          }
+        ],
+        "castCount": 62,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 2,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "Oppenheimer",
+        "year": "2023"
+      },
+      "wikidata": {
+        "id": "Q108839994",
+        "label": "Oppenheimer",
+        "description": "2023 film directed by Christopher Nolan",
+        "year": 2023,
+        "runtimeMinutes": 180,
+        "budgetUsd": 100000000,
+        "boxOfficeUsd": 955300000,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q17013749",
+            "label": "historical film"
+          },
+          {
+            "id": "Q645928",
+            "label": "biographical film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 59,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 6
+      }
+    },
+    {
+      "input": {
+        "title": "Barbie",
+        "year": "2023"
+      },
+      "wikidata": {
+        "id": "Q55436290",
+        "label": "Barbie",
+        "description": "2023 film directed by Greta Gerwig",
+        "year": 2023,
+        "runtimeMinutes": 114,
+        "budgetUsd": 145000000,
+        "boxOfficeUsd": 1345183126,
+        "directors": [
+          {
+            "id": "Q271967",
+            "label": "Greta Gerwig"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q118612349",
+            "label": "romantic comedy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q1146335",
+            "label": "teen film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q842256",
+            "label": "musical film"
+          },
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          },
+          {
+            "id": "Q1548170",
+            "label": "musical comedy"
+          },
+          {
+            "id": "Q95440291",
+            "label": "fantasy comedy film"
+          },
+          {
+            "id": "Q2075808",
+            "label": "chick flick"
+          },
+          {
+            "id": "Q138603203",
+            "label": "satirical film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 39,
+        "producerCount": 5,
+        "screenwriterCount": 2,
+        "composerCount": 2,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Super Mario Bros. Movie",
+        "year": "2023"
+      },
+      "wikidata": {
+        "id": "Q108671102",
+        "label": "The Super Mario Bros. Movie",
+        "description": "2023 film directed by Aaron Horvath and Michael Jelenic",
+        "year": 2023,
+        "runtimeMinutes": 92,
+        "budgetUsd": 100000000,
+        "boxOfficeUsd": 1346395054,
+        "directors": [
+          {
+            "id": "Q47492998",
+            "label": "Aaron Horvath"
+          },
+          {
+            "id": "Q5394838",
+            "label": "Michael Jelenic"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q53911753",
+            "label": "isekai"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q17",
+            "label": "Japan"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 2,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Inside Out 2",
+        "year": "2024"
+      },
+      "wikidata": {
+        "id": "Q113877606",
+        "label": "Inside Out 2",
+        "description": "2024 animated film directed by Kelsey Mann",
+        "year": 2024,
+        "runtimeMinutes": 96,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 835300000,
+        "directors": [
+          {
+            "id": "Q58640889",
+            "label": "Kelsey Mann"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Frozen",
+        "year": "2013"
+      },
+      "wikidata": {
+        "id": "Q246283",
+        "label": "Frozen",
+        "description": "2013 animated film directed by Chris Buck and Jennifer Lee",
+        "year": 2013,
+        "runtimeMinutes": 101,
+        "budgetUsd": 150000000,
+        "boxOfficeUsd": 1274219009,
+        "directors": [
+          {
+            "id": "Q156596",
+            "label": "Chris Buck"
+          },
+          {
+            "id": "Q5929198",
+            "label": "Jennifer Lee"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q842256",
+            "label": "musical film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q1957385",
+            "label": "cinematic fairy tale"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 3,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "Frozen II",
+        "year": "2019"
+      },
+      "wikidata": {
+        "id": "Q24733929",
+        "label": "Frozen 2",
+        "description": "2019 animated film directed by Chris Buck and Jennifer Lee",
+        "year": 2019,
+        "runtimeMinutes": 103,
+        "budgetUsd": 150000000,
+        "boxOfficeUsd": 1119151068,
+        "directors": [
+          {
+            "id": "Q5929198",
+            "label": "Jennifer Lee"
+          },
+          {
+            "id": "Q156596",
+            "label": "Chris Buck"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q842256",
+            "label": "musical film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 3,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Toy Story 3",
+        "year": "2010"
+      },
+      "wikidata": {
+        "id": "Q187278",
+        "label": "Toy Story 3",
+        "description": "2010 animated film directed by Lee Unkrich",
+        "year": 2010,
+        "runtimeMinutes": 103,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1066969703,
+        "directors": [
+          {
+            "id": "Q380920",
+            "label": "Lee Unkrich"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q663106",
+            "label": "buddy film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q1321",
+            "label": "Spanish"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "Toy Story 4",
+        "year": "2019"
+      },
+      "wikidata": {
+        "id": "Q18517638",
+        "label": "Toy Story 4",
+        "description": "2019 animated film directed by Josh Cooley",
+        "year": 2019,
+        "runtimeMinutes": 100,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 23812010,
+        "directors": [
+          {
+            "id": "Q22073999",
+            "label": "Josh Cooley"
+          },
+          {
+            "id": "Q269214",
+            "label": "John Lasseter"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q7976",
+            "label": "American English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "Finding Nemo",
+        "year": "2003"
+      },
+      "wikidata": {
+        "id": "Q132863",
+        "label": "Finding Nemo",
+        "description": "2003 animated film",
+        "year": 2003,
+        "runtimeMinutes": 100,
+        "budgetUsd": 94000000,
+        "boxOfficeUsd": 969023261,
+        "directors": [
+          {
+            "id": "Q328723",
+            "label": "Andrew Stanton"
+          },
+          {
+            "id": "Q380920",
+            "label": "Lee Unkrich"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 2,
+        "awardsReceivedCount": 5
+      }
+    },
+    {
+      "input": {
+        "title": "Finding Dory",
+        "year": "2016"
+      },
+      "wikidata": {
+        "id": "Q9321426",
+        "label": "Finding Dory",
+        "description": "2016 animated film directed by Andrew Stanton",
+        "year": 2016,
+        "runtimeMinutes": 97,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 486295561,
+        "directors": [
+          {
+            "id": "Q328723",
+            "label": "Andrew Stanton"
+          },
+          {
+            "id": "Q17386294",
+            "label": "Angus MacLane"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q21401869",
+            "label": "flashback film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Incredibles",
+        "year": "2004"
+      },
+      "wikidata": {
+        "id": "Q213326",
+        "label": "The Incredibles",
+        "description": "2004 animated film directed by Brad Bird",
+        "year": 2004,
+        "runtimeMinutes": 111,
+        "budgetUsd": 92000000,
+        "boxOfficeUsd": 631606713,
+        "directors": [
+          {
+            "id": "Q310960",
+            "label": "Brad Bird"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 4,
+        "screenwriterCount": 1,
+        "composerCount": 2,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Incredibles 2",
+        "year": "2018"
+      },
+      "wikidata": {
+        "id": "Q24832112",
+        "label": "Incredibles 2",
+        "description": "2018 animated film directed by Brad Bird",
+        "year": 2018,
+        "runtimeMinutes": 118,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1242805359,
+        "directors": [
+          {
+            "id": "Q310960",
+            "label": "Brad Bird"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Minions",
+        "year": "2015"
+      },
+      "wikidata": {
+        "id": "Q13619743",
+        "label": "Minions",
+        "description": "2015 animated film by Pierre Coffin and Kyle Balda",
+        "year": 2015,
+        "runtimeMinutes": 91,
+        "budgetUsd": 74000000,
+        "boxOfficeUsd": 1159398397,
+        "directors": [
+          {
+            "id": "Q3384479",
+            "label": "Pierre Coffin"
+          },
+          {
+            "id": "Q20666333",
+            "label": "Kyle Balda"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          },
+          {
+            "id": "Q496523",
+            "label": "heist film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 30,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Despicable Me 3",
+        "year": "2017"
+      },
+      "wikidata": {
+        "id": "Q22997984",
+        "label": "Despicable Me 3",
+        "description": "2017 American 3D computer-animated comedy film directed by Pierre Coffin",
+        "year": 2017,
+        "runtimeMinutes": 90,
+        "budgetUsd": 75000000,
+        "boxOfficeUsd": 1034799409,
+        "directors": [
+          {
+            "id": "Q3384479",
+            "label": "Pierre Coffin"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Joker",
+        "year": "2019"
+      },
+      "wikidata": {
+        "id": "Q42759035",
+        "label": "Joker",
+        "description": "2019 musical film directed by Todd Phillips",
+        "year": 2019,
+        "runtimeMinutes": 122,
+        "budgetUsd": 55000000,
+        "boxOfficeUsd": 1074458282,
+        "directors": [
+          {
+            "id": "Q362824",
+            "label": "Todd Phillips"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 23,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "The Dark Knight Rises",
+        "year": "2012"
+      },
+      "wikidata": {
+        "id": "Q189330",
+        "label": "The Dark Knight Rises",
+        "description": "2012 superhero film by Christopher Nolan",
+        "year": 2012,
+        "runtimeMinutes": 164,
+        "budgetUsd": 250000000,
+        "boxOfficeUsd": 1081169825,
+        "directors": [
+          {
+            "id": "Q25191",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1535153",
+            "label": "superhero film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 49,
+        "producerCount": 3,
+        "screenwriterCount": 4,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Skyfall",
+        "year": "2012"
+      },
+      "wikidata": {
+        "id": "Q4941",
+        "label": "Skyfall",
+        "description": "2012 film by Sam Mendes",
+        "year": 2012,
+        "runtimeMinutes": 143,
+        "budgetUsd": 200000000,
+        "boxOfficeUsd": 1108561013,
+        "directors": [
+          {
+            "id": "Q223233",
+            "label": "Sam Mendes"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q3990883",
+            "label": "action thriller"
+          },
+          {
+            "id": "Q2297927",
+            "label": "spy film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 20,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "No Time to Die",
+        "year": "2021"
+      },
+      "wikidata": {
+        "id": "Q21534241",
+        "label": "No Time to Die",
+        "description": "2021 film directed by Cary Joji Fukunaga",
+        "year": 2020,
+        "runtimeMinutes": 163,
+        "budgetUsd": 250000000,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q512103",
+            "label": "Cary Joji Fukunaga"
+          },
+          {
+            "id": "Q134867",
+            "label": "Danny Boyle"
+          },
+          {
+            "id": "Q223233",
+            "label": "Sam Mendes"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q2297927",
+            "label": "spy film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 13,
+        "producerCount": 2,
+        "screenwriterCount": 6,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Casino Royale",
+        "year": "2006"
+      },
+      "wikidata": {
+        "id": "Q151904",
+        "label": "Casino Royale",
+        "description": "2006 film by Martin Campbell",
+        "year": 2006,
+        "runtimeMinutes": 144,
+        "budgetUsd": null,
+        "boxOfficeUsd": 609447995,
+        "directors": [
+          {
+            "id": "Q282033",
+            "label": "Martin Campbell"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2297927",
+            "label": "spy film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q183",
+            "label": "Germany"
+          },
+          {
+            "id": "Q213",
+            "label": "Czech Republic"
+          },
+          {
+            "id": "Q38",
+            "label": "Italy"
+          },
+          {
+            "id": "Q778",
+            "label": "The Bahamas"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 60,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Wolf of Wall Street",
+        "year": "2013"
+      },
+      "wikidata": {
+        "id": "Q1392744",
+        "label": "The Wolf of Wall Street",
+        "description": "2013 film by Martin Scorsese",
+        "year": 2013,
+        "runtimeMinutes": 180,
+        "budgetUsd": 100000000,
+        "boxOfficeUsd": 392000000,
+        "directors": [
+          {
+            "id": "Q41148",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q5778924",
+            "label": "black comedy film"
+          },
+          {
+            "id": "Q645928",
+            "label": "biographical film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q150",
+            "label": "French"
+          }
+        ],
+        "castCount": 36,
+        "producerCount": 5,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "La La Land",
+        "year": "2016"
+      },
+      "wikidata": {
+        "id": "Q25019036",
+        "label": "La La Land",
+        "description": "2016 Bosnian documentary film directed by Dalibor Miljević",
+        "year": 2016,
+        "runtimeMinutes": null,
+        "budgetUsd": null,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q26830295",
+            "label": "Dalibor Miljevic"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q93204",
+            "label": "documentary film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q225",
+            "label": "Bosnia and Herzegovina"
+          }
+        ],
+        "languages": [],
+        "castCount": 0,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 0,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "The Social Network",
+        "year": "2010"
+      },
+      "wikidata": {
+        "id": "Q185888",
+        "label": "The Social Network",
+        "description": "2010 film by David Fincher",
+        "year": 2010,
+        "runtimeMinutes": 121,
+        "budgetUsd": 40000000,
+        "boxOfficeUsd": 224920315,
+        "directors": [
+          {
+            "id": "Q184903",
+            "label": "David Fincher"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q645928",
+            "label": "biographical film"
+          },
+          {
+            "id": "Q3072039",
+            "label": "trial film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 40,
+        "producerCount": 5,
+        "screenwriterCount": 1,
+        "composerCount": 2,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Mad Max: Fury Road",
+        "year": "2015"
+      },
+      "wikidata": {
+        "id": "Q1757288",
+        "label": "Mad Max: Fury Road",
+        "description": "2015 film directed by George Miller",
+        "year": 2015,
+        "runtimeMinutes": 120,
+        "budgetUsd": 150000000,
+        "boxOfficeUsd": 378858340,
+        "directors": [
+          {
+            "id": "Q446960",
+            "label": "George Miller"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q408",
+            "label": "Australia"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 5,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 16
+      }
+    },
+    {
+      "input": {
+        "title": "Dune",
+        "year": "2021"
+      },
+      "wikidata": {
+        "id": "Q60834962",
+        "label": "Dune",
+        "description": "2021 film directed by Denis Villeneuve",
+        "year": 2021,
+        "runtimeMinutes": 155,
+        "budgetUsd": 165000000,
+        "boxOfficeUsd": 401847900,
+        "directors": [
+          {
+            "id": "Q548823",
+            "label": "Denis Villeneuve"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q28",
+            "label": "Hungary"
+          },
+          {
+            "id": "Q810",
+            "label": "Jordan"
+          },
+          {
+            "id": "Q878",
+            "label": "United Arab Emirates"
+          },
+          {
+            "id": "Q20",
+            "label": "Norway"
+          },
+          {
+            "id": "Q16",
+            "label": "Canada"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 19,
+        "producerCount": 4,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "Dune: Part Two",
+        "year": "2024"
+      },
+      "wikidata": {
+        "id": "Q109228991",
+        "label": "Dune: Part Two",
+        "description": "2024 film directed by Denis Villeneuve",
+        "year": 2023,
+        "runtimeMinutes": 166,
+        "budgetUsd": 190000000,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q548823",
+            "label": "Denis Villeneuve"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          },
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q16",
+            "label": "Canada"
+          },
+          {
+            "id": "Q878",
+            "label": "United Arab Emirates"
+          },
+          {
+            "id": "Q28",
+            "label": "Hungary"
+          },
+          {
+            "id": "Q664",
+            "label": "New Zealand"
+          },
+          {
+            "id": "Q38",
+            "label": "Italy"
+          },
+          {
+            "id": "Q810",
+            "label": "Jordan"
+          },
+          {
+            "id": "Q1005",
+            "label": "The Gambia"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 17,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "The Grand Budapest Hotel",
+        "year": "2014"
+      },
+      "wikidata": {
+        "id": "Q3521099",
+        "label": "The Grand Budapest Hotel",
+        "description": "2014 film directed by Wes Anderson",
+        "year": 2014,
+        "runtimeMinutes": 99,
+        "budgetUsd": null,
+        "boxOfficeUsd": 174801324,
+        "directors": [
+          {
+            "id": "Q223687",
+            "label": "Wes Anderson"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q192881",
+            "label": "tragicomedy"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q183",
+            "label": "Germany"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q150",
+            "label": "French"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          }
+        ],
+        "castCount": 48,
+        "producerCount": 7,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 5
+      }
+    },
+    {
+      "input": {
+        "title": "Everything Everywhere All at Once",
+        "year": "2022"
+      },
+      "wikidata": {
+        "id": "Q83808444",
+        "label": "Everything Everywhere All at Once",
+        "description": "2022 film by Daniel Kwan and Daniel Scheinert",
+        "year": 2022,
+        "runtimeMinutes": 140,
+        "budgetUsd": 25000000,
+        "boxOfficeUsd": 97737200,
+        "directors": [
+          {
+            "id": "Q28746830",
+            "label": "Dan Kwan"
+          },
+          {
+            "id": "Q28746848",
+            "label": "Daniel Scheinert"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q1770859",
+            "label": "absurdist fiction"
+          },
+          {
+            "id": "Q1033891",
+            "label": "martial arts film"
+          },
+          {
+            "id": "Q21858363",
+            "label": "psychedelic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q9192",
+            "label": "Mandarin"
+          },
+          {
+            "id": "Q9186",
+            "label": "Cantonese"
+          }
+        ],
+        "castCount": 14,
+        "producerCount": 6,
+        "screenwriterCount": 2,
+        "composerCount": 3,
+        "awardsReceivedCount": 8
+      }
+    },
+    {
+      "input": {
+        "title": "Get Out",
+        "year": "2017"
+      },
+      "wikidata": {
+        "id": "Q25136235",
+        "label": "Get Out",
+        "description": "2017 film directed by Jordan Peele",
+        "year": 2017,
+        "runtimeMinutes": 104,
+        "budgetUsd": 4500000,
+        "boxOfficeUsd": 255407663,
+        "directors": [
+          {
+            "id": "Q3371986",
+            "label": "Jordan Peele"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q224700",
+            "label": "comedy horror"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q17",
+            "label": "Japan"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 12,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "A Quiet Place",
+        "year": "2018"
+      },
+      "wikidata": {
+        "id": "Q39070473",
+        "label": "A Quiet Place",
+        "description": "2018 film directed by John Krasinski",
+        "year": 2018,
+        "runtimeMinutes": 90,
+        "budgetUsd": 17000000,
+        "boxOfficeUsd": 340939361,
+        "directors": [
+          {
+            "id": "Q313039",
+            "label": "John Krasinski"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q47009776",
+            "label": "apocalyptic film"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q14759",
+            "label": "American Sign Language"
+          }
+        ],
+        "castCount": 5,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Conjuring",
+        "year": "2013"
+      },
+      "wikidata": {
+        "id": "Q5540479",
+        "label": "The Conjuring",
+        "description": "2013 film directed by James Wan",
+        "year": 2013,
+        "runtimeMinutes": 112,
+        "budgetUsd": 20000000,
+        "boxOfficeUsd": 318000000,
+        "directors": [
+          {
+            "id": "Q108047434",
+            "label": "James Wan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q31888058",
+            "label": "ghost film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q397",
+            "label": "Latin"
+          }
+        ],
+        "castCount": 9,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "It",
+        "year": "2017"
+      },
+      "wikidata": {
+        "id": "Q25136484",
+        "label": "It",
+        "description": "2017 film directed by Andy Muschietti",
+        "year": 2017,
+        "runtimeMinutes": 135,
+        "budgetUsd": 35000000,
+        "boxOfficeUsd": 700481748,
+        "directors": [
+          {
+            "id": "Q6385039",
+            "label": "Andy Muschietti"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q43911809",
+            "label": "supernatural horror film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          },
+          {
+            "id": "Q1128592",
+            "label": "contemporary fantasy"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q3634883",
+            "label": "supernatural film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 22,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "The Exorcist",
+        "year": "1973"
+      },
+      "wikidata": {
+        "id": "Q274167",
+        "label": "The Exorcist",
+        "description": "1973 film directed by William Friedkin",
+        "year": 1973,
+        "runtimeMinutes": 122,
+        "budgetUsd": 12000000,
+        "boxOfficeUsd": 441306145,
+        "directors": [
+          {
+            "id": "Q51582",
+            "label": "William Friedkin"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q18355406",
+            "label": "satanic film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q43911809",
+            "label": "supernatural horror film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 12,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 7
+      }
+    },
+    {
+      "input": {
+        "title": "Halloween",
+        "year": "1978"
+      },
+      "wikidata": {
+        "id": "Q221103",
+        "label": "Halloween",
+        "description": "1978 film directed by John Carpenter",
+        "year": 1978,
+        "runtimeMinutes": 92,
+        "budgetUsd": 325000,
+        "boxOfficeUsd": 70274000,
+        "directors": [
+          {
+            "id": "Q95008",
+            "label": "John Carpenter"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q853630",
+            "label": "slasher film"
+          },
+          {
+            "id": "Q1146335",
+            "label": "teen film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q459290",
+            "label": "independent film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q127738900",
+            "label": "teen horror film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 13,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Scream",
+        "year": "1996"
+      },
+      "wikidata": {
+        "id": "Q27411",
+        "label": "Scream",
+        "description": "1996 film directed by Wes Craven",
+        "year": 1996,
+        "runtimeMinutes": 111,
+        "budgetUsd": null,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q223992",
+            "label": "Wes Craven"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q853630",
+            "label": "slasher film"
+          },
+          {
+            "id": "Q1146335",
+            "label": "teen film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 17,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "The Sixth Sense",
+        "year": "1999"
+      },
+      "wikidata": {
+        "id": "Q183063",
+        "label": "The Sixth Sense",
+        "description": "1999 film directed by M. Night Shyamalan",
+        "year": 1999,
+        "runtimeMinutes": 107,
+        "budgetUsd": 40000000,
+        "boxOfficeUsd": 672806292,
+        "directors": [
+          {
+            "id": "Q51489",
+            "label": "M. Night Shyamalan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q31888058",
+            "label": "ghost film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q109629396",
+            "label": "psychological horror film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 14,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Jaws",
+        "year": "1975"
+      },
+      "wikidata": {
+        "id": "Q189505",
+        "label": "Jaws",
+        "description": "1975 film by Steven Spielberg",
+        "year": 1975,
+        "runtimeMinutes": 124,
+        "budgetUsd": 9000000,
+        "boxOfficeUsd": 497170756,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q10663882",
+            "label": "science fiction horror film"
+          },
+          {
+            "id": "Q15898171",
+            "label": "survival film"
+          },
+          {
+            "id": "Q109626272",
+            "label": "natural horror film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 12,
+        "producerCount": 2,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "E.T. the Extra-Terrestrial",
+        "year": "1982"
+      },
+      "wikidata": {
+        "id": "Q11621",
+        "label": "E.T. the Extra-Terrestrial",
+        "description": "1982 film directed by Steven Spielberg",
+        "year": 1982,
+        "runtimeMinutes": 115,
+        "budgetUsd": 10500000,
+        "boxOfficeUsd": 792910554,
+        "directors": [
+          {
+            "id": "Q8877",
+            "label": "Steven Spielberg"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 15,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 20
+      }
+    },
+    {
+      "input": {
+        "title": "Rocky",
+        "year": "1976"
+      },
+      "wikidata": {
+        "id": "Q188652",
+        "label": "Rocky",
+        "description": "1976 film directed by John Avildsen",
+        "year": 1976,
+        "runtimeMinutes": 119,
+        "budgetUsd": 1000000,
+        "boxOfficeUsd": 117235147,
+        "directors": [
+          {
+            "id": "Q260125",
+            "label": "John G. Avildsen"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q895583",
+            "label": "boxing film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 18,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "Creed",
+        "year": "2015"
+      },
+      "wikidata": {
+        "id": "Q18822138",
+        "label": "Creed",
+        "description": "2015 film directed by Ryan Coogler",
+        "year": 2015,
+        "runtimeMinutes": 133,
+        "budgetUsd": 35000000,
+        "boxOfficeUsd": 173578883,
+        "directors": [
+          {
+            "id": "Q7383978",
+            "label": "Ryan Coogler"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q895583",
+            "label": "boxing film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 9,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "The Terminator",
+        "year": "1984"
+      },
+      "wikidata": {
+        "id": "Q162255",
+        "label": "The Terminator",
+        "description": "1984 film by James Cameron",
+        "year": 1984,
+        "runtimeMinutes": 108,
+        "budgetUsd": 6400000,
+        "boxOfficeUsd": 78371200,
+        "directors": [
+          {
+            "id": "Q42574",
+            "label": "James Cameron"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q174526",
+            "label": "cyberpunk"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q16538713",
+            "label": "chase film"
+          },
+          {
+            "id": "Q104765957",
+            "label": "time-travel film"
+          },
+          {
+            "id": "Q200092",
+            "label": "horror film"
+          },
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q10663882",
+            "label": "science fiction horror film"
+          },
+          {
+            "id": "Q1341051",
+            "label": "post-apocalyptic film"
+          },
+          {
+            "id": "Q20656232",
+            "label": "science fiction action film"
+          },
+          {
+            "id": "Q116778237",
+            "label": "tech-noir film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q459290",
+            "label": "independent film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q580850",
+            "label": "techno-thriller"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 14,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Die Hard",
+        "year": "1988"
+      },
+      "wikidata": {
+        "id": "Q105598",
+        "label": "Die Hard",
+        "description": "1988 film directed by John McTiernan",
+        "year": 1988,
+        "runtimeMinutes": 131,
+        "budgetUsd": 28000000,
+        "boxOfficeUsd": 140767956,
+        "directors": [
+          {
+            "id": "Q270639",
+            "label": "John McTiernan"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q3990883",
+            "label": "action thriller"
+          },
+          {
+            "id": "Q28026639",
+            "label": "Christmas film"
+          },
+          {
+            "id": "Q496523",
+            "label": "heist film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          }
+        ],
+        "castCount": 27,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Heat",
+        "year": "1995"
+      },
+      "wikidata": {
+        "id": "Q42198",
+        "label": "Heat",
+        "description": "1995 film directed by Michael Mann",
+        "year": 1995,
+        "runtimeMinutes": 171,
+        "budgetUsd": 60000000,
+        "boxOfficeUsd": 187436818,
+        "directors": [
+          {
+            "id": "Q270097",
+            "label": "Michael Mann"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q652256",
+            "label": "epic film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q109733304",
+            "label": "psychological thriller film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q496523",
+            "label": "heist film"
+          },
+          {
+            "id": "Q63214877",
+            "label": "psychological drama film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 30,
+        "producerCount": 2,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Scarface",
+        "year": "1983"
+      },
+      "wikidata": {
+        "id": "Q47075",
+        "label": "Scarface",
+        "description": "1983 film directed by Brian De Palma",
+        "year": 1983,
+        "runtimeMinutes": 170,
+        "budgetUsd": 25000000,
+        "boxOfficeUsd": 65.884,
+        "directors": [
+          {
+            "id": "Q189526",
+            "label": "Brian De Palma"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q7444356",
+            "label": "gangster film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q11304653",
+            "label": "suspense film"
+          },
+          {
+            "id": "Q109733630",
+            "label": "police procedural film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 33,
+        "producerCount": 1,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "The Truman Show",
+        "year": "1998"
+      },
+      "wikidata": {
+        "id": "Q214801",
+        "label": "The Truman Show",
+        "description": "1998 film directed by Peter Weir",
+        "year": 1998,
+        "runtimeMinutes": 99,
+        "budgetUsd": 60000000,
+        "boxOfficeUsd": 264118201,
+        "directors": [
+          {
+            "id": "Q55424",
+            "label": "Peter Weir"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q192881",
+            "label": "tragicomedy"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q15062348",
+            "label": "dystopian fiction"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 23,
+        "producerCount": 4,
+        "screenwriterCount": 1,
+        "composerCount": 3,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "The Big Lebowski",
+        "year": "1998"
+      },
+      "wikidata": {
+        "id": "Q337078",
+        "label": "The Big Lebowski",
+        "description": "1998 film by Joel Coen, Ethan Coen",
+        "year": 1998,
+        "runtimeMinutes": 117,
+        "budgetUsd": 15000000,
+        "boxOfficeUsd": 46000000,
+        "directors": [
+          {
+            "id": "Q13595311",
+            "label": "Joel Coen"
+          },
+          {
+            "id": "Q13595531",
+            "label": "Ethan Coen"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q56296585",
+            "label": "comedy of error"
+          },
+          {
+            "id": "Q185867",
+            "label": "film noir"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q188",
+            "label": "German"
+          },
+          {
+            "id": "Q9288",
+            "label": "Hebrew"
+          },
+          {
+            "id": "Q1321",
+            "label": "Spanish"
+          }
+        ],
+        "castCount": 29,
+        "producerCount": 5,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Blade Runner",
+        "year": "1982"
+      },
+      "wikidata": {
+        "id": "Q184843",
+        "label": "Blade Runner",
+        "description": "1982 film by Ridley Scott",
+        "year": 1982,
+        "runtimeMinutes": 112,
+        "budgetUsd": 28000000,
+        "boxOfficeUsd": 27615743,
+        "directors": [
+          {
+            "id": "Q56005",
+            "label": "Ridley Scott"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1894374",
+            "label": "tech noir"
+          },
+          {
+            "id": "Q174526",
+            "label": "cyberpunk"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q185867",
+            "label": "film noir"
+          },
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          },
+          {
+            "id": "Q959790",
+            "label": "crime film"
+          },
+          {
+            "id": "Q113485322",
+            "label": "crime drama film"
+          },
+          {
+            "id": "Q19367312",
+            "label": "crime thriller film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q8646",
+            "label": "Hong Kong"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 13,
+        "producerCount": 3,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 4
+      }
+    },
+    {
+      "input": {
+        "title": "Blade Runner 2049",
+        "year": "2017"
+      },
+      "wikidata": {
+        "id": "Q21500755",
+        "label": "Blade Runner 2049",
+        "description": "2017 film directed by Denis Villeneuve",
+        "year": 2017,
+        "runtimeMinutes": 164,
+        "budgetUsd": 150000000,
+        "boxOfficeUsd": 259239658,
+        "directors": [
+          {
+            "id": "Q548823",
+            "label": "Denis Villeneuve"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q471839",
+            "label": "science fiction film"
+          },
+          {
+            "id": "Q1200678",
+            "label": "mystery film"
+          },
+          {
+            "id": "Q174526",
+            "label": "cyberpunk"
+          },
+          {
+            "id": "Q20443008",
+            "label": "dystopian film"
+          },
+          {
+            "id": "Q2421031",
+            "label": "neo-noir"
+          },
+          {
+            "id": "Q2484376",
+            "label": "thriller film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q16",
+            "label": "Canada"
+          },
+          {
+            "id": "Q28",
+            "label": "Hungary"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 19,
+        "producerCount": 4,
+        "screenwriterCount": 2,
+        "composerCount": 2,
+        "awardsReceivedCount": 3
+      }
+    },
+    {
+      "input": {
+        "title": "The Notebook",
+        "year": "2004"
+      },
+      "wikidata": {
+        "id": "Q223374",
+        "label": "The Notebook",
+        "description": "2004 film directed by Nick Cassavetes",
+        "year": 2004,
+        "runtimeMinutes": 123,
+        "budgetUsd": 30000000,
+        "boxOfficeUsd": 15533000,
+        "directors": [
+          {
+            "id": "Q431191",
+            "label": "Nick Cassavetes"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          },
+          {
+            "id": "Q102429885",
+            "label": "coming-of-age film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 19,
+        "producerCount": 2,
+        "screenwriterCount": 3,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Pretty Woman",
+        "year": "1990"
+      },
+      "wikidata": {
+        "id": "Q207954",
+        "label": "Pretty Woman",
+        "description": "1990 film directed by Garry Marshall",
+        "year": 1990,
+        "runtimeMinutes": 119,
+        "budgetUsd": null,
+        "boxOfficeUsd": 463406268,
+        "directors": [
+          {
+            "id": "Q315087",
+            "label": "Garry Marshall"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q118612349",
+            "label": "romantic comedy film"
+          },
+          {
+            "id": "Q1054574",
+            "label": "romance film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "The Devil Wears Prada",
+        "year": "2006"
+      },
+      "wikidata": {
+        "id": "Q223316",
+        "label": "The Devil Wears Prada",
+        "description": "2006 film directed by David Frankel",
+        "year": 2006,
+        "runtimeMinutes": 109,
+        "budgetUsd": 35000000,
+        "boxOfficeUsd": 326551094,
+        "directors": [
+          {
+            "id": "Q934964",
+            "label": "David Frankel"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q859369",
+            "label": "comedy drama"
+          },
+          {
+            "id": "Q130232",
+            "label": "drama film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 21,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Mean Girls",
+        "year": "2004"
+      },
+      "wikidata": {
+        "id": "Q631103",
+        "label": "Mean Girls",
+        "description": "2004 film by Mark Waters",
+        "year": 2004,
+        "runtimeMinutes": 97,
+        "budgetUsd": null,
+        "boxOfficeUsd": null,
+        "directors": [
+          {
+            "id": "Q471552",
+            "label": "Mark Waters"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q1146335",
+            "label": "teen film"
+          },
+          {
+            "id": "Q118612349",
+            "label": "romantic comedy film"
+          },
+          {
+            "id": "Q20442589",
+            "label": "LGBTQ-related film"
+          },
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 25,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 0
+      }
+    },
+    {
+      "input": {
+        "title": "Home Alone",
+        "year": "1990"
+      },
+      "wikidata": {
+        "id": "Q105031",
+        "label": "Home Alone",
+        "description": "1990 film directed by Chris Columbus",
+        "year": 1990,
+        "runtimeMinutes": 103,
+        "budgetUsd": 18000000,
+        "boxOfficeUsd": 476684675,
+        "directors": [
+          {
+            "id": "Q75079",
+            "label": "Chris Columbus"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157443",
+            "label": "comedy film"
+          },
+          {
+            "id": "Q1361932",
+            "label": "family film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q28026639",
+            "label": "Christmas film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 35,
+        "producerCount": 1,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    },
+    {
+      "input": {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "year": "2001"
+      },
+      "wikidata": {
+        "id": "Q102438",
+        "label": "Harry Potter and the Philosopher's Stone",
+        "description": "2001 film directed by Chris Columbus",
+        "year": 2001,
+        "runtimeMinutes": 152,
+        "budgetUsd": 125000000,
+        "boxOfficeUsd": 978087613,
+        "directors": [
+          {
+            "id": "Q75079",
+            "label": "Chris Columbus"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q2973181",
+            "label": "speculative fiction film"
+          },
+          {
+            "id": "Q2143665",
+            "label": "children's film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 56,
+        "producerCount": 1,
+        "screenwriterCount": 2,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "Harry Potter and the Deathly Hallows: Part 2",
+        "year": "2011"
+      },
+      "wikidata": {
+        "id": "Q232009",
+        "label": "Harry Potter and the Deathly Hallows – Part 2",
+        "description": "2011 film directed by David Yates",
+        "year": 2011,
+        "runtimeMinutes": 130,
+        "budgetUsd": 250000000,
+        "boxOfficeUsd": 1341511219,
+        "directors": [
+          {
+            "id": "Q312988",
+            "label": "David Yates"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q145",
+            "label": "United Kingdom"
+          },
+          {
+            "id": "Q30",
+            "label": "United States"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          }
+        ],
+        "castCount": 64,
+        "producerCount": 3,
+        "screenwriterCount": 1,
+        "composerCount": 1,
+        "awardsReceivedCount": 2
+      }
+    },
+    {
+      "input": {
+        "title": "The Hobbit: An Unexpected Journey",
+        "year": "2012"
+      },
+      "wikidata": {
+        "id": "Q80379",
+        "label": "The Hobbit: An Unexpected Journey",
+        "description": "2012 film directed by Peter Jackson",
+        "year": 2012,
+        "runtimeMinutes": 169,
+        "budgetUsd": 180000000,
+        "boxOfficeUsd": 1017003568,
+        "directors": [
+          {
+            "id": "Q4465",
+            "label": "Peter Jackson"
+          }
+        ],
+        "genres": [
+          {
+            "id": "Q157394",
+            "label": "fantasy film"
+          },
+          {
+            "id": "Q319221",
+            "label": "adventure film"
+          },
+          {
+            "id": "Q188473",
+            "label": "action film"
+          }
+        ],
+        "countries": [
+          {
+            "id": "Q30",
+            "label": "United States"
+          },
+          {
+            "id": "Q664",
+            "label": "New Zealand"
+          }
+        ],
+        "languages": [
+          {
+            "id": "Q1860",
+            "label": "English"
+          },
+          {
+            "id": "Q56437",
+            "label": "Sindarin"
+          },
+          {
+            "id": "Q686210",
+            "label": "Black Speech"
+          },
+          {
+            "id": "Q7462260",
+            "label": "Khuzdûl"
+          }
+        ],
+        "castCount": 33,
+        "producerCount": 4,
+        "screenwriterCount": 5,
+        "composerCount": 1,
+        "awardsReceivedCount": 1
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,6 +1,6 @@
-import { movieCategories } from '../data/movieCategories'
-import { movies } from '../data/movies'
-import { movieRankings } from '../data/movieRankings'
+import { movieCategories } from '../data/movieCategories.ts'
+import { movies } from '../data/movies.ts'
+import { movieRankings } from '../data/movieRankings.ts'
 
 export function validateMovieData() {
   const errors: string[] = []
