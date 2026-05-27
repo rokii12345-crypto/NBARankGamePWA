@@ -1,7 +1,10 @@
+import type { MovieCategory } from '../data/movieCategories'
 import type {
   CategoryAssignment,
   EuropeCategoryAssignment,
   EuropeRoundResult,
+  MovieCategoryAssignment,
+  MovieRoundResult,
   RoundResult,
   SloveniaCategoryAssignment,
   SloveniaRoundResult,
@@ -12,9 +15,12 @@ type ResultCategory = {
   decimals?: number
 }
 
+type MovieResultCategory = ResultCategory & {
+  valueType?: MovieCategory['valueType']
+}
+
 const formatNumber = (value: number, decimals?: number) => {
-  const resolvedDecimals =
-    decimals ?? (Number.isInteger(value) ? 0 : 1)
+  const resolvedDecimals = decimals ?? (Number.isInteger(value) ? 0 : 1)
 
   return new Intl.NumberFormat('sl-SI', {
     maximumFractionDigits: resolvedDecimals,
@@ -45,6 +51,23 @@ export const formatStatValue = (
 }
 
 export const formatGamePoints = (points: number) => `+${points}`
+
+export const formatMovieValue = (
+  value: number,
+  category: MovieResultCategory,
+) => {
+  const formattedValue = formatNumber(value, category.decimals)
+
+  if (category.unit === '/10' || category.unit === '/100') {
+    return `${formattedValue}${category.unit}`
+  }
+
+  if (category.unit === 'x') {
+    return `${formattedValue}x`
+  }
+
+  return `${formattedValue} ${category.unit}`
+}
 
 export const formatAssignmentResult = (
   assignment: CategoryAssignment,
@@ -131,3 +154,29 @@ export const formatEuropeRoundResult = (result: EuropeRoundResult) =>
     result.unit,
     result.decimals,
   )} (${result.year}). Igralne točke: ${formatGamePoints(result.points)}.`
+
+export const formatMovieAssignmentResult = (
+  assignment: MovieCategoryAssignment,
+  category?: MovieResultCategory,
+  options: { includeMovieTitle?: boolean } = {},
+) => {
+  const includeMovieTitle = options.includeMovieTitle ?? true
+  const moviePrefix = includeMovieTitle ? `${assignment.movieTitle} · ` : ''
+
+  if (!category) {
+    return `${moviePrefix}${formatGamePoints(assignment.points)}`
+  }
+
+  const yearSuffix = assignment.year ? ` · ${assignment.year}` : ''
+
+  return `${moviePrefix}${formatMovieValue(
+    assignment.value,
+    category,
+  )}${yearSuffix} · ${formatGamePoints(assignment.points)}`
+}
+
+export const formatMovieRoundResult = (result: MovieRoundResult) =>
+  `${result.movieTitle} — ${result.categoryTitle}: ${formatMovieValue(
+    result.value,
+    result,
+  )}. Igralne točke: ${formatGamePoints(result.points)}.`

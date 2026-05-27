@@ -59,6 +59,23 @@ function RulesScreen({ onBack }: RulesScreenProps) {
           <li>Druga občina nato postane prejšnja občina za naslednje vprašanje.</li>
         </ul>
 
+        <h2>Rank Filmi</h2>
+        <ul>
+          <li>Igra izbere 10 filmskih kategorij in 10 filmov.</li>
+          <li>Filmi se izberejo samo iz podatkov, ki pokrivajo vseh 10 izbranih kategorij.</li>
+          <li>Za vsak film izbereš eno še neuporabljeno kategorijo.</li>
+          <li>Po izboru vidiš dejanski podatek in igralne točke.</li>
+          <li>Nižji skupni rezultat je boljši.</li>
+        </ul>
+
+        <h2>Ugani NBA igralca</h2>
+        <ul>
+          <li>Igra ima 10 vprašanj s skritim NBA igralcem.</li>
+          <li>Vsako vprašanje pokaže dva statistična namiga iz NBA lestvic in en profilni namig.</li>
+          <li>Izbereš enega od štirih možnih igralcev.</li>
+          <li>Po odgovoru vidiš pravilnega igralca, nato gre igra naprej sama.</li>
+        </ul>
+
         <h2>Ugani klub</h2>
         <ul>
           <li>Igra ima 10 vprašanj s skritim evropskim nogometnim klubom.</li>

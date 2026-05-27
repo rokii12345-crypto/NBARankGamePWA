@@ -8,6 +8,18 @@ import {
   selectCategoryForCurrentPlayer,
 } from './game/gameEngine'
 import {
+  advanceAfterNbaGuessAnswer,
+  createNewNbaGuessGame,
+  isNbaGuessGameComplete,
+  selectNbaGuessAnswer,
+} from './game/nbaGuessEngine'
+import {
+  advanceAfterMovieResult,
+  createNewMovieGame,
+  isMovieGameComplete,
+  selectCategoryForCurrentMovie,
+} from './game/movieGameEngine'
+import {
   advanceAfterEuropeResult,
   createNewEuropeGame,
   isEuropeGameComplete,
@@ -53,6 +65,8 @@ import type {
   GuessMunicipalityGameState,
   HigherLowerChoice,
   HigherLowerGameState,
+  MovieGameState,
+  NBAGuessGameState,
   SloveniaGameState,
 } from './types/game'
 import EuropeFinalResultScreen from './screens/EuropeFinalResultScreen'
@@ -64,6 +78,9 @@ import GameScreen from './screens/GameScreen'
 import GuessMunicipalityScreen from './screens/GuessMunicipalityScreen'
 import HigherLowerScreen from './screens/HigherLowerScreen'
 import ModeSelectScreen from './screens/ModeSelectScreen'
+import MovieFinalResultScreen from './screens/MovieFinalResultScreen'
+import MovieGameScreen from './screens/MovieGameScreen'
+import NbaGuessScreen from './screens/NbaGuessScreen'
 import PlayerNameScreen from './screens/PlayerNameScreen'
 import RulesScreen from './screens/RulesScreen'
 import SloveniaFinalResultScreen from './screens/SloveniaFinalResultScreen'
@@ -73,6 +90,10 @@ function App() {
   const [screen, setScreen] = useState<AppScreen>('mode-select')
   const [gameMode, setGameMode] = useState<GameMode | null>(null)
   const [nbaGame, setNbaGame] = useState<GameState>(() => createNewNbaGame())
+  const [nbaGuessGame, setNbaGuessGame] =
+    useState<NBAGuessGameState>(() => createNewNbaGuessGame())
+  const [movieGame, setMovieGame] =
+    useState<MovieGameState>(() => createNewMovieGame())
   const [europeGame, setEuropeGame] = useState<EuropeGameState>(() =>
     createNewEuropeGame(),
   )
@@ -96,6 +117,7 @@ function App() {
     setResultCountdown(
       mode === 'guess-municipality' ||
         mode === 'higher-lower' ||
+        mode === 'nba-guess' ||
         mode === 'football-guess' ||
         mode === 'football-stadium'
         ? 2
@@ -114,6 +136,12 @@ function App() {
       return
     }
 
+    if (mode === 'movies') {
+      setMovieGame(createNewMovieGame())
+      setScreen('game')
+      return
+    }
+
     if (mode === 'guess-municipality') {
       setGuessMunicipalityGame(createNewGuessMunicipalityGame())
       setScreen('game')
@@ -122,6 +150,12 @@ function App() {
 
     if (mode === 'higher-lower') {
       setHigherLowerGame(createNewHigherLowerGame())
+      setScreen('game')
+      return
+    }
+
+    if (mode === 'nba-guess') {
+      setNbaGuessGame(createNewNbaGuessGame())
       setScreen('game')
       return
     }
@@ -171,6 +205,13 @@ function App() {
       return
     }
 
+    if (gameMode === 'movies') {
+      setMovieGame((currentGame) =>
+        selectCategoryForCurrentMovie(currentGame, categoryId),
+      )
+      return
+    }
+
     setNbaGame((currentGame) =>
       selectCategoryForCurrentPlayer(currentGame, categoryId),
     )
@@ -187,6 +228,13 @@ function App() {
     setResultCountdown(2)
     setHigherLowerGame((currentGame) =>
       selectHigherLowerAnswer(currentGame, choice),
+    )
+  }
+
+  const selectNbaGuessPlayer = (playerId: string) => {
+    setResultCountdown(2)
+    setNbaGuessGame((currentGame) =>
+      selectNbaGuessAnswer(currentGame, playerId),
     )
   }
 
@@ -210,12 +258,16 @@ function App() {
         return guessMunicipalityGame.isResolving
       case 'higher-lower':
         return higherLowerGame.isResolving
+      case 'nba-guess':
+        return nbaGuessGame.isResolving
       case 'football-guess':
         return footballGuessGame.isResolving
       case 'football-stadium':
         return footballStadiumGame.isResolving
       case 'europe':
         return europeGame.isResolving
+      case 'movies':
+        return movieGame.isResolving
       case 'slovenia':
         return sloveniaGame.isResolving
       case 'nba':
@@ -227,6 +279,7 @@ function App() {
   const resolveDelayMs =
     gameMode === 'guess-municipality' ||
     gameMode === 'higher-lower' ||
+    gameMode === 'nba-guess' ||
     gameMode === 'football-guess' ||
     gameMode === 'football-stadium'
       ? 2000
@@ -262,6 +315,19 @@ function App() {
           const nextGame = advanceAfterHigherLowerAnswer(currentGame)
 
           if (isHigherLowerGameComplete(nextGame)) {
+            window.setTimeout(() => setScreen('final'), 0)
+          }
+
+          return nextGame
+        })
+        return
+      }
+
+      if (gameMode === 'nba-guess') {
+        setNbaGuessGame((currentGame) => {
+          const nextGame = advanceAfterNbaGuessAnswer(currentGame)
+
+          if (isNbaGuessGameComplete(nextGame)) {
             window.setTimeout(() => setScreen('final'), 0)
           }
 
@@ -314,6 +380,19 @@ function App() {
           const nextGame = advanceAfterEuropeResult(currentGame)
 
           if (isEuropeGameComplete(nextGame)) {
+            window.setTimeout(() => setScreen('final'), 0)
+          }
+
+          return nextGame
+        })
+        return
+      }
+
+      if (gameMode === 'movies') {
+        setMovieGame((currentGame) => {
+          const nextGame = advanceAfterMovieResult(currentGame)
+
+          if (isMovieGameComplete(nextGame)) {
             window.setTimeout(() => setScreen('final'), 0)
           }
 
@@ -380,6 +459,18 @@ function App() {
     )
   }
 
+  if (screen === 'game' && gameMode === 'movies') {
+    return (
+      <MovieGameScreen
+        game={movieGame}
+        countdown={resultCountdown}
+        onSelectCategory={selectCategory}
+        onRestart={restartGame}
+        onBack={goHome}
+      />
+    )
+  }
+
   if (screen === 'game' && gameMode === 'guess-municipality') {
     return (
       <GuessMunicipalityScreen
@@ -398,6 +489,18 @@ function App() {
         game={higherLowerGame}
         countdown={resultCountdown}
         onSelectAnswer={selectHigherLowerChoice}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'game' && gameMode === 'nba-guess') {
+    return (
+      <NbaGuessScreen
+        game={nbaGuessGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectNbaGuessPlayer}
         onRestart={restartGame}
         onHome={goHome}
       />
@@ -460,6 +563,16 @@ function App() {
     )
   }
 
+  if (screen === 'final' && gameMode === 'movies') {
+    return (
+      <MovieFinalResultScreen
+        game={movieGame}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
   if (screen === 'final' && gameMode === 'guess-municipality') {
     return (
       <GuessMunicipalityScreen
@@ -478,6 +591,18 @@ function App() {
         game={higherLowerGame}
         countdown={resultCountdown}
         onSelectAnswer={selectHigherLowerChoice}
+        onRestart={restartGame}
+        onHome={goHome}
+      />
+    )
+  }
+
+  if (screen === 'final' && gameMode === 'nba-guess') {
+    return (
+      <NbaGuessScreen
+        game={nbaGuessGame}
+        countdown={resultCountdown}
+        onSelectAnswer={selectNbaGuessPlayer}
         onRestart={restartGame}
         onHome={goHome}
       />

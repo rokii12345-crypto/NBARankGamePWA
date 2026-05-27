@@ -5,6 +5,9 @@ import type { EuropeCategory } from '../data/europeCategories'
 import type { EuropeCountry } from '../data/europeCountries'
 import type { EuropeRanking } from '../data/europeRankings'
 import type { FootballClub } from '../data/footballClubs'
+import type { MovieCategory } from '../data/movieCategories'
+import type { MovieRanking } from '../data/movieRankings'
+import type { Movie } from '../data/movies'
 import type { SloveniaCategory } from '../data/sloveniaCategories'
 import type { SloveniaMunicipality } from '../data/sloveniaMunicipalities'
 import type { SloveniaRanking } from '../data/sloveniaRankings'
@@ -13,6 +16,8 @@ export const GAME_ROUNDS = 10
 
 export type GameMode =
   | 'nba'
+  | 'nba-guess'
+  | 'movies'
   | 'europe'
   | 'slovenia'
   | 'guess-municipality'
@@ -55,6 +60,36 @@ export type CategoryChoice = {
   category: NBACategory
   assignment?: CategoryAssignment
   ranking?: NBARanking
+}
+
+export type NBAGuessHint = {
+  label: string
+  value: string
+  icon: string
+  badge?: string
+}
+
+export type NBAGuessQuestion = {
+  player: NBAPlayer
+  hints: NBAGuessHint[]
+  options: NBAPlayer[]
+}
+
+export type NBAGuessAnswer = {
+  questionIndex: number
+  selectedPlayerId: string
+  selectedPlayerName: string
+  correctPlayerId: string
+  correctPlayerName: string
+  isCorrect: boolean
+}
+
+export type NBAGuessGameState = {
+  questions: NBAGuessQuestion[]
+  currentQuestionIndex: number
+  answers: NBAGuessAnswer[]
+  lastAnswer: NBAGuessAnswer | null
+  isResolving: boolean
 }
 
 export type SloveniaCategoryAssignment = {
@@ -116,6 +151,39 @@ export type EuropeCategoryChoice = {
   category: EuropeCategory
   assignment?: EuropeCategoryAssignment
   ranking?: EuropeRanking
+}
+
+export type MovieCategoryAssignment = {
+  categoryId: string
+  movieId: string
+  movieTitle: string
+  rank: number
+  value: number
+  points: number
+  year?: number
+}
+
+export type MovieRoundResult = MovieCategoryAssignment & {
+  categoryTitle: string
+  unit: string
+  decimals: number
+  valueType: MovieCategory['valueType']
+}
+
+export type MovieGameState = {
+  movies: Movie[]
+  categories: MovieCategory[]
+  currentRoundIndex: number
+  assignments: MovieCategoryAssignment[]
+  lastResult: MovieRoundResult | null
+  isResolving: boolean
+  setupError: string | null
+}
+
+export type MovieCategoryChoice = {
+  category: MovieCategory
+  assignment?: MovieCategoryAssignment
+  ranking?: MovieRanking
 }
 
 export type GuessMunicipalityHint = {

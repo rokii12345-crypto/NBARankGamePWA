@@ -119,6 +119,12 @@
     linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
 }
 
+.mode-card--movie {
+  background:
+    linear-gradient(135deg, rgba(244, 63, 94, 0.18), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
 .mode-card--higher-lower {
   background:
     linear-gradient(135deg, rgba(56, 189, 248, 0.16), transparent 46%),
@@ -134,6 +140,12 @@
 .mode-card--football {
   background:
     linear-gradient(135deg, rgba(74, 222, 128, 0.16), transparent 46%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
+}
+
+.mode-card--nba-guess {
+  background:
+    linear-gradient(135deg, rgba(236, 72, 153, 0.16), transparent 46%),
     linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.98));
 }
 
@@ -405,6 +417,102 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.movie-game-screen {
+  gap: 8px;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 11px;
+  overflow: hidden;
+  border: 1px solid rgba(244, 63, 94, 0.22);
+  border-radius: 18px;
+  padding: 11px;
+  color: #f8fafc;
+  background:
+    linear-gradient(135deg, rgba(244, 63, 94, 0.18), transparent 44%),
+    radial-gradient(circle at top right, rgba(255, 209, 102, 0.16), transparent 36%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+  text-align: left;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+.movie-card__poster {
+  display: grid;
+  width: 88px;
+  min-height: 132px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(244, 63, 94, 0.18), transparent 52%),
+    linear-gradient(180deg, rgba(38, 50, 68, 0.96), rgba(15, 23, 42, 0.98));
+  font-size: 2rem;
+}
+
+.movie-card__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card h2 {
+  margin: 1px 0 5px;
+  color: #ffffff;
+  font-size: clamp(1.15rem, 5.8vw, 1.8rem);
+  line-height: 1;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.movie-card__bio {
+  display: -webkit-box;
+  margin: 0 0 8px;
+  overflow: hidden;
+  color: #fecdd3;
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.18;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.movie-card__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 10px;
+  margin: 0;
+}
+
+.movie-card dt {
+  color: #94a3b8;
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.movie-card dd {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+}
+
+.movie-result-panel {
+  border-color: rgba(244, 63, 94, 0.42);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.16), rgba(124, 45, 18, 0.18));
+}
+
+.movie-empty-copy {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 .result-panel {
   display: grid;
   gap: 4px;
@@ -599,6 +707,29 @@
 .football-difficulty-copy {
   margin: 0;
   color: #bbf7d0;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.nba-guess-game-screen {
+  gap: 10px;
+}
+
+.nba-guess-prompt-card {
+  border-color: rgba(236, 72, 153, 0.28);
+  background:
+    linear-gradient(135deg, rgba(236, 72, 153, 0.16), transparent 44%),
+    radial-gradient(circle at top right, rgba(255, 159, 28, 0.18), transparent 34%),
+    linear-gradient(180deg, #172033 0%, #101722 100%);
+}
+
+.nba-guess-hint-card .hint-card__icon {
+  background: rgba(236, 72, 153, 0.12);
+}
+
+.nba-guess-copy {
+  margin: 0;
+  color: #fbcfe8;
   font-size: 0.78rem;
   font-weight: 900;
 }
@@ -1106,6 +1237,36 @@
     gap: 9px;
     padding: 9px;
     border-radius: 15px;
+  }
+
+  .movie-card {
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 9px;
+    padding: 9px;
+    border-radius: 15px;
+  }
+
+  .movie-card__poster {
+    width: 74px;
+    min-height: 111px;
+  }
+
+  .movie-card h2 {
+    margin-bottom: 3px;
+    font-size: clamp(1rem, 5.2vw, 1.45rem);
+  }
+
+  .movie-card__bio {
+    margin-bottom: 6px;
+    font-size: 0.66rem;
+  }
+
+  .movie-card dt {
+    font-size: 0.56rem;
+  }
+
+  .movie-card dd {
+    font-size: 0.64rem;
   }
 
   .player-card__flag {
